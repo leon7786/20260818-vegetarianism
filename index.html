@@ -1458,9 +1458,13 @@
       }
       .nav-right {
         width: 100%;
+        display: flex;
+        justify-content: center;
       }
       .nav-search-box {
-        width: 100%;
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
       }
       .nav-search-input {
         height: 38px;
@@ -1579,6 +1583,16 @@
         padding: 0.32rem 0.55rem;
         font-size: 0.72rem;
         min-height: 32px;
+      }
+      .nav-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .nav-search-box {
+        width: 88%;
+        max-width: 88%;
+        margin: 0 auto;
       }
       .nav-search-input {
         height: 36px;
@@ -2455,9 +2469,50 @@
       }
     ];
 
+    // === 1 年有效期 Cookie 与 LocalStorage 双重持久化收藏机制 ===
+    function setCookie(name, value, days = 365) {
+      const d = new Date();
+      d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+      const expires = "expires=" + d.toUTCString();
+      document.cookie = `${name}=${encodeURIComponent(value)}; ${expires}; path=/; SameSite=Lax`;
+      try {
+        localStorage.setItem(name, value);
+      } catch (e) {}
+    }
+
+    function getCookie(name) {
+      const nameEQ = name + "=";
+      const ca = document.cookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(nameEQ) === 0) {
+          return decodeURIComponent(c.substring(nameEQ.length, c.length));
+        }
+      }
+      try {
+        return localStorage.getItem(name);
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function loadFavorites() {
+      try {
+        const val = getCookie("vege_favs");
+        if (val) {
+          return JSON.parse(val);
+        }
+      } catch (e) {}
+      return [];
+    }
+
+    function saveFavorites() {
+      setCookie("vege_favs", JSON.stringify(favorites), 365);
+    }
+
     let searchQuery = "";
     let favoritesOnly = false;
-    let favorites = JSON.parse(localStorage.getItem("vege_favs") || "[]");
+    let favorites = loadFavorites();
 
     // 简繁汉字双向智能转换映射表
     const S2T_MAP = {
@@ -2707,20 +2762,34 @@
     }
 
     function toggleFav(id, event) {
-      event.stopPropagation();
+      if (event) event.stopPropagation();
       const index = favorites.indexOf(id);
       if (index > -1) {
         favorites.splice(index, 1);
       } else {
         favorites.push(id);
       }
-      localStorage.setItem("vege_favs", JSON.stringify(favorites));
+      saveFavorites();
       updateFavCount();
       renderMainDisplay();
+      if (searchQuery) {
+        const { recipes, platforms } = getSearchResults();
+        renderSearchDropdown(recipes, platforms);
+      }
     }
 
     function updateFavCount() {
       document.getElementById("favCount").innerText = favorites.length;
+    }
+
+    function updateModalFavBtn(id) {
+      const btn = document.getElementById("modalFavBtn_" + id);
+      if (btn) {
+        const isFav = favorites.includes(id);
+        btn.className = "fav-btn " + (isFav ? "active" : "");
+        btn.innerText = isFav ? "★" : "☆";
+        btn.title = isFav ? "取消收藏" : "加入收藏";
+      }
     }
 
     function toggleFavoritesOnly() {
@@ -2793,8 +2862,9 @@
       `;
     }
 
-    // 生成食谱卡片 HTML
+    // 生成食谱卡片 HTML (支持收藏)
     function generateRecipeCardHtml(r) {
+      const isFav = favorites.includes(r.id);
       const ingChips = r.ingredients.slice(0, 4).map(i => `<span class="recipe-ing-chip">${i.split(' ')[0]}</span>`).join("");
       return `
         <article class="recipe-card" onclick="openRecipeDetail('${r.id}')" title="点击查看 ${r.name} 详细烹饪步骤">
@@ -2805,7 +2875,12 @@
           </div>
           <div class="recipe-card-body">
             <div>
-              <h4 class="recipe-title">${highlightKeyword(r.name, searchQuery)}</h4>
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem;">
+                <h4 class="recipe-title" style="flex: 1;">${highlightKeyword(r.name, searchQuery)}</h4>
+                <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${r.id}', event)" title="${isFav ? '取消收藏' : '加入收藏'}" style="margin-top: -3px;">
+                  ${isFav ? '★' : '☆'}
+                </button>
+              </div>
               <div class="recipe-en-sub">${r.name_en}</div>
               <div class="recipe-ingredients-preview">${ingChips}</div>
             </div>
@@ -2850,15 +2925,20 @@
           matchedRecipes = results.recipes;
           matchedPlatforms = results.platforms;
         } else if (favoritesOnly) {
+          matchedRecipes = RECIPES_DATA.filter(r => favorites.includes(r.id));
           matchedPlatforms = PLATFORMS_DATA.filter(p => favorites.includes(p.id));
         }
 
         if (matchedRecipes.length === 0 && matchedPlatforms.length === 0) {
+          const emptyMsg = favoritesOnly 
+            ? "您还没有收藏任何食谱或平台，点击任意卡片上的 ★ 即可加入收藏（自动保存 1 年）！" 
+            : "尝试输入其他词，如: <strong>南瓜 (pumpkin)</strong>, <strong>豆腐 (tofu)</strong>, <strong>鲜菇 (mushroom)</strong>, <strong>素面 (noodles)</strong>, <strong>汤 (soup)</strong>。";
+
           container.innerHTML = `
             <div class="empty-state">
-              <div class="empty-icon">🍃</div>
-              <h4 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem;">未找到相关食谱或平台</h4>
-              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">尝试输入其他词，如: <strong>南瓜 (pumpkin)</strong>, <strong>豆腐 (tofu)</strong>, <strong>鲜菇 (mushroom)</strong>, <strong>素面 (noodles)</strong>, <strong>汤 (soup)</strong>。</p>
+              <div class="empty-icon">${favoritesOnly ? '⭐' : '🍃'}</div>
+              <h4 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem;">${favoritesOnly ? '暂无收藏内容' : '未找到相关食谱或平台'}</h4>
+              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">${emptyMsg}</p>
               <button class="btn btn-outline" onclick="resetFilters()">返回全部平台与食谱</button>
             </div>
           `;
@@ -2869,13 +2949,14 @@
 
         // 呈现匹配到的本地食谱库
         if (matchedRecipes.length > 0) {
+          const sectionTitle = favoritesOnly ? "⭐ 我的收藏食谱" : "🍲 精选食谱库搜索结果";
           html += `
             <section class="group-section">
               <div class="section-header">
                 <h3 class="section-title">
-                  <span>🍲 精选食谱库搜索结果</span>
+                  <span>${sectionTitle}</span>
                 </h3>
-                <div class="result-info">找到 <strong style="color: var(--primary-700);">${matchedRecipes.length}</strong> 道菜谱</div>
+                <div class="result-info">共 <strong style="color: var(--primary-700);">${matchedRecipes.length}</strong> 道菜谱</div>
               </div>
               <div class="cards-grid">
                 ${matchedRecipes.map(r => generateRecipeCardHtml(r)).join("")}
@@ -2891,7 +2972,7 @@
             <section class="group-section">
               <div class="section-header">
                 <h3 class="section-title"><span>${sectionTitle}</span></h3>
-                <div class="result-info">共找到 <strong style="color: var(--primary-700);">${matchedPlatforms.length}</strong> 个平台</div>
+                <div class="result-info">共 <strong style="color: var(--primary-700);">${matchedPlatforms.length}</strong> 个平台</div>
               </div>
               <div class="cards-grid">
                 ${matchedPlatforms.map(item => generateCardHtml(item)).join("")}
@@ -2937,11 +3018,12 @@
       `;
     }
 
-    // 打开食谱详情弹窗
+    // 打开食谱详情弹窗 (支持收藏)
     function openRecipeDetail(recipeId) {
       const recipe = RECIPES_DATA.find(r => r.id === recipeId);
       if (!recipe) return;
 
+      const isFav = favorites.includes(recipe.id);
       const modalBody = document.getElementById("recipeModalBody");
       const ingHtml = recipe.ingredients.map((ing, idx) => `
         <label class="ing-item">
@@ -2960,7 +3042,12 @@
       modalBody.innerHTML = `
         <img src="${recipe.image}" alt="${recipe.name}" class="recipe-modal-cover" onerror="this.style.display='none'">
         <div class="recipe-modal-inner">
-          <h2 class="recipe-modal-title">${recipe.name}</h2>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.25rem;">
+            <h2 class="recipe-modal-title" style="flex: 1; margin-bottom: 0;">${recipe.name}</h2>
+            <button class="fav-btn ${isFav ? 'active' : ''}" id="modalFavBtn_${recipe.id}" onclick="toggleFav('${recipe.id}', event); updateModalFavBtn('${recipe.id}');" title="${isFav ? '取消收藏' : '加入收藏'}" style="font-size: 1.4rem; padding: 0.2rem;">
+              ${isFav ? '★' : '☆'}
+            </button>
+          </div>
           <div class="recipe-modal-subtitle">${recipe.name_hans} · <em>${recipe.name_en}</em></div>
 
           <div class="recipe-info-row">
@@ -2982,7 +3069,7 @@
           </div>
 
           <div class="recipe-tip-box">
-            <strong>💡 大廚美味提鮮要點：</strong><br>
+            <strong>💡 大廚美味提鮮要点：</strong><br>
             ${recipe.desc || '使用康寶純素 / 鮮味系列調味料，能快速提升蔬食鮮味與層次。'}
           </div>
 
@@ -3003,6 +3090,7 @@
       const modal = document.getElementById("recipeDetailModal");
       modal.classList.add("open");
     }
+
 
     function closeRecipeModal() {
       const modal = document.getElementById("recipeDetailModal");
