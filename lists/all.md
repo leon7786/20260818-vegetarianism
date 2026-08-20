@@ -116,7 +116,7 @@ https://www.foodnetwork.com/topics/vegetarian-recipes
 
 
 **EatingWell｜Vegetarian Recipes**
-https://www.eatingwell.com/recipes/17907/dietary-regimes/vegetarian/
+https://www.eatingwell.com/recipes/18005/lifestyle-diets/vegetarian/
 强调健康和营养的素食菜谱，适合找高蛋白、低热量、健康型植物饮食。
 
 **Epicurious｜Vegetarian Recipes**
