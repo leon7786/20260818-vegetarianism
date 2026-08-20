@@ -380,6 +380,7 @@
       transition: var(--transition);
       position: relative;
       overflow: hidden;
+      cursor: pointer;
     }
 
     .site-card::before {
@@ -397,6 +398,10 @@
       transform: translateY(-4px);
       box-shadow: var(--shadow-hover);
       border-color: var(--border-hover);
+    }
+
+    .site-card:hover .card-title {
+      color: var(--primary-700);
     }
 
     .site-card:hover::before {
@@ -1473,6 +1478,14 @@
       renderMainDisplay();
     }
 
+    // 点击整个卡片区块直接打开主网址
+    function openSite(url, event) {
+      if (event && event.target.closest('button, a')) {
+        return; // 用户点击的是收藏按钮或独立子链接，不重复触发
+      }
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
     // 生成单个卡片 HTML
     function generateCardHtml(item) {
       const isFav = favorites.includes(item.id);
@@ -1481,7 +1494,7 @@
       const extraLinksHtml = item.extraUrls.map((link, idx) => {
         const isMain = idx === 0;
         return `
-          <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="direct-link ${isMain ? '' : 'secondary'}">
+          <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="direct-link ${isMain ? '' : 'secondary'}" onclick="event.stopPropagation()">
             <span>${link.label}</span>
             <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -1491,7 +1504,7 @@
       }).join("");
 
       return `
-        <article class="site-card">
+        <article class="site-card" onclick="openSite('${item.mainUrl}', event)" title="点击直达 ${item.name}">
           <div>
             <div class="card-top">
               <div class="card-icon-wrap">${item.icon}</div>
