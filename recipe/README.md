@@ -2,7 +2,51 @@
 
 > **說明**：本目錄為 Antigravity 素食導航項目的本地食譜庫，提供結構化 Markdown、高清成品圖與多語言（簡體 / 繁體 / 英文）檢索支援，方便搜尋引擎快速抓取索引與使用者本地查詢。
 
-**當前已歸檔食譜數量**：`10` 道精選素食料理
+**當前已歸檔食譜數量**：`10` 道精選素食料理（劃分為 `5` 大經典料理主題分組）
+
+---
+
+## 🍱 5 大精選料理主題分類匯總 (5 Thematic Recipe Groups)
+
+### 🥢 第 1 組：麵食與米食主食料理 (Staple Noodles & Sticky Rice)
+*包含香濃南瓜蕎麥湯麵與傳統麻油香菇長糯米糕，提供高飽足感與優質碳水化合物。*
+
+| 食譜名稱 (繁/簡/英) | 素食流派 | 烹飪耗時 | 核心食材 | 圖文詳情 |
+| :--- | :--- | :--- | :--- | :--- |
+| **蕈菇南瓜素麵**<br>*蕈菇南瓜素面*<br>`Mushroom Pumpkin Vegetarian Noodles` | <span style='color:#15803d;'>全素 Vegan</span> | 備料 5 分鐘 / 烹飪 10 分鐘 | 南瓜絲、柳松菇、青江菜絲、薑絲... | [蕈菇南瓜素麵](www.knorr.com/蕈菇南瓜素麵/README.md) |
+| **菇菇素米糕**<br>*菇菇素米糕*<br>`Savory Mushroom Vegetarian Sticky Rice Cake` | <span style='color:#15803d;'>全素 Vegan</span> | 備料 10 分鐘 / 烹飪 25 分鐘 | 長糯米2杯、水2杯、薑末10克、泡發香菇丁30克... | [菇菇素米糕](www.knorr.com/菇菇素米糕/README.md) |
+
+### 🥢 第 2 組：豆腐與經典豆製品料理 (Tofu & Bean Curd Delicacies)
+*包含滑嫩鮮香的煲仔豆腐煲與金黃鹹香的熱炒金沙豆腐，富含豐富大豆植物蛋白。*
+
+| 食譜名稱 (繁/簡/英) | 素食流派 | 烹飪耗時 | 核心食材 | 圖文詳情 |
+| :--- | :--- | :--- | :--- | :--- |
+| **鮮菇豆腐煲(素)**<br>*鲜菇豆腐煲(素)*<br>`Fresh Mushroom Tofu Claypot` | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 備料 5 分鐘 / 烹飪 15 分鐘 | 蛋豆腐、鴻喜菇、雪白菇、鮮香菇... | [鮮菇豆腐煲(素)](www.knorr.com/鮮菇豆腐煲(素)/README.md) |
+| **金沙豆腐**<br>*金沙豆腐*<br>`Golden Salted Egg Tofu` | <span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 備料 5 分鐘 / 烹飪 10 分鐘 | 雞蛋豆腐1盒、蔥1根、太白粉少許、康寶私廚料理醬-金沙豆腐醬1包... | [金沙豆腐](www.knorr.com/金沙豆腐/README.md) |
+
+### 🥢 第 3 組：溫潤羹湯與西式濃湯料理 (Thick Soups & Creamy Potages)
+*包含爽脆三絲勾芡素羹與絲滑香甜的野菇南瓜濃湯，鮮美溫潤、老少咸宜。*
+
+| 食譜名稱 (繁/簡/英) | 素食流派 | 烹飪耗時 | 核心食材 | 圖文詳情 |
+| :--- | :--- | :--- | :--- | :--- |
+| **三絲豆腐羹(素)**<br>*三丝豆腐羹(素)*<br>`Three Shreds Tofu Thick Soup` | <span style='color:#15803d;'>全素 Vegan</span> | 備料 8 分鐘 / 烹飪 12 分鐘 | 筍絲、香菇絲、嫩豆腐絲、紅蘿蔔絲... | [三絲豆腐羹(素)](www.knorr.com/三絲豆腐羹(素)/README.md) |
+| **菌菇南瓜湯(素)**<br>*菌菇南瓜汤(素)*<br>`Creamy Mushroom Pumpkin Soup (Vegetarian)` | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 備料 15 分鐘 / 烹飪 2 分鐘 | 南瓜塊、雪白菇50克、鴻喜菇50克、水... | [菌菇南瓜湯(素)](www.knorr.com/菌菇南瓜湯(素)/README.md) |
+
+### 🥢 第 4 組：香酥炸物與夜市特色小吃 (Crispy Fried & Street Snacks)
+*包含酥脆低油氣炸海苔腐皮卷與台式經典九層塔鹹酥雙菇，酥脆誘人、外酥內嫩。*
+
+| 食譜名稱 (繁/簡/英) | 素食流派 | 烹飪耗時 | 核心食材 | 圖文詳情 |
+| :--- | :--- | :--- | :--- | :--- |
+| **炸海苔腐皮卷 (全素)**<br>*炸海苔腐皮卷(全素)*<br>`Crispy Nori Bean Curd Skin Rolls (Vegan)` | <span style='color:#15803d;'>純素 Vegan</span> | 備料 10 分鐘 / 烹飪 13 分鐘 | 豆皮、紅甜椒、玉米筍、四季豆... | [炸海苔腐皮卷 (全素)](www.knorr.com/炸海苔腐皮卷 (全素)/README.md) |
+| **鹹酥菇菇 (蛋奶素)**<br>*咸酥菇菇(蛋奶素)*<br>`Taiwanese Crispy Fried Mushrooms (Ovo-Lacto)` | <span style='color:#15803d;'>蛋奶素 Ovo-Lacto</span> | 備料 25 分鐘 / 烹飪 7 分鐘 | 金針菇、杏鮑菇、九層塔、油... | [鹹酥菇菇 (蛋奶素)](www.knorr.com/鹹酥菇菇 (蛋奶素)/README.md) |
+
+### 🥢 第 5 組：開胃涼拌與精緻宴席手卷 (Appetizers & Banquet Rolls)
+*包含酸甜清爽的五彩涼拌什錦與晶瑩剔透的翡翠如意冬瓜卷，色香味美、清雅甘甜。*
+
+| 食譜名稱 (繁/簡/英) | 素食流派 | 烹飪耗時 | 核心食材 | 圖文詳情 |
+| :--- | :--- | :--- | :--- | :--- |
+| **涼拌素什錦(素)**<br>*凉拌素什锦(素)*<br>`Cold Tossed Assorted Vegetarian Salad` | <span style='color:#15803d;'>全素 Vegan</span> | 備料 5 分鐘 / 烹飪 10 分鐘 | 豆皮絲、紅甜椒絲、芹菜段、金針菇... | [涼拌素什錦(素)](www.knorr.com/涼拌素什錦(素)/README.md) |
+| **如意冬瓜卷**<br>*如意冬瓜卷*<br>`Ruyi Winter Melon Rolls with Mushroom Stuffing` | <span style='color:#15803d;'>全素 Vegan</span> | 備料 10 分鐘 / 烹飪 25 分鐘 | 冬瓜600克、香菇絲50克、胡蘿蔔絲30克、黑木耳絲30克... | [如意冬瓜卷](www.knorr.com/如意冬瓜卷/README.md) |
 
 ---
 
@@ -10,16 +54,16 @@
 
 | 序號 | 食譜名稱 (繁/簡/英) | 分類 / 流派 | 耗時 | 食材精選摘要 | 食譜詳情與圖文 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **蕈菇南瓜素麵**<br>*蕈菇南瓜素面*<br>`Mushroom Pumpkin Vegetarian Noodles` | 麵食 / 主食<br><span style='color:#15803d;'>全素 Vegan</span> | 備料5 分鐘 / 烹飪10 分鐘 | 南瓜絲、柳松菇、青江菜絲、薑絲... | [蕈菇南瓜素麵](www.knorr.com/蕈菇南瓜素麵/README.md) |
-| 2 | **鮮菇豆腐煲(素)**<br>*鲜菇豆腐煲(素)*<br>`Fresh Mushroom Tofu Claypot` | 煲仔 / 熱炒<br><span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 備料5 分鐘 / 烹飪15 分鐘 | 蛋豆腐、鴻喜菇、雪白菇、鮮香菇... | [鮮菇豆腐煲(素)](www.knorr.com/鮮菇豆腐煲(素)/README.md) |
-| 3 | **三絲豆腐羹(素)**<br>*三丝豆腐羹(素)*<br>`Three Shreds Tofu Thick Soup` | 羹湯 / 湯品<br><span style='color:#15803d;'>全素 Vegan</span> | 備料8 分鐘 / 烹飪12 分鐘 | 筍絲、香菇絲、嫩豆腐絲、紅蘿蔔絲... | [三絲豆腐羹(素)](www.knorr.com/三絲豆腐羹(素)/README.md) |
-| 4 | **涼拌素什錦(素)**<br>*凉拌素什锦(素)*<br>`Cold Tossed Assorted Vegetarian Salad` | 涼拌 / 前菜<br><span style='color:#15803d;'>全素 Vegan</span> | 備料5 分鐘 / 烹飪10 分鐘 | 豆皮絲、紅甜椒絲、芹菜段、金針菇... | [涼拌素什錦(素)](www.knorr.com/涼拌素什錦(素)/README.md) |
-| 5 | **炸海苔腐皮卷 (全素)**<br>*炸海苔腐皮卷(全素)*<br>`Crispy Nori Bean Curd Skin Rolls (Vegan)` | 炸物 / 點心<br><span style='color:#15803d;'>純素 Vegan</span> | 備料10 分鐘 / 烹飪13 分鐘 | 豆皮、紅甜椒、玉米筍、四季豆... | [炸海苔腐皮卷 (全素)](www.knorr.com/炸海苔腐皮卷 (全素)/README.md) |
-| 6 | **鹹酥菇菇 (蛋奶素)**<br>*咸酥菇菇(蛋奶素)*<br>`Taiwanese Crispy Fried Mushrooms (Ovo-Lacto)` | 炸物 / 小吃<br><span style='color:#15803d;'>蛋奶素 Ovo-Lacto</span> | 備料25 分鐘 / 烹飪7 分鐘 | 金針菇、杏鮑菇、九層塔、油... | [鹹酥菇菇 (蛋奶素)](www.knorr.com/鹹酥菇菇 (蛋奶素)/README.md) |
-| 7 | **菇菇素米糕**<br>*菇菇素米糕*<br>`Savory Mushroom Vegetarian Sticky Rice Cake` | 米食 / 點心<br><span style='color:#15803d;'>全素 Vegan</span> | 備料10 分鐘 / 烹飪25 分鐘 | 長糯米2杯、水2杯、薑末10克、泡發香菇丁30克... | [菇菇素米糕](www.knorr.com/菇菇素米糕/README.md) |
-| 8 | **菌菇南瓜湯(素)**<br>*菌菇南瓜汤(素)*<br>`Creamy Mushroom Pumpkin Soup (Vegetarian)` | 湯品 / 西式濃湯<br><span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 備料15 分鐘 / 烹飪2 分鐘 | 南瓜塊、雪白菇50克、鴻喜菇50克、水... | [菌菇南瓜湯(素)](www.knorr.com/菌菇南瓜湯(素)/README.md) |
-| 9 | **如意冬瓜卷**<br>*如意冬瓜卷*<br>`Ruyi Winter Melon Rolls with Mushroom Stuffing` | 精緻熱菜 / 宴席料理<br><span style='color:#15803d;'>全素 Vegan</span> | 備料10 分鐘 / 烹飪25 分鐘 | 冬瓜600克、香菇絲50克、胡蘿蔔絲30克、黑木耳絲30克... | [如意冬瓜卷](www.knorr.com/如意冬瓜卷/README.md) |
-| 10 | **金沙豆腐**<br>*金沙豆腐*<br>`Golden Salted Egg Tofu` | 熱炒 / 經典家常<br><span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 備料5 分鐘 / 烹飪10 分鐘 | 雞蛋豆腐1盒、蔥1根、太白粉少許、康寶私廚料理醬-金沙豆腐醬1包... | [金沙豆腐](www.knorr.com/金沙豆腐/README.md) |
+| 1 | **蕈菇南瓜素麵**<br>*蕈菇南瓜素面*<br>`Mushroom Pumpkin Vegetarian Noodles` | 麵食 / 主食<br><span style='color:#15803d;'>全素 Vegan</span> | 備料 5 分鐘 / 烹飪 10 分鐘 | 南瓜絲、柳松菇、青江菜絲、薑絲... | [蕈菇南瓜素麵](www.knorr.com/蕈菇南瓜素麵/README.md) |
+| 2 | **鮮菇豆腐煲(素)**<br>*鲜菇豆腐煲(素)*<br>`Fresh Mushroom Tofu Claypot` | 煲仔 / 熱炒<br><span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 備料 5 分鐘 / 烹飪 15 分鐘 | 蛋豆腐、鴻喜菇、雪白菇、鮮香菇... | [鮮菇豆腐煲(素)](www.knorr.com/鮮菇豆腐煲(素)/README.md) |
+| 3 | **三絲豆腐羹(素)**<br>*三丝豆腐羹(素)*<br>`Three Shreds Tofu Thick Soup` | 羹湯 / 湯品<br><span style='color:#15803d;'>全素 Vegan</span> | 備料 8 分鐘 / 烹飪 12 分鐘 | 筍絲、香菇絲、嫩豆腐絲、紅蘿蔔絲... | [三絲豆腐羹(素)](www.knorr.com/三絲豆腐羹(素)/README.md) |
+| 4 | **涼拌素什錦(素)**<br>*凉拌素什锦(素)*<br>`Cold Tossed Assorted Vegetarian Salad` | 涼拌 / 前菜<br><span style='color:#15803d;'>全素 Vegan</span> | 備料 5 分鐘 / 烹飪 10 分鐘 | 豆皮絲、紅甜椒絲、芹菜段、金針菇... | [涼拌素什錦(素)](www.knorr.com/涼拌素什錦(素)/README.md) |
+| 5 | **炸海苔腐皮卷 (全素)**<br>*炸海苔腐皮卷(全素)*<br>`Crispy Nori Bean Curd Skin Rolls (Vegan)` | 炸物 / 點心<br><span style='color:#15803d;'>純素 Vegan</span> | 備料 10 分鐘 / 烹飪 13 分鐘 | 豆皮、紅甜椒、玉米筍、四季豆... | [炸海苔腐皮卷 (全素)](www.knorr.com/炸海苔腐皮卷 (全素)/README.md) |
+| 6 | **鹹酥菇菇 (蛋奶素)**<br>*咸酥菇菇(蛋奶素)*<br>`Taiwanese Crispy Fried Mushrooms (Ovo-Lacto)` | 炸物 / 小吃<br><span style='color:#15803d;'>蛋奶素 Ovo-Lacto</span> | 備料 25 分鐘 / 烹飪 7 分鐘 | 金針菇、杏鮑菇、九層塔、油... | [鹹酥菇菇 (蛋奶素)](www.knorr.com/鹹酥菇菇 (蛋奶素)/README.md) |
+| 7 | **菇菇素米糕**<br>*菇菇素米糕*<br>`Savory Mushroom Vegetarian Sticky Rice Cake` | 米食 / 點心<br><span style='color:#15803d;'>全素 Vegan</span> | 備料 10 分鐘 / 烹飪 25 分鐘 | 長糯米2杯、水2杯、薑末10克、泡發香菇丁30克... | [菇菇素米糕](www.knorr.com/菇菇素米糕/README.md) |
+| 8 | **菌菇南瓜湯(素)**<br>*菌菇南瓜汤(素)*<br>`Creamy Mushroom Pumpkin Soup (Vegetarian)` | 湯品 / 西式濃湯<br><span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 備料 15 分鐘 / 烹飪 2 分鐘 | 南瓜塊、雪白菇50克、鴻喜菇50克、水... | [菌菇南瓜湯(素)](www.knorr.com/菌菇南瓜湯(素)/README.md) |
+| 9 | **如意冬瓜卷**<br>*如意冬瓜卷*<br>`Ruyi Winter Melon Rolls with Mushroom Stuffing` | 精緻熱菜 / 宴席料理<br><span style='color:#15803d;'>全素 Vegan</span> | 備料 10 分鐘 / 烹飪 25 分鐘 | 冬瓜600克、香菇絲50克、胡蘿蔔絲30克、黑木耳絲30克... | [如意冬瓜卷](www.knorr.com/如意冬瓜卷/README.md) |
+| 10 | **金沙豆腐**<br>*金沙豆腐*<br>`Golden Salted Egg Tofu` | 熱炒 / 經典家常<br><span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 備料 5 分鐘 / 烹飪 10 分鐘 | 雞蛋豆腐1盒、蔥1根、太白粉少許、康寶私廚料理醬-金沙豆腐醬1包... | [金沙豆腐](www.knorr.com/金沙豆腐/README.md) |
 
 ---
 

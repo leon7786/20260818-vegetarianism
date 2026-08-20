@@ -2280,23 +2280,36 @@
     let favoritesOnly = false;
     let favorites = JSON.parse(localStorage.getItem("vege_favs") || "[]");
 
-    // 简繁体常用字互转词典
-    const CHAR_MAP = {
-      '面': '麵', '麵': '面',
-      '鲜': '鮮', '鮮': '鲜',
-      '汤': '湯', '湯': '汤',
-      '凉': '涼', '涼': '凉',
-      '什锦': '什錦', '什錦': '什锦',
-      '咸': '鹹', '鹹': '咸',
-      '卷': '卷', '捲': '卷',
-      '块': '塊', '塊': '块',
-      '鸡': '雞', '雞': '鸡',
-      '丝': '絲', '絲': '丝',
-      '笋': '筍', '筍': '笋',
-      '萝卜': '蘿蔔', '蘿蔔': '萝卜',
-      '虾': '蝦', '蝦': '虾',
-      '蛋': '蛋', '菇': '菇', '素': '素', '豆腐': '豆腐'
+    // 简繁汉字双向智能转换映射表
+    const S2T_MAP = {
+      '面': '麵', '鲜': '鮮', '汤': '湯', '凉': '涼', '什锦': '什錦',
+      '咸': '鹹', '卷': '捲', '块': '塊', '鸡': '雞', '丝': '絲',
+      '笋': '筍', '萝卜': '蘿蔔', '虾': '蝦', '煲': '煲', '炒': '炒',
+      '羹': '羹', '菇': '菇', '素': '素', '腐': '腐', '南': '南', '瓜': '瓜'
     };
+    const T2S_MAP = {
+      '麵': '面', '鮮': '鲜', '湯': '汤', '涼': '凉', '什錦': '什锦',
+      '鹹': '咸', '捲': '卷', '塊': '块', '雞': '鸡', '絲': '丝',
+      '筍': '笋', '蘿蔔': '萝卜', '蝦': '虾'
+    };
+
+    function convertHansToHant(str) {
+      if (!str) return '';
+      let res = str;
+      for (const [s, t] of Object.entries(S2T_MAP)) {
+        res = res.split(s).join(t);
+      }
+      return res;
+    }
+
+    function convertHantToHans(str) {
+      if (!str) return '';
+      let res = str;
+      for (const [t, s] of Object.entries(T2S_MAP)) {
+        res = res.split(t).join(s);
+      }
+      return res;
+    }
 
     function init() {
       updateFavCount();
@@ -2446,11 +2459,12 @@
       const lowerQ = query.toLowerCase();
       if (lowerText.includes(lowerQ)) return true;
 
-      // 简繁互转匹配
-      for (const [s, t] of Object.entries(CHAR_MAP)) {
-        if (lowerQ.includes(s) && lowerText.includes(t)) return true;
-        if (lowerQ.includes(t) && lowerText.includes(s)) return true;
-      }
+      const qHant = convertHansToHant(lowerQ);
+      if (qHant && lowerText.includes(qHant)) return true;
+
+      const qHans = convertHantToHans(lowerQ);
+      if (qHans && lowerText.includes(qHans)) return true;
+
       return false;
     }
 

@@ -1,8 +1,6 @@
 import os
 import re
 import json
-from curl_cffi import requests
-from bs4 import BeautifulSoup
 
 TARGET_BASE = "/root/1CT-Share/20260818-vegetarianism/recipe/www.knorr.com"
 RECIPE_ROOT = "/root/1CT-Share/20260818-vegetarianism/recipe"
@@ -270,6 +268,39 @@ def scrape_all():
     # 生成方便搜尋引擎檢索的 master README.md / INDEX.md
     generate_master_readme(all_recipes)
 
+RECIPE_GROUPS = [
+    {
+        "group_id": "group_1",
+        "group_name_zh": "第 1 組：麵食與米食主食料理 (Staple Noodles & Sticky Rice)",
+        "group_desc": "包含香濃南瓜蕎麥湯麵與傳統麻油香菇長糯米糕，提供高飽足感與優質碳水化合物。",
+        "recipes": ["蕈菇南瓜素麵", "菇菇素米糕"]
+    },
+    {
+        "group_id": "group_2",
+        "group_name_zh": "第 2 組：豆腐與經典豆製品料理 (Tofu & Bean Curd Delicacies)",
+        "group_desc": "包含滑嫩鮮香的煲仔豆腐煲與金黃鹹香的熱炒金沙豆腐，富含豐富大豆植物蛋白。",
+        "recipes": ["鮮菇豆腐煲(素)", "金沙豆腐"]
+    },
+    {
+        "group_id": "group_3",
+        "group_name_zh": "第 3 組：溫潤羹湯與西式濃湯料理 (Thick Soups & Creamy Potages)",
+        "group_desc": "包含爽脆三絲勾芡素羹與絲滑香甜的野菇南瓜濃湯，鮮美溫潤、老少咸宜。",
+        "recipes": ["三絲豆腐羹(素)", "菌菇南瓜湯(素)"]
+    },
+    {
+        "group_id": "group_4",
+        "group_name_zh": "第 4 組：香酥炸物與夜市特色小吃 (Crispy Fried & Street Snacks)",
+        "group_desc": "包含酥脆低油氣炸海苔腐皮卷與台式經典九層塔鹹酥雙菇，酥脆誘人、外酥內嫩。",
+        "recipes": ["炸海苔腐皮卷 (全素)", "鹹酥菇菇 (蛋奶素)"]
+    },
+    {
+        "group_id": "group_5",
+        "group_name_zh": "第 5 組：開胃涼拌與精緻宴席手卷 (Appetizers & Banquet Rolls)",
+        "group_desc": "包含酸甜清爽的五彩涼拌什錦與晶瑩剔透的翡翠如意冬瓜卷，色香味美、清雅甘甜。",
+        "recipes": ["涼拌素什錦(素)", "如意冬瓜卷"]
+    }
+]
+
 def generate_master_readme(recipes):
     readme_path = os.path.join(RECIPE_ROOT, "README.md")
     lines = [
@@ -277,19 +308,44 @@ def generate_master_readme(recipes):
         "",
         "> **說明**：本目錄為 Antigravity 素食導航項目的本地食譜庫，提供結構化 Markdown、高清成品圖與多語言（簡體 / 繁體 / 英文）檢索支援，方便搜尋引擎快速抓取索引與使用者本地查詢。",
         "",
-        f"**當前已歸檔食譜數量**：`{len(recipes)}` 道精選素食料理",
+        f"**當前已歸檔食譜數量**：`{len(recipes)}` 道精選素食料理（劃分為 `5` 大經典料理主題分組）",
         "",
+        "---",
+        "",
+        "## 🍱 5 大精選料理主題分類匯總 (5 Thematic Recipe Groups)",
+        ""
+    ]
+
+    for g in RECIPE_GROUPS:
+        lines.append(f"### 🥢 {g['group_name_zh']}")
+        lines.append(f"*{g['group_desc']}*")
+        lines.append("")
+        lines.append("| 食譜名稱 (繁/簡/英) | 素食流派 | 烹飪耗時 | 核心食材 | 圖文詳情 |")
+        lines.append("| :--- | :--- | :--- | :--- | :--- |")
+        for r_name in g["recipes"]:
+            r = next((item for item in recipes if item["name"] == r_name), None)
+            if not r:
+                continue
+            ing_summary = "、".join([i.split(" ")[0] for i in r["ingredients"][:4]])
+            time_display = f"備料 {r['prep_time']} / 烹飪 {r['cook_time']}"
+            link_md = f"[{r['name']}](www.knorr.com/{r['id']}/README.md)"
+            lines.append(
+                f"| **{r['name']}**<br>*{r['name_hans']}*<br>`{r['name_en']}` | <span style='color:#15803d;'>{r['diet']}</span> | {time_display} | {ing_summary}... | {link_md} |"
+            )
+        lines.append("")
+
+    lines.extend([
         "---",
         "",
         "## 📚 食譜目錄總覽 (Master Recipe Catalog)",
         "",
         "| 序號 | 食譜名稱 (繁/簡/英) | 分類 / 流派 | 耗時 | 食材精選摘要 | 食譜詳情與圖文 |",
         "| :--- | :--- | :--- | :--- | :--- | :--- |"
-    ]
+    ])
 
     for idx, r in enumerate(recipes, 1):
         ing_summary = "、".join([i.split(" ")[0] for i in r["ingredients"][:4]])
-        time_display = f"備料{r['prep_time']} / 烹飪{r['cook_time']}"
+        time_display = f"備料 {r['prep_time']} / 烹飪 {r['cook_time']}"
         link_md = f"[{r['name']}](www.knorr.com/{r['id']}/README.md)"
         lines.append(
             f"| {idx} | **{r['name']}**<br>*{r['name_hans']}*<br>`{r['name_en']}` | {r['category']}<br><span style='color:#15803d;'>{r['diet']}</span> | {time_display} | {ing_summary}... | {link_md} |"
@@ -306,7 +362,6 @@ def generate_master_readme(recipes):
     ])
 
     for r in recipes:
-        ing_all = ", ".join(r["ingredients"][:3])
         lines.append(
             f"| {r['name']} | {r['name_hans']} | {r['name_en']} ({r['keywords_en']}) | [{r['name']}](www.knorr.com/{r['id']}/README.md) |"
         )
@@ -341,4 +396,6 @@ def generate_master_readme(recipes):
     print(f"[✓] 已成功生成搜索引擎專用檢索文件: {readme_path}")
 
 if __name__ == "__main__":
-    scrape_all()
+    with open(os.path.join(RECIPE_ROOT, "recipes_data.json"), "r", encoding="utf-8") as f:
+        recipes_data = json.load(f)
+    generate_master_readme(recipes_data)
