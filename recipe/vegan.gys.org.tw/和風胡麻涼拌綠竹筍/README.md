@@ -6,6 +6,7 @@
 - **料理名稱**：和風胡麻涼拌綠竹筍
 - **原始標題**：和風胡麻涼拌綠竹筍｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：中式料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/green-bamboo-shoots20210625/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

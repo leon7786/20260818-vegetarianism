@@ -6,6 +6,7 @@
 - **料理名稱**：烤杏鮑菇佐檸檬奶油醬
 - **原始標題**：烤杏鮑菇佐檸檬奶油醬｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：中式料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/pleurotus-eryngii20210123/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

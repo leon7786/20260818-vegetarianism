@@ -6,6 +6,7 @@
 - **料理名稱**：塔香素于
 - **原始標題**：塔香素于｜蛋奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：家常料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/%e5%a1%94%e9%a6%99%e7%b4%a0%e4%ba%8e%ef%bd%9c%e8%9b%8b%e5%a5%b6%e7%b4%a0/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

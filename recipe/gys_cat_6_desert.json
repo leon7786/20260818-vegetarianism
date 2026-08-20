@@ -1,0 +1,18 @@
+{
+  "id": "desert",
+  "name": "烘焙甜點",
+  "base_url": "https://vegan.gys.org.tw/recipe/desert/",
+  "count": 10,
+  "urls": [
+    "https://vegan.gys.org.tw/%e9%a3%b2%e5%93%81%e6%96%99%e7%90%86%ef%bd%9c%e8%8a%8b%e8%a6%8b%e5%85%a8%e6%a4%8d%e7%8f%8d%e5%a5%b6%ef%bd%9c%e5%85%a8%e7%b4%a0/",
+    "https://vegan.gys.org.tw/salt-and-pepper20230106/",
+    "https://vegan.gys.org.tw/rice-pudding20211210/",
+    "https://vegan.gys.org.tw/sydney20211119/",
+    "https://vegan.gys.org.tw/sago20210619/",
+    "https://vegan.gys.org.tw/mothers-day20210507/",
+    "https://vegan.gys.org.tw/bean-curd20210409/",
+    "https://vegan.gys.org.tw/tremella20210119/",
+    "https://vegan.gys.org.tw/winter-solstice20201220/",
+    "https://vegan.gys.org.tw/%e8%b1%86%e5%8c%85%e5%9c%b0%e7%93%9c%e7%85%8e%e9%a4%85%ef%bd%9c%e5%85%a8%e7%b4%a0/"
+  ]
+}

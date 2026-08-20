@@ -6,6 +6,7 @@
 - **料理名稱**：西西里焗豆燉飯
 - **原始標題**：異國蔬食｜西西里焗豆燉飯｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：主食種類
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/sicilian-baked-bean-risotto-20220708/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

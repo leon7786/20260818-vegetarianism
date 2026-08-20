@@ -6,6 +6,7 @@
 - **料理名稱**：西芹彩蔬
 - **原始標題**：家常料理｜西芹彩蔬｜全素
 - **素食流派 / Diet**：全素 Vegan
+- **料理分類 / Category**：中式料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/celery-and-vegetables20230317/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

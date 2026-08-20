@@ -6,6 +6,7 @@
 - **料理名稱**：花椰菜米燕麥奶粥
 - **原始標題**：燕麥奶系列｜花椰菜米燕麥奶粥｜全素
 - **素食流派 / Diet**：全素 Vegan
+- **料理分類 / Category**：主食種類
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/cauliflower-rice-oat-milk-porridge20220429/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

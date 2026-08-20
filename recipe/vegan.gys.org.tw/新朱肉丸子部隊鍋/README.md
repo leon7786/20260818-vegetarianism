@@ -6,6 +6,7 @@
 - **料理名稱**：新朱肉丸子部隊鍋
 - **原始標題**：新朱肉丸子部隊鍋｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：家常料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/new-vermilion-meat20210109/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

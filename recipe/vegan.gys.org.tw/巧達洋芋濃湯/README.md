@@ -6,6 +6,7 @@
 - **料理名稱**：巧達洋芋濃湯
 - **原始標題**：巧達洋芋濃湯｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：湯品系列
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/thick-soup20210917/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

@@ -1,0 +1,32 @@
+{
+  "id": "soup",
+  "name": "湯品系列",
+  "base_url": "https://vegan.gys.org.tw/recipe/soup/",
+  "count": 24,
+  "urls": [
+    "https://vegan.gys.org.tw/bamboo-fungus20201124/",
+    "https://vegan.gys.org.tw/lemongrass-soup20231027/",
+    "https://vegan.gys.org.tw/taro-flavored-corn-soup20230915/",
+    "https://vegan.gys.org.tw/tapioca-corn-chowder20230526/",
+    "https://vegan.gys.org.tw/spicy-stinky-tofu-pot20220527/",
+    "https://vegan.gys.org.tw/coconut-curry-soup-base220516/",
+    "https://vegan.gys.org.tw/oat-milk-soup-base20220506/",
+    "https://vegan.gys.org.tw/oatmilk-pumpkin-soup20220422/",
+    "https://vegan.gys.org.tw/healthy-mongolian-oat-milk-broth20220415/",
+    "https://vegan.gys.org.tw/spicy-hot-pot20220314/",
+    "https://vegan.gys.org.tw/pumpkin-soup-base20220311/",
+    "https://vegan.gys.org.tw/sukiyak20220228/",
+    "https://vegan.gys.org.tw/vegetarian-kimchi-pot-soup-base20220225/",
+    "https://vegan.gys.org.tw/soup20211105/",
+    "https://vegan.gys.org.tw/macaroni20211001/",
+    "https://vegan.gys.org.tw/thick-soup20210917/",
+    "https://vegan.gys.org.tw/bamboo-shoot-soup20210709/",
+    "https://vegan.gys.org.tw/stinky-tofu20201212/",
+    "https://vegan.gys.org.tw/tonic-soup20201211/",
+    "https://vegan.gys.org.tw/tofu-pot20201020/",
+    "https://vegan.gys.org.tw/plain-soup20201020/",
+    "https://vegan.gys.org.tw/parkway-soup20201020/",
+    "https://vegan.gys.org.tw/preserved-chestnuts-and-vegetables20201020/",
+    "https://vegan.gys.org.tw/water-chestnut-lotus-seeds20201018/"
+  ]
+}

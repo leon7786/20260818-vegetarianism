@@ -6,6 +6,7 @@
 - **料理名稱**：美式麥香G堡
 - **原始標題**：美式麥香G堡｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：家常料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/%e7%be%8e%e5%bc%8f%e9%ba%a5%e9%a6%99g%e5%a0%a1/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

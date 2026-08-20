@@ -6,6 +6,7 @@
 - **料理名稱**：泡菜辣G口袋餅
 - **原始標題**：泡菜辣G口袋餅｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：家常料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/%e6%b3%a1%e8%8f%9c%e8%be%a3g%e5%8f%a3%e8%a2%8b%e9%a4%85-2/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

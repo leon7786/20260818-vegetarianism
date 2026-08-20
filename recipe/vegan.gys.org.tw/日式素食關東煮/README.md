@@ -6,6 +6,7 @@
 - **料理名稱**：日式素食關東煮
 - **原始標題**：日式料理｜日式素食關東煮 ｜全素
 - **素食流派 / Diet**：全素 Vegan
+- **料理分類 / Category**：中式料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/japanese-vegetarian-oden-20220107/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

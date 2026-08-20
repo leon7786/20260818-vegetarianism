@@ -6,6 +6,7 @@
 - **料理名稱**：不一樣泰式椒麻G
 - **原始標題**：不一樣泰式椒麻G｜蛋奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：家常料理
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/thai-style20210213/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

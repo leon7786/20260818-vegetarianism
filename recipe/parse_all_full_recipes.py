@@ -198,16 +198,19 @@ def main():
     with open(os.path.join(RECIPE_DIR, "recipes_data.json"), "w", encoding="utf-8") as f:
         json.dump(total_recipes, f, ensure_ascii=False, indent=2)
 
-    # Embed in index.html
+    # Embed in index.html safely without re.sub unescaping
     with open("/root/1CT-Share/20260818-vegetarianism/index.html", "r", encoding="utf-8") as f:
         html = f.read()
 
-    recipes_js = "const RECIPES_DATA = " + json.dumps(total_recipes, ensure_ascii=False, indent=6) + ";"
-    new_html = re.sub(r'const RECIPES_DATA = \[[\s\S]*?\];', recipes_js, html)
-    with open("/root/1CT-Share/20260818-vegetarianism/index.html", "w", encoding="utf-8") as f:
-        f.write(new_html)
+    pos1 = html.find("const RECIPES_DATA = ")
+    pos2 = html.find("const PLATFORMS_DATA = ")
+    if pos1 != -1 and pos2 != -1:
+        recipes_js = "const RECIPES_DATA = " + json.dumps(total_recipes, ensure_ascii=False) + ";\n\n    "
+        new_html = html[:pos1] + recipes_js + html[pos2:]
+        with open("/root/1CT-Share/20260818-vegetarianism/index.html", "w", encoding="utf-8") as f:
+            f.write(new_html)
 
-    print("[✓] Successfully parsed full text, granular ingredients, and steps for all 53 recipes!")
+    print("[✓] Successfully parsed full text, granular ingredients, and steps for all recipes!")
 
 if __name__ == "__main__":
     main()

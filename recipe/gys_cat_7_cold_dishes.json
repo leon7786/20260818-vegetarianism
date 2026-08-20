@@ -1,0 +1,19 @@
+{
+  "id": "cold_dishes",
+  "name": "涼拌小菜",
+  "base_url": "https://vegan.gys.org.tw/recipe/%e6%b6%bc%e6%8b%8c%e5%b0%8f%e8%8f%9c/",
+  "count": 11,
+  "urls": [
+    "https://vegan.gys.org.tw/yilan-vegetarian-rewards20220617/",
+    "https://vegan.gys.org.tw/homemade-pickled-cucumber20210730/",
+    "https://vegan.gys.org.tw/eggplant20210723/",
+    "https://vegan.gys.org.tw/green-bamboo-shoots20210625/",
+    "https://vegan.gys.org.tw/pickle20210501/",
+    "https://vegan.gys.org.tw/%e6%b6%bc%e6%8b%8c%e7%a7%8b%e8%91%b5/",
+    "https://vegan.gys.org.tw/%e9%ba%bb%e9%86%ac%e6%b6%bc%e6%8b%8c%e6%b5%b7%e8%8c%b8%ef%bd%9c%e5%85%a8%e7%b4%a0/",
+    "https://vegan.gys.org.tw/smoked-bean-buns20201020/",
+    "https://vegan.gys.org.tw/%e8%8a%b1%e7%94%9f%e8%8a%9d%e9%ba%bb%e7%b4%a0%e5%b0%8f%e9%ad%9a%e4%b9%be%ef%bd%9c%e5%85%a8%e7%b4%a0/",
+    "https://vegan.gys.org.tw/%e8%9c%9c%e7%b3%96%e6%9d%8f%e4%bb%81%e5%b0%8f%e4%ba%8e%e4%b9%be/",
+    "https://vegan.gys.org.tw/134-2/"
+  ]
+}

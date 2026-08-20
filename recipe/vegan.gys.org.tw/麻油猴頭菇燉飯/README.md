@@ -6,6 +6,7 @@
 - **料理名稱**：麻油猴頭菇燉飯
 - **原始標題**：麻油猴頭菇燉飯｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：主食種類
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/%e9%ba%bb%e6%b2%b9%e7%8c%b4%e9%a0%ad%e8%8f%87%e7%87%89%e9%a3%af%ef%bd%9c%e5%a5%b6%e7%b4%a0/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

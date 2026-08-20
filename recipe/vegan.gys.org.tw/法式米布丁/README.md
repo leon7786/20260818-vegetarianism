@@ -6,6 +6,7 @@
 - **料理名稱**：法式米布丁
 - **原始標題**：電鍋料理 ｜法式米布丁｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：主食種類
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/rice-pudding20211210/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

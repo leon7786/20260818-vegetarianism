@@ -6,6 +6,7 @@
 - **料理名稱**：瑪格麗特厚片吐司
 - **原始標題**：瑪格麗特厚片吐司 ｜奶素
 - **素食流派 / Diet**：奶素 Lacto-Vegetarian
+- **料理分類 / Category**：輕食點心
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/margarita-thick20210910/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)
