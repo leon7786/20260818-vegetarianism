@@ -21,8 +21,7 @@
 4. 混合物倒入容器待凉至常温后移至冰箱冷藏一个小时即可
 
 ## 💡 大廚美味秘訣 / Chef's Tips
-- 红豆羊羹的小贴士
- 步骤图请看http://blog.sina.com.cn/s/blog_60b49a1e0100q0ny.html
+- 步骤图请看http://blog.sina.com.cn/s/blog_60b49a1e0100q0ny.html
 
 ---
 *食譜歸檔時間：2026-08-20 · 來源：下廚房 (www.xiachufang.com)*

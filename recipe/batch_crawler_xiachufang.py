@@ -12,22 +12,22 @@ TARGET_BASE = "/root/1CT-Share/20260818-vegetarianism/recipe/www.xiachufang.com"
 
 HEADERS_LIST = [
     {
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.38',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
         'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
     },
     {
-        'User-Agent': 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
     },
     {
-        'User-Agent': 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 14; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36 MicroMessenger/8.0.47',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
     },
     {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15',
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'zh-CN,zh;q=0.9',
     }
@@ -74,20 +74,30 @@ def detect_category(title, ingredients_str):
         return "面点小吃"
     return "家常蔬食 / 经典热菜"
 
-def fetch_html_with_retry(m_url, max_retries=4):
+def fetch_html_with_retry(m_url, max_retries=6):
     for attempt in range(max_retries):
         headers = HEADERS_LIST[attempt % len(HEADERS_LIST)]
         try:
             r = requests.get(m_url, headers=headers, impersonate="chrome120", timeout=15)
             if r.status_code == 200 and len(r.text) > 1000:
                 return r.text
+            elif r.status_code in [429, 503]:
+                time.sleep(2.5 * (attempt + 1))
         except Exception:
-            pass
-        time.sleep(random.uniform(0.5, 1.5))
+            time.sleep(2.0)
+        time.sleep(random.uniform(1.0, 2.0))
     return None
 
 def scrape_one_recipe(url, default_title=""):
     try:
+        if default_title:
+            cand_folder = clean_title(default_title)
+            cand_dir = os.path.join(TARGET_BASE, cand_folder)
+            if os.path.exists(os.path.join(cand_dir, "README.md")) and os.path.exists(os.path.join(cand_dir, "cover.jpg")):
+                if os.path.getsize(os.path.join(cand_dir, "README.md")) > 100 and os.path.getsize(os.path.join(cand_dir, "cover.jpg")) > 1000:
+                    print(f"[✓] 已存在完整归档: {cand_folder}")
+                    return {"title": cand_folder, "url": url}
+
         recipe_id_m = re.search(r'/recipe/(\d+)', url)
         if not recipe_id_m:
             return None
@@ -240,7 +250,7 @@ def scrape_one_recipe(url, default_title=""):
         print(f"[!] 抓取异常 ({url}): {e}")
         return None
 
-def process_batch(batch_json_path, max_workers=4):
+def process_batch(batch_json_path, max_workers=2):
     if not os.path.exists(batch_json_path):
         print(f"File not found: {batch_json_path}")
         return []
@@ -248,26 +258,24 @@ def process_batch(batch_json_path, max_workers=4):
     with open(batch_json_path, 'r', encoding='utf-8') as f:
         url_dict = json.load(f)
 
-    print(f"=== 开始并发处理批次: {batch_json_path} (共 {len(url_dict)} 道食谱) ===")
+    print(f"=== 开始处理批次: {batch_json_path} (共 {len(url_dict)} 道食谱) ===")
     results = {}
-    pending = dict(url_dict)
 
-    # Pass 1
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(scrape_one_recipe, u, t): u for u, t in pending.items()}
-        for future in as_completed(futures):
-            u = futures[future]
-            res = future.result()
-            if res:
-                results[u] = res
+    for idx, (u, t) in enumerate(url_dict.items(), 1):
+        res = scrape_one_recipe(u, t)
+        if res:
+            results[u] = res
+        time.sleep(1.8)
 
-    # Pass 2 (Retry any failed)
-    failed_items = {u: t for u, t in url_dict.items() if u not in results}
-    if failed_items:
-        print(f"\n--- 正在重试未成功项 (共 {len(failed_items)} 道) ---")
+    # Multi-round retries for any missing
+    for retry_round in range(1, 6):
+        failed_items = {u: t for u, t in url_dict.items() if u not in results}
+        if not failed_items:
+            break
+        print(f"\n--- 正在第 {retry_round} 轮重试未成功项 (共 {len(failed_items)} 道) ---")
         time.sleep(3)
         for u, t in failed_items.items():
-            time.sleep(1.5)
+            time.sleep(2.5)
             res = scrape_one_recipe(u, t)
             if res:
                 results[u] = res
