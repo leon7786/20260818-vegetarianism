@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>绿意食光 · 素食与蔬食全球权威菜谱与测评导航</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-50: #f0fdf4;
+      --primary-100: #dcfce7;
+      --primary-200: #bbf7d0;
+      --primary-300: #86efac;
+      --primary-400: #4ade80;
+      --primary-500: #22c55e;
+      --primary-600: #16a34a;
+      --primary-700: #15803d;
+      --primary-800: #166534;
+      --primary-900: #14532d;
+      
+      --accent-warm: #f59e0b;
+      --accent-warm-light: #fef3c7;
+      --accent-sage: #0d9488;
+      --accent-sage-light: #ccfbf1;
+      
+      --bg-main: #f8faf8;
+      --bg-card: #ffffff;
+      --bg-card-subtle: #f8faf9;
+      --border-color: #e2e8e4;
+      --border-hover: #86efac;
+      
+      --text-main: #14281d;
+      --text-muted: #496355;
+      --text-light: #7b9487;
+      
+      --shadow-sm: 0 2px 8px rgba(20, 40, 29, 0.04);
+      --shadow-md: 0 8px 24px -4px rgba(20, 40, 29, 0.06), 0 4px 8px -2px rgba(20, 40, 29, 0.03);
+      --shadow-lg: 0 16px 36px -6px rgba(21, 128, 61, 0.12), 0 8px 16px -4px rgba(20, 40, 29, 0.04);
+      --shadow-hover: 0 20px 35px -8px rgba(22, 163, 74, 0.18), 0 6px 12px rgba(0,0,0,0.03);
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      
+      --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(220, 252, 231, 0.6) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(204, 251, 241, 0.5) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(254, 243, 199, 0.35) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header / Navbar */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226, 232, 228, 0.85);
+      transition: var(--transition);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--primary-600), var(--primary-400));
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);
+    }
+
+    .brand-text h1 {
+      font-size: 1.225rem;
+      font-weight: 800;
+      color: var(--primary-900);
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .brand-text p {
+      font-size: 0.725rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* 顶部右侧区域：搜索框 + 按钮 */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    .nav-search-box {
+      position: relative;
+      width: 320px;
+      transition: var(--transition);
+    }
+
+    .nav-search-box:focus-within {
+      width: 380px;
+    }
+
+    .nav-search-input {
+      width: 100%;
+      height: 44px;
+      padding: 0 2.4rem 0 2.5rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      background: var(--bg-card-subtle);
+      font-size: 0.875rem;
+      color: var(--text-main);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .nav-search-input:focus {
+      border-color: var(--primary-500);
+      background: #ffffff;
+      box-shadow: 0 0 0 3.5px rgba(34, 197, 94, 0.16);
+    }
+
+    .nav-search-box .search-icon {
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-search-box .clear-search {
+      position: absolute;
+      right: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-light);
+      cursor: pointer;
+      font-size: 1rem;
+      display: none;
+    }
+
+    .nav-search-box .clear-search:hover {
+      color: var(--text-main);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      color: var(--text-muted);
+      border-color: var(--border-color);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-50);
+      color: var(--primary-700);
+      border-color: var(--primary-300);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+      color: white;
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--primary-700), var(--primary-600));
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(22, 163, 74, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 3rem 0 1.75rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.9rem;
+      background: var(--primary-100);
+      color: var(--primary-800);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1.15rem;
+      border: 1px solid var(--primary-200);
+    }
+
+    .hero-title {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-bottom: 0.85rem;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-title span.highlight {
+      background: linear-gradient(120deg, var(--primary-700), var(--accent-sage));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      font-weight: 400;
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      max-width: 980px;
+      margin: 0 auto 2.25rem;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-color);
+      padding: 1.1rem 1rem;
+      border-radius: var(--radius-md);
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary-300);
+      background: #ffffff;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stat-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary-700);
+      line-height: 1.1;
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.775rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* 控制面板：分类 Tab + 细分标签 */
+    .controls-wrapper {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 2.25rem;
+    }
+
+    /* Category Tabs */
+    .category-tabs {
+      display: flex;
+      gap: 0.55rem;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
+      scrollbar-width: none;
+    }
+
+    .category-tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cat-btn {
+      white-space: nowrap;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid var(--border-color);
+      background: #ffffff;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .cat-btn:hover {
+      border-color: var(--primary-300);
+      color: var(--primary-700);
+      background: var(--primary-50);
+    }
+
+    .cat-btn.active {
+      background: var(--primary-700);
+      color: #ffffff;
+      border-color: var(--primary-700);
+      box-shadow: 0 4px 12px rgba(21, 128, 61, 0.25);
+    }
+
+    .cat-btn .badge-count {
+      font-size: 0.75rem;
+      padding: 0.1rem 0.48rem;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.08);
+      color: inherit;
+    }
+
+    .cat-btn.active .badge-count {
+      background: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    /* Tag Filters */
+    .filter-tags-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-size: 0.775rem;
+      font-weight: 700;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-right: 0.25rem;
+    }
+
+    .tag-chip {
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.775rem;
+      font-weight: 500;
+      border: 1px solid var(--border-color);
+      background: #ffffff;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .tag-chip:hover {
+      border-color: var(--primary-400);
+      color: var(--primary-700);
+    }
+
+    .tag-chip.active {
+      background: var(--primary-100);
+      color: var(--primary-800);
+      border-color: var(--primary-300);
+      font-weight: 600;
+    }
+
+    /* Section Header */
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .result-info {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    /* Grid layout */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    /* Site Card */
+    .site-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .site-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: transparent;
+      transition: var(--transition);
+    }
+
+    .site-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-hover);
+    }
+
+    .site-card:hover::before {
+      background: linear-gradient(90deg, var(--primary-500), var(--accent-sage));
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      background: var(--primary-50);
+      border: 1px solid var(--primary-100);
+      box-shadow: inset 0 1px 2px rgba(255,255,255,0.8);
+    }
+
+    .card-title-group {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .card-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .fav-btn {
+      background: none;
+      border: none;
+      color: var(--text-light);
+      cursor: pointer;
+      font-size: 1.15rem;
+      line-height: 1;
+      padding: 0.2rem;
+      transition: var(--transition);
+    }
+
+    .fav-btn:hover {
+      color: var(--accent-warm);
+      transform: scale(1.15);
+    }
+
+    .fav-btn.active {
+      color: var(--accent-warm);
+    }
+
+    .card-category-badge {
+      display: inline-block;
+      font-size: 0.725rem;
+      font-weight: 600;
+      color: var(--primary-700);
+      background: var(--primary-50);
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      border: 1px solid var(--primary-100);
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 1.1rem;
+      flex-grow: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-tag {
+      font-size: 0.725rem;
+      padding: 0.15rem 0.55rem;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .card-footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .links-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .direct-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-sm);
+      background: var(--primary-50);
+      color: var(--primary-800);
+      border: 1px solid var(--primary-200);
+      transition: var(--transition);
+    }
+
+    .direct-link:hover {
+      background: var(--primary-600);
+      color: #ffffff;
+      border-color: var(--primary-600);
+      transform: translateY(-1px);
+    }
+
+    .direct-link.secondary {
+      background: var(--bg-card-subtle);
+      color: var(--text-muted);
+      border-color: var(--border-color);
+    }
+
+    .direct-link.secondary:hover {
+      background: var(--primary-100);
+      color: var(--primary-800);
+      border-color: var(--primary-300);
+    }
+
+    /* Modal Guide */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(20, 40, 29, 0.45);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-content {
+      background: #ffffff;
+      width: 100%;
+      max-width: 760px;
+      max-height: 85vh;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-color);
+      overflow-y: auto;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .modal-header h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary-900);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--text-light);
+      cursor: pointer;
+    }
+
+    .modal-close:hover {
+      color: var(--text-main);
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .guide-item {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+    }
+
+    .guide-item h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary-800);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .guide-item p {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .footer {
+      background: #ffffff;
+      border-top: 1px solid var(--border-color);
+      padding: 3rem 0 2rem;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px dashed var(--border-color);
+      grid-column: 1 / -1;
+    }
+
+    .empty-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .header-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        gap: 0.85rem;
+      }
+      .nav-right {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .nav-search-box, .nav-search-box:focus-within {
+        width: 100%;
+        flex: 1;
+      }
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+      }
+      .nav-right {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand" onclick="resetFilters()">
+        <div class="brand-icon">🌱</div>
+        <div class="brand-text">
+          <h1>绿意食光 · 素食权威库</h1>
+          <p>Global Vegetarian & Vegan Authority Guide</p>
+        </div>
+      </div>
+
+      <!-- 顶部右侧：搜索栏 + 功能按钮 -->
+      <div class="nav-right">
+        <div class="nav-search-box">
+          <span class="search-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </span>
+          <input type="text" id="searchInput" class="nav-search-input" placeholder="搜索菜谱、平台、食材、标签..." oninput="handleSearch()">
+          <button id="clearSearchBtn" class="clear-search" onclick="clearSearch()">✕</button>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline" onclick="openModal()">
+            <span>📖 营养指南</span>
+          </button>
+          <button class="btn btn-primary" onclick="toggleFavoritesOnly()" id="favToggleBtn">
+            <span>⭐ 收藏 (<span id="favCount">0</span>)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主体容器 -->
+  <main class="container">
+    <!-- Hero 区域 -->
+    <section class="hero">
+      <div class="hero-badge">
+        <span>✨ 严选全球权威测评 · 科学实测实验室 · 顶级名厨博客 · 中文精选</span>
+      </div>
+      <h2 class="hero-title">
+        探索全球最严谨、最美味的<br><span class="highlight">素食与蔬食料理指南</span>
+      </h2>
+      <p class="hero-subtitle">
+        收录大中华区主流社区、北美顶尖测试厨房、百年实验室、名厨纯素专栏与万道精选食谱，开启纯净健康的植物性饮食生活。
+      </p>
+
+      <!-- 统计数据看板 -->
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-num" id="totalSitesNum">39</div>
+          <div class="stat-label">全球权威平台收录</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100万+</div>
+          <div class="stat-label">实测与精选素食菜谱</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2 大板块</div>
+          <div class="stat-label">中华美食 & 寰宇美食</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">逐一核实真实有效</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分类选择与细分标签控制面板 -->
+    <section class="controls-wrapper">
+      <!-- 分类 Tab (全部 / 中华美食 / 寰宇美食 / 科学实测 / 权威媒体 / 名厨博客 / 数据工具) -->
+      <div class="category-tabs" id="categoryTabs">
+        <!-- 动态生成 -->
+      </div>
+
+      <!-- 细分标签 Tags -->
+      <div class="filter-tags-row">
+        <span class="filter-label">特色标签：</span>
+        <div id="tagFiltersGroup" style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
+          <!-- 动态生成 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 结果展示列表 -->
+    <section>
+      <div class="section-header">
+        <h3 class="section-title" id="currentSectionTitle">
+          <span>🌱 全部平台</span>
+        </h3>
+        <div class="result-info">
+          共找到 <strong id="matchedCount" style="color: var(--primary-700);">39</strong> 个平台
+        </div>
+      </div>
+
+      <!-- 卡片网格 -->
+      <div class="cards-grid" id="cardsGrid">
+        <!-- JS 动态渲染卡片 -->
+      </div>
+    </section>
+  </main>
+
+  <!-- 素食与蔬食基础小指南弹窗 -->
+  <div class="modal-overlay" id="guideModal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>🥗 素食流派与料理营养全指南</h2>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+
+      <div class="guide-grid">
+        <div class="guide-item">
+          <h3>🌱 纯素 Vegan</h3>
+          <p>完全不使用任何动物制品，包括肉类、家禽、海鲜、蛋奶、蜂蜜、明胶等，倡导动物友善与生态可持续。</p>
+        </div>
+        <div class="guide-item">
+          <h3>🥚🥛 蛋奶素 Ovo-Lacto</h3>
+          <p>不食用肉类与海鲜，但保留鸡蛋和乳制品（牛奶、奶酪、酸奶），是最广泛普及的素食形态之一。</p>
+        </div>
+        <div class="guide-item">
+          <h3>🍄 鲜味科学 (Umami)</h3>
+          <p>植物鲜味核心来自谷氨酸（西红柿、菌菇、发酵豆制品）与鸟苷酸（干香菇、海带）。两者结合能产生几何级数鲜味爆发。</p>
+        </div>
+        <div class="guide-item">
+          <h3>💪 关键营养摄入指南</h3>
+          <p>注意规律补充维生素 B12（发酵物或营养酵母）、优质完全蛋白（大豆、鹰嘴豆、藜麦）以及铁锌与 Omega-3（亚麻籽/核桃）。</p>
+        </div>
+      </div>
+
+      <div style="background: var(--primary-50); border: 1px solid var(--primary-200); padding: 1rem; border-radius: var(--radius-md);">
+        <h4 style="font-weight: 700; color: var(--primary-900); margin-bottom: 0.3rem;">💡 如何使用本站找到适合的菜谱？</h4>
+        <ul style="padding-left: 1.2rem; font-size: 0.85rem; color: var(--primary-800); line-height: 1.6;">
+          <li>想要<strong>家常中式快手菜</strong>：选择「中华美食」查看下厨房、豆果、爱料理等平台。</li>
+          <li>想要<strong>绝对不失败的经典配方</strong>：选择「科学实测」查看 America's Test Kitchen 与 Serious Eats。</li>
+          <li>想要<strong>探索全球风味与打卡高分</strong>：选择「寰宇美食」查看 TasteAtlas 世界排名或 BBC Good Food。</li>
+          <li>想要<strong>高颜值日常美餐与派对料理</strong>：选择「名厨与博客」查看 101 Cookbooks 与 Love and Lemons。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-weight: 700; color: var(--primary-900); margin-bottom: 0.25rem;">绿意食光 · 全球素食权威导航</div>
+        <div style="color: var(--text-light); font-size: 0.8rem;">基于权威测评、科学厨房实测与全球美食数据精心整理</div>
+      </div>
+      <div style="font-size: 0.8rem; color: var(--text-light);">
+        2026 Vegetarian & Vegan Resource Directory · 纯净 · 科学 · 真实
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const PLATFORMS_DATA = [
+      // === 中国区 / 中华美食 (16个) ===
+      {
+        id: "xiachufang",
+        name: "下厨房 (Xiachufang)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🍳",
+        desc: "国内素食菜谱最集中、质量最高的平台，设有素食专区与热门分类，评分和“做过人数”真实反馈机制成熟，UGC 内容极度丰富。",
+        tags: ["中式家常", "UGC社区", "热门菜谱", "做过反馈"],
+        mainUrl: "https://www.xiachufang.com/special/vegetarian/pop/",
+        extraUrls: [
+          { label: "素食精选专题", url: "https://www.xiachufang.com/special/vegetarian/pop/" },
+          { label: "素菜全分类", url: "https://m.xiachufang.com/category/51885/" }
+        ]
+      },
+      {
+        id: "douguo",
+        name: "豆果美食 (Douguo)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🥑",
+        desc: "大型综合菜谱社区，素食、轻食、健康菜谱分类完善，搜索“素食”“纯素”能找到海量实用家庭日常做法与营养早餐灵感。",
+        tags: ["中式家常", "轻食健康", "家常素食", "早餐食谱"],
+        mainUrl: "https://www.douguo.com/caipu/%E7%B4%A0%E9%A3%9F",
+        extraUrls: [
+          { label: "素食频道直达", url: "https://www.douguo.com/caipu/%E7%B4%A0%E9%A3%9F" }
+        ]
+      },
+      {
+        id: "icook",
+        name: "爱料理 (iCook 台湾)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🍲",
+        desc: "台湾地区最大料理生活平台，拥有 29 万+ 精致食谱，设有“素食/蔬食/全素”专门专题标签，涵盖丰富台式蔬食与亚洲创意素菜。",
+        tags: ["中式家常", "台湾最大", "29万+食谱", "全素蔬食"],
+        mainUrl: "https://icook.tw/search/%E7%B4%A0%E9%A3%9F/",
+        extraUrls: [
+          { label: "素食专区", url: "https://icook.tw/search/%E7%B4%A0%E9%A3%9F/" },
+          { label: "全素专区", url: "https://icook.tw/search/%E5%85%A8%E7%B4%A0/" }
+        ]
+      },
+      {
+        id: "cookpad-tw",
+        name: "Cookpad 台湾",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🍱",
+        desc: "全球最大食谱社区 Cookpad 的台湾站，设有活跃的素食与蔬食专栏，家庭厨师日常分享率高，步骤平实亲切。",
+        tags: ["中式家常", "全球社区台湾站", "日常蔬食", "家庭料理"],
+        mainUrl: "https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E7%B4%A0%E9%A3%9F",
+        extraUrls: [
+          { label: "素食搜索页", url: "https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E7%B4%A0%E9%A3%9F" }
+        ]
+      },
+      {
+        id: "meishichina",
+        name: "美食天下",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🥗",
+        desc: "综合美食社区，设有食材大全、营养排行、食疗食补等健康饮食板块，素食食材搭配和中医药食同源内容极为详实。",
+        tags: ["中式家常", "营养师主理", "食材大全", "食疗食补"],
+        mainUrl: "https://home.meishichina.com/recipe/sushi/elite/",
+        extraUrls: [
+          { label: "素食精华菜谱", url: "https://home.meishichina.com/recipe/sushi/elite/" }
+        ]
+      },
+      {
+        id: "xiangha",
+        name: "香哈网",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🎬",
+        desc: "设有专门“素食菜谱/素菜做法大全”板块，视频菜谱丰富，且每道菜均兼具食材营养与功效科普解析。",
+        tags: ["中式家常", "视频教学", "功效科普", "家常菜谱"],
+        mainUrl: "https://www.xiangha.com/caipu/caidan/277/",
+        extraUrls: [
+          { label: "素食菜谱大全", url: "https://www.xiangha.com/caipu/caidan/277/" },
+          { label: "香哈网首页", url: "https://www.xiangha.com" }
+        ]
+      },
+      {
+        id: "ytower",
+        name: "杨桃美食网 (Y-Tower)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🥣",
+        desc: "台湾老牌料理影音平台，汇集海量经典台式素菜、中式纯素小吃与宴客素席的烹饪秘笈与视频教学。",
+        tags: ["中式家常", "视频教学", "台湾经典", "台式素食"],
+        mainUrl: "https://www.ytower.com.tw/recipe/recipe-search.asp?PageNo=7&KIND=%A5D%B5%E6&COUNTRY=%A4%A4%A6%A1%AE%C6%B2z&VEGETARIA=%AF%C0%AD%B9",
+        extraUrls: [
+          { label: "中式纯素搜索", url: "https://www.ytower.com.tw/recipe/recipe-search.asp?PageNo=7&KIND=%A5D%B5%E6&COUNTRY=%A4%A4%A6%A1%AE%C6%B2z&VEGETARIA=%AF%C0%AD%B9" }
+        ]
+      },
+      {
+        id: "hk01-vege",
+        name: "香港01｜20道健康素菜专题",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🥬",
+        desc: "香港01教煮精选专题，主打简单易做、提升免疫力、健康低卡少油的居家素菜，步骤清晰快速上手。",
+        tags: ["中式家常", "媒体精选", "免疫提升", "健康快手"],
+        mainUrl: "https://www.hk01.com/%E6%95%99%E7%85%AE/504254/%E7%B4%A0%E9%A3%9F%E8%AD%9C%E5%A4%A7%E5%85%A8-%E5%B1%85%E5%AE%B6%E6%8A%97%E7%96%AB%E5%BF%85%E5%AD%B820%E9%81%93%E5%81%A5%E5%BA%B7%E7%B4%A0%E8%8F%9C-%E7%B0%A1%E5%96%AE%E6%98%93%E5%AD%B8%E6%8F%90%E5%8D%87%E5%85%8D%E7%96%AB%E5%8A%9B",
+        extraUrls: [
+          { label: "查看专题文章", url: "https://www.hk01.com/%E6%95%99%E7%85%AE/504254/%E7%B4%A0%E9%A3%9F%E8%AD%9C%E5%A4%A7%E5%85%A8-%E5%B1%85%E5%AE%B6%E6%8A%97%E7%96%AB%E5%BF%85%E5%AD%B820%E9%81%93%E5%81%A5%E5%BA%B7%E7%B4%A0%E8%8F%9C-%E7%B0%A1%E5%96%AE%E6%98%93%E5%AD%B8%E6%8F%90%E5%8D%87%E5%85%8D%E7%96%AB%E5%8A%9B" }
+        ]
+      },
+      {
+        id: "hkbuddhist",
+        name: "香港佛教联合会 · 养生素食",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🪷",
+        desc: "提供传统健康禅意素食食谱及养生指导，注重清淡本味、身心调和与天然时令食材运用。",
+        tags: ["无五辛纯素", "禅意素食", "身心养生", "天然本味"],
+        mainUrl: "https://www.hkbuddhist.org/zh/top_page.php?p=medical_menu&cid=7&type_id=2&id=29",
+        extraUrls: [
+          { label: "佛联会素食食谱", url: "https://www.hkbuddhist.org/zh/top_page.php?p=medical_menu&cid=7&type_id=2&id=29" }
+        ]
+      },
+      {
+        id: "vegeangel",
+        name: "VegeAngel 蔬食天使",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "👼",
+        desc: "专注中西式纯素、蛋奶素及无五辛料理食谱，版面清雅，步骤极为细致，适合追求清净饮食与全食物料理的朋友。",
+        tags: ["无五辛纯素", "全食物", "中西融合", "清雅图文"],
+        mainUrl: "https://www.vegeangel.com/category/%e7%b4%a0%e9%a3%9f%e9%a3%9f%e8%b0%b1/?lang=zh-hans",
+        extraUrls: [
+          { label: "素食食谱目录", url: "https://www.vegeangel.com/category/%e7%b4%a0%e9%a3%9f%e9%a3%9f%e8%b0%b1/?lang=zh-hans" }
+        ]
+      },
+      {
+        id: "knorr-tw",
+        name: "Knorr 康宝素食食谱",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🌿",
+        desc: "联合利华旗下康宝精选素食菜谱，专注调味搭配、便捷烹饪与鲜味提升技巧，适合厨房新手快速调配可口风味。",
+        tags: ["中式家常", "品牌精选", "调味搭配", "快捷料理"],
+        mainUrl: "https://www.knorr.com/tw/recipe-ideas/%E6%96%99%E7%90%86%E7%A8%AE%E9%A1%9E/%E7%B4%A0%E9%A3%9F%E9%A3%9F%E8%AD%9C.html",
+        extraUrls: [
+          { label: "素食料理专区", url: "https://www.knorr.com/tw/recipe-ideas/%E6%96%99%E7%90%86%E7%A8%AE%E9%A1%9E/%E7%B4%A0%E9%A3%9F%E9%A3%9F%E8%AD%9C.html" }
+        ]
+      },
+      {
+        id: "guanyinshan",
+        name: "觀音山 · 素食料理簡單做",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "📿",
+        desc: "倡导慈悲护生、推广植物性饮食，包含大量图文与影音示范，专治“不会做菜”的实用家常素食做法。",
+        tags: ["无五辛纯素", "视频教学", "慈悲素食", "简单易做"],
+        mainUrl: "https://vegan.gys.org.tw/",
+        extraUrls: [
+          { label: "观音山蔬食官网", url: "https://vegan.gys.org.tw/" }
+        ]
+      },
+      {
+        id: "meishij",
+        name: "美食杰 (Meishi.cc)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "📖",
+        desc: "国内老牌综合菜谱门户，分类细致，涵盖热菜、凉菜、汤羹、主食等完备的素食做法大全。",
+        tags: ["中式家常", "老牌门户", "分类详尽", "烹饪基础"],
+        mainUrl: "https://www.meishi.cc/",
+        extraUrls: [
+          { label: "素食做法大全", url: "https://m.meishij.net/fenlei/sushi/" },
+          { label: "美食杰主站", url: "https://www.meishi.cc/" }
+        ]
+      },
+      {
+        id: "justgreen",
+        name: "Just Green Mall 绿色生活",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🌱",
+        desc: "倡导绿色有机与环境可持续，提供以天然蔬果和全植物食材为主的轻食与西式素食配方。",
+        tags: ["全食物", "绿色有机", "健康轻食", "可持续"],
+        mainUrl: "https://www.justgreenmall.com/pages/recipe-world",
+        extraUrls: [
+          { label: "食谱世界", url: "https://www.justgreenmall.com/pages/recipe-world" }
+        ]
+      },
+      {
+        id: "slideshare-100",
+        name: "100道经典素菜 (心经图册)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "📑",
+        desc: "广为流传的 100 道家常与传统素菜珍藏图谱，步骤图解清晰，适合作为厨房随时翻阅的备忘典藏。",
+        tags: ["中式家常", "经典图册", "百道精选", "典藏参考"],
+        mainUrl: "https://www.slideshare.net/slideshow/100-2470416/2470416",
+        extraUrls: [
+          { label: "在线阅读图册", url: "https://www.slideshare.net/slideshow/100-2470416/2470416" }
+        ]
+      },
+      {
+        id: "world-sulian",
+        name: "世界素食联合会 (World Union)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🌐",
+        desc: "世界素联专业板块，汇聚素食文化、大师级素菜烹饪技艺研讨以及全球植物基产业前沿动态。",
+        tags: ["行业组织", "素食文化", "专业厨艺", "国际交流"],
+        mainUrl: "http://sulian.sushi001.com/category/zhuanyeb",
+        extraUrls: [
+          { label: "专业专栏", url: "http://sulian.sushi001.com/category/zhuanyeb" }
+        ]
+      },
+
+      // === 寰宇美食 - 科学实测 (5个) ===
+      {
+        id: "atk",
+        name: "America's Test Kitchen (ATK)",
+        region: "global",
+        category: "science",
+        categoryName: "科学实测",
+        icon: "🔬",
+        desc: "50+人专业测试厨房团队，每道菜谱经数十次对照实验与严谨实测，出品《The Complete Vegetarian Cookbook》与《Vegan for Everybody》等传世权威书目。",
+        tags: ["严谨实测", "Tried&Tested", "50人厨房", "科学配方", "绝对零失败"],
+        mainUrl: "https://www.americastestkitchen.com/recipes/vegetarian",
+        extraUrls: [
+          { label: "ATK 素食专区", url: "https://www.americastestkitchen.com/recipes/vegetarian" }
+        ]
+      },
+      {
+        id: "seriouseats",
+        name: "Serious Eats (严肃美食)",
+        region: "global",
+        category: "science",
+        categoryName: "科学实测",
+        icon: "🧪",
+        desc: "以食品化学与物理原理解析烹饪本质，前主笔 J. Kenji López-Alt 的“The Vegan Experience”专栏深刻影响全球植物饮食界，配方技术含量极高。",
+        tags: ["食品科学", "严谨实测", "Kenji专栏", "风味原理", "深度拆解"],
+        mainUrl: "https://www.seriouseats.com/vegetarian-recipes-5117757",
+        extraUrls: [
+          { label: "Vegetarian 专栏", url: "https://www.seriouseats.com/vegetarian-recipes-5117757" },
+          { label: "所有素食分类", url: "https://www.seriouseats.com/recipes/vegetarian" }
+        ]
+      },
+      {
+        id: "goodhousekeeping",
+        name: "Good Housekeeping Institute",
+        region: "global",
+        category: "science",
+        categoryName: "科学实测",
+        icon: "🏛️",
+        desc: "百年消费品与食品评测权威，设有专门的食品烹饪实验室（Culinary Lab），对素食菜谱可行性、营养配比及厨具匹配度进行标准化严格测试。",
+        tags: ["严谨实测", "Tried&Tested", "百年实验室", "标准化实测"],
+        mainUrl: "https://www.goodhousekeeping.com/uk/food/g538621/best-vegetarian-recipes/",
+        extraUrls: [
+          { label: "年度精选素食榜单", url: "https://www.goodhousekeeping.com/uk/food/g538621/best-vegetarian-recipes/" }
+        ]
+      },
+      {
+        id: "viva-vegan",
+        name: "Viva! Vegan Recipe Club",
+        region: "global",
+        category: "science",
+        categoryName: "科学实测",
+        icon: "🎖️",
+        desc: "英国权威纯素慈善组织旗下平台，所有菜谱经试厨团队“Tried & Tested”严格实操认证，详尽标注耗时、预算、难度及营养成分，600+完全免费。",
+        tags: ["Tried&Tested", "严谨实测", "英国官方认证", "纯素无雷"],
+        mainUrl: "https://www.veganrecipeclub.org.uk",
+        extraUrls: [
+          { label: "官方食谱俱乐部", url: "https://www.veganrecipeclub.org.uk" }
+        ]
+      },
+      {
+        id: "umami-vegan",
+        name: "鲜味信息中心 (Umami Center)",
+        region: "global",
+        category: "science",
+        categoryName: "科学实测",
+        icon: "🧪",
+        desc: "国际权威鲜味（Umami）研究机构专门设立的纯素食谱专区，用科学视角解析如何利用海藻、干菇、发酵物释放极致植物鲜味。",
+        tags: ["食品科学", "严谨实测", "鲜味科学", "风味原理"],
+        mainUrl: "https://zh-cn.umamiinfo.com/recipes2/vegan/",
+        extraUrls: [
+          { label: "纯素鲜味菜谱", url: "https://zh-cn.umamiinfo.com/recipes2/vegan/" }
+        ]
+      },
+
+      // === 寰宇美食 - 权威媒体与榜单 (10个) ===
+      {
+        id: "tasteatlas",
+        name: "TasteAtlas｜世界素食料理排名",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "🗺️",
+        desc: "全球权威传统美食大数据地图，基于全球数百万食客打分与算法去噪，权威发布全球最佳素食料理榜单（Best Rated Vegetarian Dishes）。",
+        tags: ["全球排行", "大数据算法", "世界各国美食", "地道传统"],
+        mainUrl: "https://www.tasteatlas.com/best-rated-vegetarian-dishes-in-the-world",
+        extraUrls: [
+          { label: "全球素食料理榜单", url: "https://www.tasteatlas.com/best-rated-vegetarian-dishes-in-the-world" }
+        ]
+      },
+      {
+        id: "bbc-goodfood",
+        name: "BBC Good Food｜Vegetarian",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "🇬🇧",
+        desc: "英国国民级专业美食媒体，Vegetarian 专栏拥有数千道由专业编辑与主厨审核的五星高分菜谱，涵盖全天候餐饮配方。",
+        tags: ["全球排行", "英国BBC", "编辑严审", "海量五星评分"],
+        mainUrl: "https://www.bbcgoodfood.com/recipes/collection/vegetarian-recipes",
+        extraUrls: [
+          { label: "Vegetarian 专栏", url: "https://www.bbcgoodfood.com/recipes/collection/vegetarian-recipes" }
+        ]
+      },
+      {
+        id: "happycow",
+        name: "HappyCow (幸福牛)",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "🐮",
+        desc: "全球最大、最权威的素食/纯素餐厅发现与真实评价平台，覆盖 180+ 国家与地区，是全球素食主义者出行与探店的绝对首选。",
+        tags: ["全球排行", "全球素食地图", "180+国家", "真实探店"],
+        mainUrl: "https://www.happycow.net/",
+        extraUrls: [
+          { label: "HappyCow 官网", url: "https://www.happycow.net/" }
+        ]
+      },
+      {
+        id: "nyt-cooking",
+        name: "NYT Cooking (纽约时报烹饪)",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "📰",
+        desc: "《纽约时报》旗下顶级美食专栏，定期推出最受欢迎无肉料理专题，文笔优雅、调味高级，深具美食文学性与品味。",
+        tags: ["高颜值摄影", "纽约时报", "顶级专栏", "精致品味"],
+        mainUrl: "https://cooking.nytimes.com/topics/vegetarian",
+        extraUrls: [
+          { label: "NYT 素食主题", url: "https://cooking.nytimes.com/topics/vegetarian" }
+        ]
+      },
+      {
+        id: "allrecipes",
+        name: "Allrecipes｜Vegetarian",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "👩‍🍳",
+        desc: "全球最大用户食谱分享平台之一，拥有数万条家庭烘焙与家常素菜，附带数万条真实厨友改良心得与改良建议。",
+        tags: ["全球排行", "全球社区", "数万评价", "家庭烘焙"],
+        mainUrl: "https://www.allrecipes.com/recipes/87/everyday-cooking/vegetarian/",
+        extraUrls: [
+          { label: "Vegetarian 专栏", url: "https://www.allrecipes.com/recipes/87/everyday-cooking/vegetarian/" }
+        ]
+      },
+      {
+        id: "food-network",
+        name: "Food Network",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "📺",
+        desc: "电视烹饪网络与名厨大咖云集，提供极富创意、摆盘考究与风味多元的专业素食佳肴做法。",
+        tags: ["视频教学", "电视名厨", "创意摆盘", "美式西餐"],
+        mainUrl: "https://www.foodnetwork.com/topics/vegetarian-recipes",
+        extraUrls: [
+          { label: "素食主题频道", url: "https://www.foodnetwork.com/topics/vegetarian-recipes" }
+        ]
+      },
+      {
+        id: "eatingwell",
+        name: "EatingWell",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "🥑",
+        desc: "注册营养师（RD）团队主导，专注健康减脂、高蛋白植物性饮食、低 GI 与无麸质搭配，附有极其精准的卡路里与微量营养分析。",
+        tags: ["营养师主理", "低GI高蛋白", "精准卡路里", "科学控糖"],
+        mainUrl: "https://www.eatingwell.com/recipes/17907/dietary-regimes/vegetarian/",
+        extraUrls: [
+          { label: "EatingWell 素食专栏", url: "https://www.eatingwell.com/recipes/17907/dietary-regimes/vegetarian/" }
+        ]
+      },
+      {
+        id: "epicurious",
+        name: "Epicurious",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "🍷",
+        desc: "康泰纳仕（Condé Nast）旗下高端美食媒体，精选大厨级纯素与蔬食料理，适合寻找更高阶、具有餐厅仪式感的料理做法。",
+        tags: ["高颜值摄影", "高端美食", "餐厅级料理", "康泰纳仕"],
+        mainUrl: "https://www.epicurious.com/special-consideration/vegetarian",
+        extraUrls: [
+          { label: "Epicurious 素食精选", url: "https://www.epicurious.com/special-consideration/vegetarian" }
+        ]
+      },
+      {
+        id: "thekitchn",
+        name: "The Kitchn",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "🍳",
+        desc: "专注普通家庭厨房的日常烹饪，主打 30 分钟快手晚餐、备餐技巧（Meal Prep）与省时小妙招。",
+        tags: ["快手晚餐", "备餐技巧", "日常实用", "省时高效"],
+        mainUrl: "https://www.thekitchn.com/recipes/vegetarian",
+        extraUrls: [
+          { label: "The Kitchn 素食专栏", url: "https://www.thekitchn.com/recipes/vegetarian" }
+        ]
+      },
+      {
+        id: "vegnews",
+        name: "VegNews",
+        region: "global",
+        category: "media",
+        categoryName: "权威媒体与榜单",
+        icon: "🌿",
+        desc: "全球发行量最大的纯素（Vegan）生活方式媒体，严格坚持 100% 植物性，涵盖从纯素起司到纯素烘焙全系列配方。",
+        tags: ["100%纯素", "纯素生活", "起司与烘焙", "前沿潮品"],
+        mainUrl: "https://vegnews.com/recipes",
+        extraUrls: [
+          { label: "VegNews 纯素食谱", url: "https://vegnews.com/recipes" }
+        ]
+      },
+
+      // === 寰宇美食 - 知名名厨 / 获奖博客 (5个) ===
+      {
+        id: "101cookbooks",
+        name: "101 Cookbooks (Heidi Swanson)",
+        region: "global",
+        category: "chef",
+        categoryName: "名厨与博客",
+        icon: "📖",
+        desc: "由詹姆斯·比尔德大奖（James Beard Award）得主 Heidi Swanson 创立，拥有 700+ 原创素食与纯素食谱，摄影极具自然美感与宁静质感。",
+        tags: ["全食物", "高颜值摄影", "James Beard大奖", "700+原创"],
+        mainUrl: "https://www.101cookbooks.com/vegetarian_recipes",
+        extraUrls: [
+          { label: "素食食谱库", url: "https://www.101cookbooks.com/vegetarian_recipes" }
+        ]
+      },
+      {
+        id: "smitten-kitchen",
+        name: "Smitten Kitchen (Deb Perelman)",
+        region: "global",
+        category: "chef",
+        categoryName: "名厨与博客",
+        icon: "🥧",
+        desc: "纽约时报畅销书作家 Deb Perelman 创立的传奇博客，专为狭小家庭厨房设计，风味层次丰富，素食与烘焙食谱备受推崇。",
+        tags: ["高颜值摄影", "纽约时报畅销作家", "家庭厨房", "浓郁风味"],
+        mainUrl: "https://smittenkitchen.com/recipes/diet/vegetarian/",
+        extraUrls: [
+          { label: "Smitten 素食专栏", url: "https://smittenkitchen.com/recipes/diet/vegetarian/" }
+        ]
+      },
+      {
+        id: "cookie-and-kate",
+        name: "Cookie and Kate (Kathryne Taylor)",
+        region: "global",
+        category: "chef",
+        categoryName: "名厨与博客",
+        icon: "🍪",
+        desc: "全球最受欢迎的全食物（Whole Foods）素食博客之一，由 Kathryne 创立，食材天然、无过度加工，步骤清晰易复刻。",
+        tags: ["全食物", "零过度加工", "超高人气", "清新健康"],
+        mainUrl: "https://cookieandkate.com",
+        extraUrls: [
+          { label: "Cookie and Kate 官网", url: "https://cookieandkate.com" }
+        ]
+      },
+      {
+        id: "love-and-lemons",
+        name: "Love and Lemons (Jeanine Donofrio)",
+        region: "global",
+        category: "chef",
+        categoryName: "名厨与博客",
+        icon: "🍋",
+        desc: "清新视觉与当季时蔬料理的典范之作，专注以新鲜时令蔬菜为主角的高颜值日常健康餐饮。",
+        tags: ["全食物", "高颜值摄影", "当季时蔬", "清新明亮"],
+        mainUrl: "https://www.loveandlemons.com",
+        extraUrls: [
+          { label: "Love and Lemons 官网", url: "https://www.loveandlemons.com" }
+        ]
+      },
+      {
+        id: "sharon-palmer",
+        name: "Sharon Palmer (植物营养师)",
+        region: "global",
+        category: "chef",
+        categoryName: "名厨与博客",
+        icon: "🩺",
+        desc: "注册营养师（The Plant Powered Dietitian）主导，每年发布全网 Top Vegan Blogs 权威榜单，提供深厚临床营养学背书。",
+        tags: ["营养师主理", "食品科学", "注册营养师", "年度博客榜单"],
+        mainUrl: "https://sharonpalmer.com",
+        extraUrls: [
+          { label: "Sharon Palmer 官网", url: "https://sharonpalmer.com" }
+        ]
+      },
+
+      // === 寰宇美食 - 数据工具与倡导组织 (3个) ===
+      {
+        id: "spoonacular",
+        name: "Spoonacular 数据库 & API",
+        region: "global",
+        category: "tools",
+        categoryName: "数据与组织",
+        icon: "💻",
+        desc: "全球强大的菜谱数据与算法引擎，收录 36.5 万+ 食谱，支持严格纯素、无麸质、低卡、过敏原等多维参数精准计算与代码集成。",
+        tags: ["36.5万数据", "API与算法", "精准微量营养", "多维筛选"],
+        mainUrl: "https://spoonacular.com",
+        extraUrls: [
+          { label: "Spoonacular 官网", url: "https://spoonacular.com" }
+        ]
+      },
+      {
+        id: "veganuary",
+        name: "Veganuary (纯素一月国际组织)",
+        region: "global",
+        category: "tools",
+        categoryName: "数据与组织",
+        icon: "🌍",
+        desc: "全球影响力最大的纯素倡导公益组织，每年带领全球数百万人尝试植物性生活，提供丰富全面的免费新手食谱与配餐指南。",
+        tags: ["全球倡导", "入门配餐", "新手无痛过渡", "公益指南"],
+        mainUrl: "https://veganuary.com/recipes/",
+        extraUrls: [
+          { label: "新手食谱专区", url: "https://veganuary.com/recipes/" }
+        ]
+      },
+      {
+        id: "reddit-vege",
+        name: "Reddit r/vegetarian 社区精选",
+        region: "global",
+        category: "tools",
+        categoryName: "数据与组织",
+        icon: "💬",
+        desc: "全球最大的素食爱好者 Reddit 讨论板块，来自数十万真实素食者的口碑私藏网站与菜谱推荐合集。",
+        tags: ["Reddit社区", "真实口碑", "私藏合集", "互动交流"],
+        mainUrl: "https://www.reddit.com/r/vegetarian/comments/1qsfvqe/would_love_some_vegetarian_recipe_website/?tl=zh-hans",
+        extraUrls: [
+          { label: "查看讨论贴", url: "https://www.reddit.com/r/vegetarian/comments/1qsfvqe/would_love_some_vegetarian_recipe_website/?tl=zh-hans" }
+        ]
+      }
+    ];
+
+    // 分类体系（精准对应收录数量）
+    const CATEGORIES = [
+      { id: "all", name: "全部平台", icon: "🌱" },
+      { id: "china", name: "中华美食", icon: "🇨🇳" },
+      { id: "global", name: "寰宇美食", icon: "🌍" },
+      { id: "science", name: "科学实测", icon: "🔬" },
+      { id: "media", name: "权威媒体与榜单", icon: "📺" },
+      { id: "chef", name: "名厨与博客", icon: "👩‍🍳" },
+      { id: "tools", name: "数据与组织", icon: "🛠️" }
+    ];
+
+    // 指定的 10 个核心特色标签
+    const POPULAR_TAGS = [
+      "中式家常",
+      "严谨实测",
+      "食品科学",
+      "全食物",
+      "营养师主理",
+      "全球排行",
+      "视频教学",
+      "Tried&Tested",
+      "无五辛纯素",
+      "高颜值摄影"
+    ];
+
+    let currentCategory = "all";
+    let activeTag = null;
+    let searchQuery = "";
+    let favoritesOnly = false;
+    let favorites = JSON.parse(localStorage.getItem("vege_favs") || "[]");
+
+    function init() {
+      renderCategoryTabs();
+      renderTagFilters();
+      updateFavCount();
+      renderCards();
+    }
+
+    function renderCategoryTabs() {
+      const tabsEl = document.getElementById("categoryTabs");
+      tabsEl.innerHTML = CATEGORIES.map(cat => {
+        let count = 0;
+        if (cat.id === "all") {
+          count = PLATFORMS_DATA.length;
+        } else if (cat.id === "china") {
+          count = PLATFORMS_DATA.filter(p => p.region === "china").length;
+        } else if (cat.id === "global") {
+          count = PLATFORMS_DATA.filter(p => p.region === "global").length;
+        } else {
+          count = PLATFORMS_DATA.filter(p => p.category === cat.id).length;
+        }
+        const activeClass = currentCategory === cat.id ? "active" : "";
+        return `
+          <button class="cat-btn ${activeClass}" onclick="setCategory('${cat.id}')">
+            <span>${cat.icon} ${cat.name}</span>
+            <span class="badge-count">${count}</span>
+          </button>
+        `;
+      }).join("");
+    }
+
+    function renderTagFilters() {
+      const container = document.getElementById("tagFiltersGroup");
+      container.innerHTML = POPULAR_TAGS.map(tag => {
+        const activeClass = activeTag === tag ? "active" : "";
+        return `
+          <span class="tag-chip ${activeClass}" onclick="toggleTag('${tag}')">#${tag}</span>
+        `;
+      }).join("");
+    }
+
+    function setCategory(catId) {
+      currentCategory = catId;
+      favoritesOnly = false;
+      document.getElementById("favToggleBtn").classList.remove("btn-primary");
+      document.getElementById("favToggleBtn").classList.add("btn-outline");
+      renderCategoryTabs();
+      renderCards();
+    }
+
+    function toggleTag(tag) {
+      if (activeTag === tag) {
+        activeTag = null;
+      } else {
+        activeTag = tag;
+      }
+      renderTagFilters();
+      renderCards();
+    }
+
+    function handleSearch() {
+      const input = document.getElementById("searchInput");
+      searchQuery = input.value.trim().toLowerCase();
+      document.getElementById("clearSearchBtn").style.display = searchQuery ? "block" : "none";
+      renderCards();
+    }
+
+    function clearSearch() {
+      document.getElementById("searchInput").value = "";
+      searchQuery = "";
+      document.getElementById("clearSearchBtn").style.display = "none";
+      renderCards();
+    }
+
+    function resetFilters() {
+      currentCategory = "all";
+      activeTag = null;
+      searchQuery = "";
+      favoritesOnly = false;
+      document.getElementById("searchInput").value = "";
+      document.getElementById("clearSearchBtn").style.display = "none";
+      renderCategoryTabs();
+      renderTagFilters();
+      renderCards();
+    }
+
+    function toggleFav(id, event) {
+      event.stopPropagation();
+      const index = favorites.indexOf(id);
+      if (index > -1) {
+        favorites.splice(index, 1);
+      } else {
+        favorites.push(id);
+      }
+      localStorage.setItem("vege_favs", JSON.stringify(favorites));
+      updateFavCount();
+      renderCards();
+    }
+
+    function updateFavCount() {
+      document.getElementById("favCount").innerText = favorites.length;
+    }
+
+    function toggleFavoritesOnly() {
+      favoritesOnly = !favoritesOnly;
+      const btn = document.getElementById("favToggleBtn");
+      if (favoritesOnly) {
+        btn.classList.remove("btn-outline");
+        btn.classList.add("btn-primary");
+      } else {
+        btn.classList.remove("btn-primary");
+        btn.classList.add("btn-outline");
+      }
+      renderCards();
+    }
+
+    function renderCards() {
+      const gridEl = document.getElementById("cardsGrid");
+      const matchedCountEl = document.getElementById("matchedCount");
+      const titleEl = document.getElementById("currentSectionTitle");
+
+      let filtered = PLATFORMS_DATA.filter(item => {
+        if (favoritesOnly && !favorites.includes(item.id)) {
+          return false;
+        }
+
+        // 分类过滤
+        if (currentCategory === "china") {
+          if (item.region !== "china") return false;
+        } else if (currentCategory === "global") {
+          if (item.region !== "global") return false;
+        } else if (currentCategory !== "all") {
+          if (item.category !== currentCategory) return false;
+        }
+
+        // 标签过滤
+        if (activeTag && !item.tags.includes(activeTag)) {
+          return false;
+        }
+
+        // 搜索过滤
+        if (searchQuery) {
+          const matchName = item.name.toLowerCase().includes(searchQuery);
+          const matchDesc = item.desc.toLowerCase().includes(searchQuery);
+          const matchTags = item.tags.some(t => t.toLowerCase().includes(searchQuery));
+          const matchCat = item.categoryName.toLowerCase().includes(searchQuery);
+          if (!matchName && !matchDesc && !matchTags && !matchCat) {
+            return false;
+          }
+        }
+
+        return true;
+      });
+
+      matchedCountEl.innerText = filtered.length;
+      if (favoritesOnly) {
+        titleEl.innerHTML = `<span>⭐ 我的收藏列表</span>`;
+      } else {
+        const curCatObj = CATEGORIES.find(c => c.id === currentCategory) || CATEGORIES[0];
+        titleEl.innerHTML = `<span>${curCatObj.icon} ${curCatObj.name}</span>`;
+      }
+
+      if (filtered.length === 0) {
+        gridEl.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">🍃</div>
+            <h4 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.5rem;">未找到相关平台或食谱</h4>
+            <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">尝试在右上角更换搜索词，或切换分类与标签。</p>
+            <button class="btn btn-outline" onclick="resetFilters()">重置所有筛选</button>
+          </div>
+        `;
+        return;
+      }
+
+      gridEl.innerHTML = filtered.map(item => {
+        const isFav = favorites.includes(item.id);
+        const tagsHtml = item.tags.map(t => `<span class="card-tag">#${t}</span>`).join("");
+        
+        const extraLinksHtml = item.extraUrls.map((link, idx) => {
+          const isMain = idx === 0;
+          return `
+            <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="direct-link ${isMain ? '' : 'secondary'}">
+              <span>${link.label}</span>
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          `;
+        }).join("");
+
+        return `
+          <article class="site-card">
+            <div>
+              <div class="card-top">
+                <div class="card-icon-wrap">${item.icon}</div>
+                <div class="card-title-group">
+                  <div class="card-title-row">
+                    <h4 class="card-title" title="${item.name}">${item.name}</h4>
+                    <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${item.id}', event)" title="${isFav ? '取消收藏' : '加入收藏'}">
+                      ${isFav ? '★' : '☆'}
+                    </button>
+                  </div>
+                  <span class="card-category-badge">${item.categoryName}</span>
+                </div>
+              </div>
+
+              <p class="card-desc">${item.desc}</p>
+              <div class="card-tags">${tagsHtml}</div>
+            </div>
+
+            <div class="card-footer">
+              <div class="links-group">
+                ${extraLinksHtml}
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function openModal() {
+      const modal = document.getElementById("guideModal");
+      modal.classList.add("open");
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("guideModal");
+      modal.classList.remove("open");
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target.id === "guideModal") {
+        closeModal();
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>
