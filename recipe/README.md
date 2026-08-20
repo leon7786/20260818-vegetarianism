@@ -2,16 +2,123 @@
 
 > **說明**：本目錄為 Antigravity 素食導航項目的本地食譜庫，提供結構化 Markdown、高清成品圖與多語言（簡體 / 繁體 / 英文）檢索支援，方便搜尋引擎快速抓取索引與使用者本地查詢。
 
-**當前已歸檔食譜總數**：`565` 道精選素食料理
+**當前已歸檔食譜總數**：`664` 道精選素食料理
 - 🥢 **下廚房 (Xiachufang)**：`194` 道
 - 🍲 **豆果美食 (Douguo)**：`179` 道
 - 🌿 **觀音山蔬食館 (Guanyinshan)**：`173` 道
+- 🍽️ **美食天下 (Meishichina)**：`99` 道
 - 🥗 **康寶官方 (Knorr Taiwan)**：`15` 道
 - 🥑 **植境 JustGreen Mall**：`4` 道
 
 ---
 
-## 📚 1. 下廚房 · 素食主義專區熱門菜譜 (194 道)
+## 📚 1. 美食天下 · 素食精華專區菜譜 (99 道)
+
+| 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | **--瓤豆腐** | <span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 面食主食 | 豆腐、精腿肉、虾仁... | [--瓤豆腐](home.meishichina.com/--瓤豆腐/README.md) |
+| 2 | **。椒盐脆豆腐 & 糖醋脆豆腐** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 锅烧豆腐、食用油、辣椒粉... | [。椒盐脆豆腐 & 糖醋脆豆腐](home.meishichina.com/。椒盐脆豆腐 & 糖醋脆豆腐/README.md) |
+| 3 | **一步步做出好吃好看的 {茶香卤豆干}** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 白豆腐干、卤料、冰糖... | [一步步做出好吃好看的 {茶香卤豆干}](home.meishichina.com/一步步做出好吃好看的 {茶香卤豆干}/README.md) |
+| 4 | **三丝杏鲍菇** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 杏鲍菇、胡萝卜、尖椒... | [三丝杏鲍菇](home.meishichina.com/三丝杏鲍菇/README.md) |
+| 5 | **上海青炒海米** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 上海青、海米、葱... | [上海青炒海米](home.meishichina.com/上海青炒海米/README.md) |
+| 6 | **五香花生** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 花生、姜、桂皮... | [五香花生](home.meishichina.com/五香花生/README.md) |
+| 7 | **京酱素肉丝—素食** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 素肉丝、黄瓜、姜... | [京酱素肉丝—素食](home.meishichina.com/京酱素肉丝—素食/README.md) |
+| 8 | **健康三宝——辣椒红枣爆双菇** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 香菇、圆白菇、青椒... | [健康三宝——辣椒红枣爆双菇](home.meishichina.com/健康三宝——辣椒红枣爆双菇/README.md) |
+| 9 | **冬瓜花边雕刻** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 冬瓜、雕刻刀、笔... | [冬瓜花边雕刻](home.meishichina.com/冬瓜花边雕刻/README.md) |
+| 10 | **凉拌千张** | <span style='color:#15803d;'>全素 Vegan</span> | 爽口凉菜 | 千张、青椒、青蒜... | [凉拌千张](home.meishichina.com/凉拌千张/README.md) |
+| 11 | **凉拌火龙果皮** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 火龙果皮、黄甜椒、青甜椒... | [凉拌火龙果皮](home.meishichina.com/凉拌火龙果皮/README.md) |
+| 12 | **凉拌菠菜粉丝** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 菠菜、粉丝、花生仁... | [凉拌菠菜粉丝](home.meishichina.com/凉拌菠菜粉丝/README.md) |
+| 13 | **凉拌金针菇** | <span style='color:#15803d;'>全素 Vegan</span> | 爽口凉菜 | 金针菇、黄瓜、精盐... | [凉拌金针菇](home.meishichina.com/凉拌金针菇/README.md) |
+| 14 | **凉拌黑木耳** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 黑木耳、花生米、枸杞子... | [凉拌黑木耳](home.meishichina.com/凉拌黑木耳/README.md) |
+| 15 | **凉菜也可以宴客** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 白萝卜、辣椒面、虾皮... | [凉菜也可以宴客](home.meishichina.com/凉菜也可以宴客/README.md) |
+| 16 | **凉菜混搭之** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 金针菇、豆皮、香菜... | [凉菜混搭之](home.meishichina.com/凉菜混搭之/README.md) |
+| 17 | **剁椒花生** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 花生、剁椒、虾皮... | [剁椒花生](home.meishichina.com/剁椒花生/README.md) |
+| 18 | **印度蔬菜球vegetable madchurian** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 花椰菜、红萝卜、绿辣椒... | [印度蔬菜球vegetable madchurian](home.meishichina.com/印度蔬菜球vegetable madchurian/README.md) |
+| 19 | **双拌萝卜丝** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 绿萝卜、胡萝卜、香菜... | [双拌萝卜丝](home.meishichina.com/双拌萝卜丝/README.md) |
+| 20 | **双椒拌黄豆** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 黄豆、红甜椒、青甜椒... | [双椒拌黄豆](home.meishichina.com/双椒拌黄豆/README.md) |
+| 21 | **啤酒伴侣--烤韭菜** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 韭菜、食盐、胡椒粉... | [啤酒伴侣--烤韭菜](home.meishichina.com/啤酒伴侣--烤韭菜/README.md) |
+| 22 | **在家做简单营养早餐---燕麦全麦面包早餐** | <span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 面食主食 | 全麦面包、鸡蛋、土豆... | [在家做简单营养早餐---燕麦全麦面包早餐](home.meishichina.com/在家做简单营养早餐---燕麦全麦面包早餐/README.md) |
+| 23 | **大碗菜花** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 菜花、小红辣椒、蒜... | [大碗菜花](home.meishichina.com/大碗菜花/README.md) |
+| 24 | **奶香白菜汤** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 养生汤品 | 白菜心、蘑菇、胡萝卜... | [奶香白菜汤](home.meishichina.com/奶香白菜汤/README.md) |
+| 25 | **宫保豆腐** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 豆腐、花生、蒜苔... | [宫保豆腐](home.meishichina.com/宫保豆腐/README.md) |
+| 26 | **宫保豆腐丁** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 豆腐、花生仁、青尖椒... | [宫保豆腐丁](home.meishichina.com/宫保豆腐丁/README.md) |
+| 27 | **家常豆腐** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 老豆腐、胡萝卜、木耳... | [家常豆腐](home.meishichina.com/家常豆腐/README.md) |
+| 28 | **山药莲子塔** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 鲜莲子、鲜山药、冰晶糖... | [山药莲子塔](home.meishichina.com/山药莲子塔/README.md) |
+| 29 | **干煸黑豆芽** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 黑豆芽、精盐、油... | [干煸黑豆芽](home.meishichina.com/干煸黑豆芽/README.md) |
+| 30 | **开胃素菜---脆皮豆腐** | <span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 家常蔬食 / 经典热菜 | 北豆腐、鸡蛋、青辣椒... | [开胃素菜---脆皮豆腐](home.meishichina.com/开胃素菜---脆皮豆腐/README.md) |
+| 31 | **心蓝手制私房菜——与时尚绝缘** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 攸县香干、里脊肉、姜蒜... | [心蓝手制私房菜——与时尚绝缘](home.meishichina.com/心蓝手制私房菜——与时尚绝缘/README.md) |
+| 32 | **心蓝手制私房菜——剩女们的梦幻生活 上** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 白干、胡萝卜、玉米粒... | [心蓝手制私房菜——剩女们的梦幻生活 上](home.meishichina.com/心蓝手制私房菜——剩女们的梦幻生活 上/README.md) |
+| 33 | **手撕包菜** | <span style='color:#15803d;'>全素 Vegan</span> | 面点小吃 | 球白、姜蒜末、干辣椒... | [手撕包菜](home.meishichina.com/手撕包菜/README.md) |
+| 34 | **拌花菜** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 黄瓜、腐竹、胡萝卜... | [拌花菜](home.meishichina.com/拌花菜/README.md) |
+| 35 | **春笋木耳腐竹丝** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 腐竹、春笋、木耳... | [春笋木耳腐竹丝](home.meishichina.com/春笋木耳腐竹丝/README.md) |
+| 36 | **最美味的家常菜—辣味拌茄泥** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 茄子、香菜、大蒜... | [最美味的家常菜—辣味拌茄泥](home.meishichina.com/最美味的家常菜—辣味拌茄泥/README.md) |
+| 37 | **椒盐酥皮** | <span style='color:#15803d;'>全素 Vegan</span> | 面点小吃 | 饺子皮、椒盐... | [椒盐酥皮](home.meishichina.com/椒盐酥皮/README.md) |
+| 38 | **油焖春笋** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 春笋、红甜椒、葱花... | [油焖春笋](home.meishichina.com/油焖春笋/README.md) |
+| 39 | **浓汤宝土豆块** | <span style='color:#15803d;'>全素 Vegan</span> | 养生汤品 | 土豆、葱段、浓汤宝... | [浓汤宝土豆块](home.meishichina.com/浓汤宝土豆块/README.md) |
+| 40 | **清炒南瓜藤** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 南瓜藤、大蒜、盐... | [清炒南瓜藤](home.meishichina.com/清炒南瓜藤/README.md) |
+| 41 | **炝炒椒香藕片** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 藕、鲜花椒、油... | [炝炒椒香藕片](home.meishichina.com/炝炒椒香藕片/README.md) |
+| 42 | **炸素丸子** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 胡萝卜、红薯粉条、面粉... | [炸素丸子](home.meishichina.com/炸素丸子/README.md) |
+| 43 | **爆腌雪里** | <span style='color:#15803d;'>全素 Vegan</span> | 爽口凉菜 | 雪里蕻、腌菜盐、香油... | [爆腌雪里](home.meishichina.com/爆腌雪里/README.md) |
+| 44 | **爱心调出幸福味** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 西兰花、李锦记蚝油、盐... | [爱心调出幸福味](home.meishichina.com/爱心调出幸福味/README.md) |
+| 45 | **爽脆清嫩——白灼芥兰** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 芥兰、红椒丝、葱丝... | [爽脆清嫩——白灼芥兰](home.meishichina.com/爽脆清嫩——白灼芥兰/README.md) |
+| 46 | **珊瑚藕片** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 莲藕、红辣椒、麻辣油... | [珊瑚藕片](home.meishichina.com/珊瑚藕片/README.md) |
+| 47 | **甜蜜蜜红薯** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 红薯、红枣、百合... | [甜蜜蜜红薯](home.meishichina.com/甜蜜蜜红薯/README.md) |
+| 48 | **甜酒酿泡苦瓜** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 苦瓜、甜酒酿、枸杞... | [甜酒酿泡苦瓜](home.meishichina.com/甜酒酿泡苦瓜/README.md) |
+| 49 | **用蛋糕卷演绎祝福蛋糕：加油，中国！** | <span style='color:#15803d;'>蛋奶素 Ovo-Lacto</span> | 面食主食 | 鸡蛋、低筋面粉、细砂糖... | [用蛋糕卷演绎祝福蛋糕：加油，中国！](home.meishichina.com/用蛋糕卷演绎祝福蛋糕：加油，中国！/README.md) |
+| 50 | **电饼铛烤傣味豆腐** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 豆腐、小葱、香菜... | [电饼铛烤傣味豆腐](home.meishichina.com/电饼铛烤傣味豆腐/README.md) |
+| 51 | **白灼芦笋** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 芦笋、蚝油、食用油... | [白灼芦笋](home.meishichina.com/白灼芦笋/README.md) |
+| 52 | **盐水花生** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 鲜花生、花椒、八角... | [盐水花生](home.meishichina.com/盐水花生/README.md) |
+| 53 | **素炒杏鲍菇** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 杏鲍菇、青椒、油... | [素炒杏鲍菇](home.meishichina.com/素炒杏鲍菇/README.md) |
+| 54 | **素食精選料理** | <span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 面食主食 | 豆腐、鸡蛋、鸡汤... | [素食精選料理](home.meishichina.com/素食精選料理/README.md) |
+| 55 | **紫薯春卷** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面食主食 | 紫薯、春卷皮、黄油... | [紫薯春卷](home.meishichina.com/紫薯春卷/README.md) |
+| 56 | **红烧茄子** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 长茄子、海鲜酱油、葱段... | [红烧茄子](home.meishichina.com/红烧茄子/README.md) |
+| 57 | **老厨白菜** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 白菜、木耳、粉皮... | [老厨白菜](home.meishichina.com/老厨白菜/README.md) |
+| 58 | **老干妈煸茄丝** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 长茄子、青椒、蒜瓣... | [老干妈煸茄丝](home.meishichina.com/老干妈煸茄丝/README.md) |
+| 59 | **耗油烩鲜莲草菇** | <span style='color:#15803d;'>全素 Vegan</span> | 养生汤品 | 草菇、带壳鲜莲子、小包菜芯... | [耗油烩鲜莲草菇](home.meishichina.com/耗油烩鲜莲草菇/README.md) |
+| 60 | **胡萝卜炒韭菜芽** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 韭菜芽、胡萝卜、盐... | [胡萝卜炒韭菜芽](home.meishichina.com/胡萝卜炒韭菜芽/README.md) |
+| 61 | **胭脂红藕** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 藕、蔊菜、柠檬... | [胭脂红藕](home.meishichina.com/胭脂红藕/README.md) |
+| 62 | **胭脂藕——美的闪眼** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 藕、苋菜、白醋... | [胭脂藕——美的闪眼](home.meishichina.com/胭脂藕——美的闪眼/README.md) |
+| 63 | **脆皮紫薯** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 家常蔬食 / 经典热菜 | 紫薯、馄饨皮、炼乳... | [脆皮紫薯](home.meishichina.com/脆皮紫薯/README.md) |
+| 64 | **自制健康豆腐皮** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 黄豆、水、酸浆... | [自制健康豆腐皮](home.meishichina.com/自制健康豆腐皮/README.md) |
+| 65 | **花生米炒梅豆** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 梅豆、花生米、生抽... | [花生米炒梅豆](home.meishichina.com/花生米炒梅豆/README.md) |
+| 66 | **芹叶炒黄豆** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 芹菜叶、五香黄豆、干红椒... | [芹叶炒黄豆](home.meishichina.com/芹叶炒黄豆/README.md) |
+| 67 | **茄子绣花鞋** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 茄子、小刀子、勺子... | [茄子绣花鞋](home.meishichina.com/茄子绣花鞋/README.md) |
+| 68 | **菊花茄子** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 茄子、番茄酱、面粉... | [菊花茄子](home.meishichina.com/菊花茄子/README.md) |
+| 69 | **葱油小土豆** | <span style='color:#15803d;'>全素 Vegan</span> | 养生汤品 | 熟小土豆、葱、盐... | [葱油小土豆](home.meishichina.com/葱油小土豆/README.md) |
+| 70 | **蒜白山里蕨菜** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 蕨菜、盐、猪油... | [蒜白山里蕨菜](home.meishichina.com/蒜白山里蕨菜/README.md) |
+| 71 | **虎皮尖椒** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 尖椒、大蒜、蚝油... | [虎皮尖椒](home.meishichina.com/虎皮尖椒/README.md) |
+| 72 | **虎皮青椒** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 青椒、油、蒜... | [虎皮青椒](home.meishichina.com/虎皮青椒/README.md) |
+| 73 | **蚝油草菇** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 草菇、油、青红椒丝... | [蚝油草菇](home.meishichina.com/蚝油草菇/README.md) |
+| 74 | **蚝油豆皮卷** | <span style='color:#15803d;'>全素 Vegan</span> | 面点小吃 | 豆腐皮、胡萝卜丝、莴笋丝... | [蚝油豆皮卷](home.meishichina.com/蚝油豆皮卷/README.md) |
+| 75 | **蚝油鲜平菇** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 鲜平菇、胡萝卜、黄瓜... | [蚝油鲜平菇](home.meishichina.com/蚝油鲜平菇/README.md) |
+| 76 | **西柚燕麦番茄盏** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 水果燕麦片、西柚、樱桃番茄... | [西柚燕麦番茄盏](home.meishichina.com/西柚燕麦番茄盏/README.md) |
+| 77 | **西红柿炒茄子** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 西红柿、茄子、葱... | [西红柿炒茄子](home.meishichina.com/西红柿炒茄子/README.md) |
+| 78 | **让你吃得热热火火舒舒服服——大白菜煎豆腐** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 大白菜、老豆腐、西红柿... | [让你吃得热热火火舒舒服服——大白菜煎豆腐](home.meishichina.com/让你吃得热热火火舒舒服服——大白菜煎豆腐/README.md) |
+| 79 | **豉香海藻凉粉** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 海藻凉粉、豆豉、干红椒... | [豉香海藻凉粉](home.meishichina.com/豉香海藻凉粉/README.md) |
+| 80 | **辣炒倭瓜片** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 倭瓜、红辣椒、大葱... | [辣炒倭瓜片](home.meishichina.com/辣炒倭瓜片/README.md) |
+| 81 | **辣白菜** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 白菜、韭菜、江米面... | [辣白菜](home.meishichina.com/辣白菜/README.md) |
+| 82 | **酱爆苦瓜尖椒** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 尖椒、苦瓜、豆瓣酱... | [酱爆苦瓜尖椒](home.meishichina.com/酱爆苦瓜尖椒/README.md) |
+| 83 | **酸汤素水饺** | <span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 面食主食 | 面粉、韭菜、鸡蛋... | [酸汤素水饺](home.meishichina.com/酸汤素水饺/README.md) |
+| 84 | **酸辣菜** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 圆白菜、辣椒、西红柿... | [酸辣菜](home.meishichina.com/酸辣菜/README.md) |
+| 85 | **醋烹绿豆芽** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 绿豆芽、青椒、红椒... | [醋烹绿豆芽](home.meishichina.com/醋烹绿豆芽/README.md) |
+| 86 | **金针西兰花** | <span style='color:#15803d;'>全素 Vegan</span> | 养生汤品 | 金针菇、西兰花、洋葱... | [金针西兰花](home.meishichina.com/金针西兰花/README.md) |
+| 87 | **雕刻白萝卜花** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 白萝卜、美工刀、食用色素... | [雕刻白萝卜花](home.meishichina.com/雕刻白萝卜花/README.md) |
+| 88 | **雕刻茄子绣花鞋忆童年** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 茄子、挖球器、美工刀... | [雕刻茄子绣花鞋忆童年](home.meishichina.com/雕刻茄子绣花鞋忆童年/README.md) |
+| 89 | **雪菜炒海鲜菇** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 海鲜菇、雪菜、盐... | [雪菜炒海鲜菇](home.meishichina.com/雪菜炒海鲜菇/README.md) |
+| 90 | **青椒土豆丝** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 土豆、青椒、蒜... | [青椒土豆丝](home.meishichina.com/青椒土豆丝/README.md) |
+| 91 | **青椒炒双豆** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 长扁豆、短扁豆、青椒... | [青椒炒双豆](home.meishichina.com/青椒炒双豆/README.md) |
+| 92 | **青椒炒蘑菇** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 青椒、蘑菇、生抽... | [青椒炒蘑菇](home.meishichina.com/青椒炒蘑菇/README.md) |
+| 93 | **青椒甜玉米** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 青椒、水果甜玉米、香菜... | [青椒甜玉米](home.meishichina.com/青椒甜玉米/README.md) |
+| 94 | **韩式辣萝卜块** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 白萝卜、苹果、梨... | [韩式辣萝卜块](home.meishichina.com/韩式辣萝卜块/README.md) |
+| 95 | **香干炒韭菜** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 香干、韭菜、油... | [香干炒韭菜](home.meishichina.com/香干炒韭菜/README.md) |
+| 96 | **香煎孜然豆腐干** | <span style='color:#15803d;'>全素 Vegan</span> | 面食主食 | 白豆腐干、植物油、孜然粉... | [香煎孜然豆腐干](home.meishichina.com/香煎孜然豆腐干/README.md) |
+| 97 | **香辣砂锅豆腐** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 豆腐、西兰花、木耳... | [香辣砂锅豆腐](home.meishichina.com/香辣砂锅豆腐/README.md) |
+| 98 | **鱼腥草拌青笋** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 鱼腥草、青笋、小葱... | [鱼腥草拌青笋](home.meishichina.com/鱼腥草拌青笋/README.md) |
+| 99 | **黄豆芽拌莴笋丁** | <span style='color:#15803d;'>全素 Vegan</span> | 家常蔬食 / 经典热菜 | 黄豆芽、莴笋、红椒... | [黄豆芽拌莴笋丁](home.meishichina.com/黄豆芽拌莴笋丁/README.md) |
+
+---
+
+## 📚 2. 下廚房 · 素食主義專區熱門菜譜 (194 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -212,7 +319,7 @@
 
 ---
 
-## 📚 2. 豆果美食 · 素食專區家常菜譜 (179 道)
+## 📚 3. 豆果美食 · 素食專區家常菜譜 (179 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -398,7 +505,7 @@
 
 ---
 
-## 📚 3. 觀音山 · 素食料理簡單做 (173 道)
+## 📚 4. 觀音山 · 素食料理簡單做 (173 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -578,7 +685,7 @@
 
 ---
 
-## 📚 4. 康寶 (Knorr) 台灣官方素食料理 (15 道)
+## 📚 5. 康寶 (Knorr) 台灣官方素食料理 (15 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 耗時 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -600,7 +707,7 @@
 
 ---
 
-## 📚 5. 植境 JustGreen Mall 官方博客食譜 (4 道)
+## 📚 6. 植境 JustGreen Mall 官方博客食譜 (4 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 耗時 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -616,7 +723,8 @@
 ```text
 recipe/
 ├── README.md               # 全局搜尋引擎檢索索引文件
-├── recipes_data.json       # 前端 SPA 搜尋框即時檢索結構化數據 (565 道)
+├── recipes_data.json       # 前端 SPA 搜尋框即時檢索結構化數據 (664 道)
+├── home.meishichina.com/   # 美食天下精華素食食譜庫 (99 道)
 ├── www.xiachufang.com/     # 下廚房熱門素食食譜庫 (194 道)
 ├── www.douguo.com/         # 豆果美食素食食譜庫 (179 道)
 ├── vegan.gys.org.tw/       # 觀音山蔬食館食譜庫 (173 道)

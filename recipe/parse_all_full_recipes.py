@@ -8,6 +8,7 @@ GYS_DIR = os.path.join(RECIPE_DIR, "vegan.gys.org.tw")
 JGM_DIR = os.path.join(RECIPE_DIR, "www.justgreenmall.com")
 DOUGUO_DIR = os.path.join(RECIPE_DIR, "www.douguo.com")
 XCF_DIR = os.path.join(RECIPE_DIR, "www.xiachufang.com")
+MSC_DIR = os.path.join(RECIPE_DIR, "home.meishichina.com")
 
 def clean_text(s):
     if not s:
@@ -131,7 +132,15 @@ def main():
             if os.path.isdir(folder_path) and os.path.exists(md_file):
                 total_recipes.append(parse_markdown_recipe("xcf", "www.xiachufang.com", folder, md_file, "流行素食"))
 
-    print(f"Total recipes across 5 platforms: {len(total_recipes)}")
+    # 6. Meishichina
+    if os.path.exists(MSC_DIR):
+        for folder in sorted(os.listdir(MSC_DIR)):
+            folder_path = os.path.join(MSC_DIR, folder)
+            md_file = os.path.join(folder_path, "README.md")
+            if os.path.isdir(folder_path) and os.path.exists(md_file):
+                total_recipes.append(parse_markdown_recipe("msc", "home.meishichina.com", folder, md_file, "素食精華"))
+
+    print(f"Total recipes across 6 platforms: {len(total_recipes)}")
 
     # Clean newlines in fields
     for r in total_recipes:
