@@ -9,6 +9,7 @@ JGM_DIR = os.path.join(RECIPE_DIR, "www.justgreenmall.com")
 DOUGUO_DIR = os.path.join(RECIPE_DIR, "www.douguo.com")
 XCF_DIR = os.path.join(RECIPE_DIR, "www.xiachufang.com")
 MSC_DIR = os.path.join(RECIPE_DIR, "home.meishichina.com")
+HKB_DIR = os.path.join(RECIPE_DIR, "www.hkbuddhist.org")
 
 def clean_text(s):
     if not s:
@@ -44,7 +45,7 @@ def parse_markdown_recipe(platform_prefix, platform_domain, folder_name, md_path
 
     # Ingredients
     ingredients = []
-    ing_block = re.search(r'## 🌿 食材(?:及佐料清單|清單)? / Ingredients([\s\S]*?)(?=## 🍳|## 🔪|## 💡|## 📖|---|$)', text)
+    ing_block = re.search(r'## 🌿 食材(?:及佐料清單|清單)? / Ingredients([\s\S]*?)(?=## 🧂|## 🍳|## 🔪|## 💡|## 📖|---|$)', text)
     if ing_block:
         for line in ing_block.group(1).split('\n'):
             line = clean_text(line)
@@ -52,6 +53,16 @@ def parse_markdown_recipe(platform_prefix, platform_domain, folder_name, md_path
                 cleaned = clean_text(re.sub(r'^[▪\-*•]\s*', '', line))
                 if cleaned and len(cleaned) < 80:
                     ingredients.append(cleaned)
+
+    # Seasonings (if any)
+    season_block = re.search(r'## 🧂 調味料 / Seasonings([\s\S]*?)(?=## 🍳|## 🔪|## 💡|## 📖|---|$)', text)
+    if season_block:
+        for line in season_block.group(1).split('\n'):
+            line = clean_text(line)
+            if line.startswith(('-', '*', '▪', '•')):
+                cleaned = clean_text(re.sub(r'^[▪\-*•]\s*', '', line))
+                if cleaned and len(cleaned) < 80:
+                    ingredients.append(f"{cleaned} (調味)")
 
     # Steps
     steps = []
@@ -76,7 +87,7 @@ def parse_markdown_recipe(platform_prefix, platform_domain, folder_name, md_path
         "name": title,
         "name_hans": title,
         "name_en": title,
-        "keywords_en": f"{title} {platform_domain} vegetarian vegan recipe chinese food",
+        "keywords_en": f"{title} {platform_domain} vegetarian vegan recipe chinese buddhist food",
         "category": category,
         "diet": diet,
         "servings": servings,
@@ -85,7 +96,7 @@ def parse_markdown_recipe(platform_prefix, platform_domain, folder_name, md_path
         "total_time": "25 分鐘",
         "ingredients": ingredients,
         "steps": steps,
-        "desc": tip[:200] if tip else f"{title} · 精選素食家常美味",
+        "desc": tip[:200] if tip else f"{title} · 佛教養生素食佳餚",
         "source_url": source_url,
         "image": img_rel_path,
         "local_dir": f"{platform_domain}/{folder_name}"
@@ -140,7 +151,15 @@ def main():
             if os.path.isdir(folder_path) and os.path.exists(md_file):
                 total_recipes.append(parse_markdown_recipe("msc", "home.meishichina.com", folder, md_file, "素食精華"))
 
-    print(f"Total recipes across 6 platforms: {len(total_recipes)}")
+    # 7. HKBuddhist
+    if os.path.exists(HKB_DIR):
+        for folder in sorted(os.listdir(HKB_DIR)):
+            folder_path = os.path.join(HKB_DIR, folder)
+            md_file = os.path.join(folder_path, "README.md")
+            if os.path.isdir(folder_path) and os.path.exists(md_file):
+                total_recipes.append(parse_markdown_recipe("hkb", "www.hkbuddhist.org", folder, md_file, "佛教素齋"))
+
+    print(f"Total recipes across 7 platforms: {len(total_recipes)}")
 
     # Clean newlines in fields
     for r in total_recipes:
@@ -167,7 +186,7 @@ def main():
         with open("/root/1CT-Share/20260818-vegetarianism/index.html", "w", encoding="utf-8") as f:
             f.write(new_html)
 
-    print("[✓] Successfully updated index.html and recipes_data.json!")
+    print("[✓] Successfully updated index.html and recipes_data.json with 7 platforms!")
 
 if __name__ == "__main__":
     main()

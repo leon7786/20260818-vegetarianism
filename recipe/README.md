@@ -2,17 +2,107 @@
 
 > **說明**：本目錄為 Antigravity 素食導航項目的本地食譜庫，提供結構化 Markdown、高清成品圖與多語言（簡體 / 繁體 / 英文）檢索支援，方便搜尋引擎快速抓取索引與使用者本地查詢。
 
-**當前已歸檔食譜總數**：`664` 道精選素食料理
+**當前已歸檔食譜總數**：`746` 道精選素食料理
 - 🥢 **下廚房 (Xiachufang)**：`194` 道
 - 🍲 **豆果美食 (Douguo)**：`179` 道
 - 🌿 **觀音山蔬食館 (Guanyinshan)**：`173` 道
 - 🍽️ **美食天下 (Meishichina)**：`99` 道
+- 🪷 **香港佛教聯合會 (HKBuddhist)**：`82` 道
 - 🥗 **康寶官方 (Knorr Taiwan)**：`15` 道
 - 🥑 **植境 JustGreen Mall**：`4` 道
 
 ---
 
-## 📚 1. 美食天下 · 素食精華專區菜譜 (99 道)
+## 📚 1. 香港佛教聯合會 · 養生素食食譜 (82 道)
+
+| 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | **一葦渡江** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | (12人分量)、冬菇10隻、雜豆1湯匙... | [一葦渡江](www.hkbuddhist.org/一葦渡江/README.md) |
+| 2 | **亂燉** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 / 家常燉菜 | 捲心菜、小甘筍、馬鈴薯... | [亂燉](www.hkbuddhist.org/亂燉/README.md) |
+| 3 | **五彩冬菇時蔬炒飯** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 白米、糙米、冬菇... | [五彩冬菇時蔬炒飯](www.hkbuddhist.org/五彩冬菇時蔬炒飯/README.md) |
+| 4 | **五彩釀白玉** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 白蘿蔔、泰國蘆筍、紅蘿蔔（細條）半條... | [五彩釀白玉](www.hkbuddhist.org/五彩釀白玉/README.md) |
+| 5 | **伽酡香酥 釀茄子** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面点小吃 | 茄瓜、冬菇粒、鮮腐竹... | [伽酡香酥 釀茄子](www.hkbuddhist.org/伽酡香酥 釀茄子/README.md) |
+| 6 | **佛日增輝** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面食主食 | 原個南瓜、冬菇粒、蘑菇... | [佛日增輝](www.hkbuddhist.org/佛日增輝/README.md) |
+| 7 | **健康輕盈蔬果露** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 香蕉、紅桑子、草莓... | [健康輕盈蔬果露](www.hkbuddhist.org/健康輕盈蔬果露/README.md) |
+| 8 | **南國飄香** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 佛門素齋 / 養生佳餚 | 南瓜一個約一斤重、蘑菇忌廉湯一罐、鮮忌廉一小盒... | [南國飄香](www.hkbuddhist.org/南國飄香/README.md) |
+| 9 | **南瓜批** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面食主食 | 牛油（切粒）、中筋麵粉、冰水... | [南瓜批](www.hkbuddhist.org/南瓜批/README.md) |
+| 10 | **台式黑糖薑茶雙色芋圓** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 芋頭300克、紫心蕃薯300克、木薯粉100克x... | [台式黑糖薑茶雙色芋圓](www.hkbuddhist.org/台式黑糖薑茶雙色芋圓/README.md) |
+| 11 | **咖哩萬丹** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面食主食 | 薯仔2個、豆卜4両、冬菇丸10粒... | [咖哩萬丹](www.hkbuddhist.org/咖哩萬丹/README.md) |
+| 12 | **地久天長** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 腐皮4塊、白靈菇一個、意大利生菜... | [地久天長](www.hkbuddhist.org/地久天長/README.md) |
+| 13 | **太史五菇羹** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 陳皮末1小片、白背木耳絲2片、素火腿絲適量... | [太史五菇羹](www.hkbuddhist.org/太史五菇羹/README.md) |
+| 14 | **奕葉流芳** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 兒菜或小椰菜1斤、珍珠筍10條、猴頭菇3顆... | [奕葉流芳](www.hkbuddhist.org/奕葉流芳/README.md) |
+| 15 | **始覺妙覺** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 西瓜一個、藍莓約30粒、蜜瓜10粒... | [始覺妙覺](www.hkbuddhist.org/始覺妙覺/README.md) |
+| 16 | **寒天豆腐** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 寒天粉、有機黃豆、水... | [寒天豆腐](www.hkbuddhist.org/寒天豆腐/README.md) |
+| 17 | **尋回古早味** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 老莧菜、香椿、沙茶醬... | [尋回古早味](www.hkbuddhist.org/尋回古早味/README.md) |
+| 18 | **廣種福田** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 滑豆腐4磚、老莧菜梗(香葇也可)約3-4條、毛豆少許... | [廣種福田](www.hkbuddhist.org/廣種福田/README.md) |
+| 19 | **彩虹佛陀碗** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 翠玉瓜、茄子、有機三色甜椒... | [彩虹佛陀碗](www.hkbuddhist.org/彩虹佛陀碗/README.md) |
+| 20 | **慧日醍醐** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 养生汤品 | 苜蓿芽、西生菜、蕃茄... | [慧日醍醐](www.hkbuddhist.org/慧日醍醐/README.md) |
+| 21 | **拈花微笑** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 新鮮淮山1小段、西洋甘筍半條、冬菇2-3朵... | [拈花微笑](www.hkbuddhist.org/拈花微笑/README.md) |
+| 22 | **攻鼻辣菜** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 辣菜... | [攻鼻辣菜](www.hkbuddhist.org/攻鼻辣菜/README.md) |
+| 23 | **日式蘋果野菜咖哩飯** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 薯仔（切粒）1個、富士蘋果（切粒）1個、番茄（切粒）1個... | [日式蘋果野菜咖哩飯](www.hkbuddhist.org/日式蘋果野菜咖哩飯/README.md) |
+| 24 | **最上一乘** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 蒸滑豆腐一盒、羊肚菌數塊、薑數片... | [最上一乘](www.hkbuddhist.org/最上一乘/README.md) |
+| 25 | **桂圓雙棗芋蓉** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 佛門素齋 / 養生佳餚 | 芋頭、桂圓、椰棗... | [桂圓雙棗芋蓉](www.hkbuddhist.org/桂圓雙棗芋蓉/README.md) |
+| 26 | **桃膠鮮百合杏仁茶** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 龍皇南杏130克、北杏50克、米15克... | [桃膠鮮百合杏仁茶](www.hkbuddhist.org/桃膠鮮百合杏仁茶/README.md) |
+| 27 | **椰汁腐皮卷** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面点小吃 | 鮮腐皮6張、青、紅、黃椒各1/5個、豆粉少許... | [椰汁腐皮卷](www.hkbuddhist.org/椰汁腐皮卷/README.md) |
+| 28 | **檸檬脯醬冬菇** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 有機乾冬菇、檸檬脯、老薑... | [檸檬脯醬冬菇](www.hkbuddhist.org/檸檬脯醬冬菇/README.md) |
+| 29 | **欖醬拌麵** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 欖角、欖菜、腰果或松子... | [欖醬拌麵](www.hkbuddhist.org/欖醬拌麵/README.md) |
+| 30 | **毛豆忌廉湯** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 养生汤品 | 細馬鈴薯、鮮檸檬葉絲、鮮茴香... | [毛豆忌廉湯](www.hkbuddhist.org/毛豆忌廉湯/README.md) |
+| 31 | **法式焗素田螺伴紫薯薑蓉** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 养生汤品 | 白菌4粒、即食栗子4粒、片裝芝士1至2片（純素者可選擇以素芝士取代片裝芝士）... | [法式焗素田螺伴紫薯薑蓉](www.hkbuddhist.org/法式焗素田螺伴紫薯薑蓉/README.md) |
+| 32 | **泡菜豆腐** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 日本絹豆腐、泡菜、芫茜葉... | [泡菜豆腐](www.hkbuddhist.org/泡菜豆腐/README.md) |
+| 33 | **泰式菠蘿鮮蔬炒飯** | <span style='color:#15803d;'>蛋素 Ovo-Vegetarian</span> | 面食主食 | 新鮮菠蘿（切粒）1/6個、泰國蘆筍（切粒）4條、甘筍（切粒）1/6條... | [泰式菠蘿鮮蔬炒飯](www.hkbuddhist.org/泰式菠蘿鮮蔬炒飯/README.md) |
+| 34 | **炒椰青靈菇片** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 椰青、白靈菇、芫茜碎... | [炒椰青靈菇片](www.hkbuddhist.org/炒椰青靈菇片/README.md) |
+| 35 | **炒青瓜苗** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 紅甜椒、黃甜椒、青瓜苗... | [炒青瓜苗](www.hkbuddhist.org/炒青瓜苗/README.md) |
+| 36 | **炸淮山紫菜** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 淮山、紫菜（不含味壽司紫菜）、鹽... | [炸淮山紫菜](www.hkbuddhist.org/炸淮山紫菜/README.md) |
+| 37 | **炸素雲吞** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面点小吃 | 廣東雲吞皮、沙葛、紅蘿蔔... | [炸素雲吞](www.hkbuddhist.org/炸素雲吞/README.md) |
+| 38 | **照燒素小排** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面点小吃 / 經典小食 | 腐皮、蓮藕、生粉... | [照燒素小排](www.hkbuddhist.org/照燒素小排/README.md) |
+| 39 | **甜釀大棗山藥芝麻湯圓** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 黑芝麻湯圓、淮山、大棗... | [甜釀大棗山藥芝麻湯圓](www.hkbuddhist.org/甜釀大棗山藥芝麻湯圓/README.md) |
+| 40 | **白菜菜乾蔬食老火湯** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 菜乾、白菜、紅蘿蔔... | [白菜菜乾蔬食老火湯](www.hkbuddhist.org/白菜菜乾蔬食老火湯/README.md) |
+| 41 | **知足見花開** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 椰菜花、鮮茴香、芫茜... | [知足見花開](www.hkbuddhist.org/知足見花開/README.md) |
+| 42 | **福慧綿長** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 麵筋（適量，依步驟所需）、鹹酸菜（適量，依步驟所需）、毛豆（適量，依步驟所需）... | [福慧綿長](www.hkbuddhist.org/福慧綿長/README.md) |
+| 43 | **紅菜頭鮮果忌廉意大利飯** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面食主食 | 夏威夷果仁、腰果、杏仁... | [紅菜頭鮮果忌廉意大利飯](www.hkbuddhist.org/紅菜頭鮮果忌廉意大利飯/README.md) |
+| 44 | **純素佛跳牆** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 乾花菇、海鮮菇、日本大根... | [純素佛跳牆](www.hkbuddhist.org/純素佛跳牆/README.md) |
+| 45 | **純素潮州粉果** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面点小吃 | 澄粉、生粉、香菇... | [純素潮州粉果](www.hkbuddhist.org/純素潮州粉果/README.md) |
+| 46 | **純素麻油雜蔬麵線** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 麵線、香菇、黑木耳... | [純素麻油雜蔬麵線](www.hkbuddhist.org/純素麻油雜蔬麵線/README.md) |
+| 47 | **素食泡菜** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 韓國或日本大白菜、甘筍（切絲）、天山雪蓮或白蘿蔔（切絲）... | [素食泡菜](www.hkbuddhist.org/素食泡菜/README.md) |
+| 48 | **紫薯椰汁玫瑰** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 木薯粉、粘米粉、紫薯粉... | [紫薯椰汁玫瑰](www.hkbuddhist.org/紫薯椰汁玫瑰/README.md) |
+| 49 | **艾草青糰** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 鮮艾草、糯米粉、澄粉... | [艾草青糰](www.hkbuddhist.org/艾草青糰/README.md) |
+| 50 | **茄醬藜麥鷹咀豆** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 鷹咀豆、番茄、甘筍... | [茄醬藜麥鷹咀豆](www.hkbuddhist.org/茄醬藜麥鷹咀豆/README.md) |
+| 51 | **菩提道糧** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 糯米、花菇、鮮腐竹... | [菩提道糧](www.hkbuddhist.org/菩提道糧/README.md) |
+| 52 | **蔬果素瘦肉冬蔭湯** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 素瘦肉10塊、草菇（切厚片）8粒、菠蘿（切粒）1/4個... | [蔬果素瘦肉冬蔭湯](www.hkbuddhist.org/蔬果素瘦肉冬蔭湯/README.md) |
+| 53 | **藜麥小米南瓜糕** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面食主食 | 藜麥、小米、南瓜... | [藜麥小米南瓜糕](www.hkbuddhist.org/藜麥小米南瓜糕/README.md) |
+| 54 | **藜麥芝士飯** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 米食主食 | 藜麥1杯、菲達芝士（Feta）粗粒2件、西洋菜約200g... | [藜麥芝士飯](www.hkbuddhist.org/藜麥芝士飯/README.md) |
+| 55 | **藜麥釀絲瓜** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 藜麥、絲瓜、芝麻香椿醬... | [藜麥釀絲瓜](www.hkbuddhist.org/藜麥釀絲瓜/README.md) |
+| 56 | **蜜餞蘿蔔** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 蘿蔔... | [蜜餞蘿蔔](www.hkbuddhist.org/蜜餞蘿蔔/README.md) |
+| 57 | **醍醐酥酪** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面点小吃 | 鮮奶豆腐、牛油果、彩椒... | [醍醐酥酪](www.hkbuddhist.org/醍醐酥酪/README.md) |
+| 58 | **金湯綵球獻歲** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 板豆腐、鮮香菇、紅蘿蔔... | [金湯綵球獻歲](www.hkbuddhist.org/金湯綵球獻歲/README.md) |
+| 59 | **錦繡全珍** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 羊肚菌、小棠菜、杞子... | [錦繡全珍](www.hkbuddhist.org/錦繡全珍/README.md) |
+| 60 | **長青菩提** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 青長辣椒12條、硬豆腐2磚、冬菇約8朵... | [長青菩提](www.hkbuddhist.org/長青菩提/README.md) |
+| 61 | **長養善根** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 腸根（即水筋，豆製品店可買）、滷水料：花椒、八角... | [長養善根](www.hkbuddhist.org/長養善根/README.md) |
+| 62 | **閩南炸棗** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 糯米粉、澄粉、紅皮番薯... | [閩南炸棗](www.hkbuddhist.org/閩南炸棗/README.md) |
+| 63 | **閩南風味 時蔬炒米粉** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 椰菜、芹菜、紅蘿蔔... | [閩南風味 時蔬炒米粉](www.hkbuddhist.org/閩南風味 時蔬炒米粉/README.md) |
+| 64 | **隨心歡喜** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 新鮮淮山、新鮮蘑菇、雲耳（貓耳）... | [隨心歡喜](www.hkbuddhist.org/隨心歡喜/README.md) |
+| 65 | **雅枝竹水** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 雅枝竹、去核紅棗、水... | [雅枝竹水](www.hkbuddhist.org/雅枝竹水/README.md) |
+| 66 | **雜菌羹** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 海珊瑚、冬菇、木耳... | [雜菌羹](www.hkbuddhist.org/雜菌羹/README.md) |
+| 67 | **雜錦堅果核桃露** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 鷹嘴豆、核桃、花生... | [雜錦堅果核桃露](www.hkbuddhist.org/雜錦堅果核桃露/README.md) |
+| 68 | **雪耳栗子姬松茸南瓜湯** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 姬松茸、雪耳、老南瓜... | [雪耳栗子姬松茸南瓜湯](www.hkbuddhist.org/雪耳栗子姬松茸南瓜湯/README.md) |
+| 69 | **雲水禪風** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 养生汤品 | 鮮淮山一枚、勝瓜一條、少量杞子... | [雲水禪風](www.hkbuddhist.org/雲水禪風/README.md) |
+| 70 | **香椿豆乾大啡菇炒刀削麵** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 三色椒（切絲）適量、豆乾（切斜片）2塊、大啡菇（切片）1隻... | [香椿豆乾大啡菇炒刀削麵](www.hkbuddhist.org/香椿豆乾大啡菇炒刀削麵/README.md) |
+| 71 | **香煎淮山餅** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面点小吃 | 日本鮮淮山300g、芹菜2棵、芫茜1棵... | [香煎淮山餅](www.hkbuddhist.org/香煎淮山餅/README.md) |
+| 72 | **香煎芋頭糕** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 乾花菇、炸枝竹、芋頭... | [香煎芋頭糕](www.hkbuddhist.org/香煎芋頭糕/README.md) |
+| 73 | **香草雜菌松子仁意粉** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 法邊豆、翠玉瓜、大蘑菇... | [香草雜菌松子仁意粉](www.hkbuddhist.org/香草雜菌松子仁意粉/README.md) |
+| 74 | **香酥鷹嘴豆素扒包** | <span style='color:#15803d;'>奶素 Lacto-Vegetarian</span> | 面点小吃 | 鷹嘴豆、三色雜菜粒（紅蘿蔔粒、青豆、玉米）、硬豆腐... | [香酥鷹嘴豆素扒包](www.hkbuddhist.org/香酥鷹嘴豆素扒包/README.md) |
+| 75 | **鮮淮山荷蘭豆松子仁** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 鮮淮山、荷蘭豆、紅甜椒... | [鮮淮山荷蘭豆松子仁](www.hkbuddhist.org/鮮淮山荷蘭豆松子仁/README.md) |
+| 76 | **鮮腐茸釀甜椒** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 鮮腐皮4塊、細紅、黃燈籠椒2個... | [鮮腐茸釀甜椒](www.hkbuddhist.org/鮮腐茸釀甜椒/README.md) |
+| 77 | **鮮茄甜豆天使麵** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 鮮番茄、甜豆、素火腿... | [鮮茄甜豆天使麵](www.hkbuddhist.org/鮮茄甜豆天使麵/README.md) |
+| 78 | **鮮雜菜天婦羅** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面点小吃 | 鮮冬菇、南瓜、四季豆... | [鮮雜菜天婦羅](www.hkbuddhist.org/鮮雜菜天婦羅/README.md) |
+| 79 | **麻婆豆腐** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 佛門素齋 / 養生佳餚 | 豆腐、冬菇茸、芫茜茸... | [麻婆豆腐](www.hkbuddhist.org/麻婆豆腐/README.md) |
+| 80 | **麻油薑眉豆飯** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 泰國香米、眉豆、薑... | [麻油薑眉豆飯](www.hkbuddhist.org/麻油薑眉豆飯/README.md) |
+| 81 | **黃耳薑醋** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 养生汤品 | 乾黃耳、乾辣椒、老薑... | [黃耳薑醋](www.hkbuddhist.org/黃耳薑醋/README.md) |
+| 82 | **黃薑椰香印度素飯** | <span style='color:#15803d;'>全素 Vegan (佛教純素)</span> | 面食主食 | 意大利黃瓜1條（切數片)、翠玉瓜1條（適量）、鮮冬菇... | [黃薑椰香印度素飯](www.hkbuddhist.org/黃薑椰香印度素飯/README.md) |
+
+---
+
+## 📚 2. 美食天下 · 素食精華專區菜譜 (99 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -118,7 +208,7 @@
 
 ---
 
-## 📚 2. 下廚房 · 素食主義專區熱門菜譜 (194 道)
+## 📚 3. 下廚房 · 素食主義專區熱門菜譜 (194 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -319,7 +409,7 @@
 
 ---
 
-## 📚 3. 豆果美食 · 素食專區家常菜譜 (179 道)
+## 📚 4. 豆果美食 · 素食專區家常菜譜 (179 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -505,7 +595,7 @@
 
 ---
 
-## 📚 4. 觀音山 · 素食料理簡單做 (173 道)
+## 📚 5. 觀音山 · 素食料理簡單做 (173 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -685,7 +775,7 @@
 
 ---
 
-## 📚 5. 康寶 (Knorr) 台灣官方素食料理 (15 道)
+## 📚 6. 康寶 (Knorr) 台灣官方素食料理 (15 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 耗時 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -707,7 +797,7 @@
 
 ---
 
-## 📚 6. 植境 JustGreen Mall 官方博客食譜 (4 道)
+## 📚 7. 植境 JustGreen Mall 官方博客食譜 (4 道)
 
 | 序號 | 食譜名稱 | 飲食流派 | 分類 | 耗時 | 食譜詳情 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -723,7 +813,8 @@
 ```text
 recipe/
 ├── README.md               # 全局搜尋引擎檢索索引文件
-├── recipes_data.json       # 前端 SPA 搜尋框即時檢索結構化數據 (664 道)
+├── recipes_data.json       # 前端 SPA 搜尋框即時檢索結構化數據 (746 道)
+├── www.hkbuddhist.org/     # 香港佛教聯合會養生素食庫 (82 道)
 ├── home.meishichina.com/   # 美食天下精華素食食譜庫 (99 道)
 ├── www.xiachufang.com/     # 下廚房熱門素食食譜庫 (194 道)
 ├── www.douguo.com/         # 豆果美食素食食譜庫 (179 道)

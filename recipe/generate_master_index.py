@@ -12,6 +12,7 @@ jgm_recipes = [r for r in recipes if "justgreenmall" in r.get("local_dir", "") o
 dg_recipes = [r for r in recipes if "douguo" in r.get("local_dir", "") or "dg" in r.get("id", "")]
 xcf_recipes = [r for r in recipes if "xiachufang" in r.get("local_dir", "") or "xcf" in r.get("id", "")]
 msc_recipes = [r for r in recipes if "meishichina" in r.get("local_dir", "") or "msc" in r.get("id", "")]
+hkb_recipes = [r for r in recipes if "hkbuddhist" in r.get("local_dir", "") or "hkb" in r.get("id", "")]
 
 lines = [
     "# 🌱 全球蔬食與素食精選食譜庫檢索索引 (Vegetarian & Vegan Recipe Master Index)",
@@ -23,16 +24,32 @@ lines = [
     f"- 🍲 **豆果美食 (Douguo)**：`{len(dg_recipes)}` 道",
     f"- 🌿 **觀音山蔬食館 (Guanyinshan)**：`{len(gys_recipes)}` 道",
     f"- 🍽️ **美食天下 (Meishichina)**：`{len(msc_recipes)}` 道",
+    f"- 🪷 **香港佛教聯合會 (HKBuddhist)**：`{len(hkb_recipes)}` 道",
     f"- 🥗 **康寶官方 (Knorr Taiwan)**：`{len(knorr_recipes)}` 道",
     f"- 🥑 **植境 JustGreen Mall**：`{len(jgm_recipes)}` 道",
     "",
     "---",
     "",
-    f"## 📚 1. 美食天下 · 素食精華專區菜譜 ({len(msc_recipes)} 道)",
+    f"## 📚 1. 香港佛教聯合會 · 養生素食食譜 ({len(hkb_recipes)} 道)",
     "",
     "| 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |",
     "| :--- | :--- | :--- | :--- | :--- | :--- |"
 ]
+
+for idx, r in enumerate(hkb_recipes, 1):
+    ing_summary = "、".join([i.split(" ")[0] for i in r["ingredients"][:3]])
+    link_md = f"[{r['name']}]({r['local_dir']}/README.md)"
+    lines.append(f"| {idx} | **{r['name']}** | <span style='color:#15803d;'>{r['diet']}</span> | {r['category']} | {ing_summary}... | {link_md} |")
+
+lines.extend([
+    "",
+    "---",
+    "",
+    f"## 📚 2. 美食天下 · 素食精華專區菜譜 ({len(msc_recipes)} 道)",
+    "",
+    "| 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |",
+    "| :--- | :--- | :--- | :--- | :--- | :--- |"
+])
 
 for idx, r in enumerate(msc_recipes, 1):
     ing_summary = "、".join([i.split(" ")[0] for i in r["ingredients"][:3]])
@@ -43,7 +60,7 @@ lines.extend([
     "",
     "---",
     "",
-    f"## 📚 2. 下廚房 · 素食主義專區熱門菜譜 ({len(xcf_recipes)} 道)",
+    f"## 📚 3. 下廚房 · 素食主義專區熱門菜譜 ({len(xcf_recipes)} 道)",
     "",
     "| 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |",
     "| :--- | :--- | :--- | :--- | :--- | :--- |"
@@ -58,7 +75,7 @@ lines.extend([
     "",
     "---",
     "",
-    f"## 📚 3. 豆果美食 · 素食專區家常菜譜 ({len(dg_recipes)} 道)",
+    f"## 📚 4. 豆果美食 · 素食專區家常菜譜 ({len(dg_recipes)} 道)",
     "",
     "| 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |",
     "| :--- | :--- | :--- | :--- | :--- | :--- |"
@@ -73,7 +90,7 @@ lines.extend([
     "",
     "---",
     "",
-    f"## 📚 4. 觀音山 · 素食料理簡單做 ({len(gys_recipes)} 道)",
+    f"## 📚 5. 觀音山 · 素食料理簡單做 ({len(gys_recipes)} 道)",
     "",
     "| 序號 | 食譜名稱 | 飲食流派 | 分類 | 食材精選摘要 | 食譜詳情 |",
     "| :--- | :--- | :--- | :--- | :--- | :--- |"
@@ -88,7 +105,7 @@ lines.extend([
     "",
     "---",
     "",
-    f"## 📚 5. 康寶 (Knorr) 台灣官方素食料理 ({len(knorr_recipes)} 道)",
+    f"## 📚 6. 康寶 (Knorr) 台灣官方素食料理 ({len(knorr_recipes)} 道)",
     "",
     "| 序號 | 食譜名稱 | 飲食流派 | 分類 | 耗時 | 食譜詳情 |",
     "| :--- | :--- | :--- | :--- | :--- | :--- |"
@@ -103,7 +120,7 @@ lines.extend([
     "",
     "---",
     "",
-    f"## 📚 6. 植境 JustGreen Mall 官方博客食譜 ({len(jgm_recipes)} 道)",
+    f"## 📚 7. 植境 JustGreen Mall 官方博客食譜 ({len(jgm_recipes)} 道)",
     "",
     "| 序號 | 食譜名稱 | 飲食流派 | 分類 | 耗時 | 食譜詳情 |",
     "| :--- | :--- | :--- | :--- | :--- | :--- |"
@@ -123,6 +140,7 @@ lines.extend([
     "recipe/",
     "├── README.md               # 全局搜尋引擎檢索索引文件",
     f"├── recipes_data.json       # 前端 SPA 搜尋框即時檢索結構化數據 ({len(recipes)} 道)",
+    f"├── www.hkbuddhist.org/     # 香港佛教聯合會養生素食庫 ({len(hkb_recipes)} 道)",
     f"├── home.meishichina.com/   # 美食天下精華素食食譜庫 ({len(msc_recipes)} 道)",
     f"├── www.xiachufang.com/     # 下廚房熱門素食食譜庫 ({len(xcf_recipes)} 道)",
     f"├── www.douguo.com/         # 豆果美食素食食譜庫 ({len(dg_recipes)} 道)",
@@ -138,4 +156,4 @@ lines.extend([
 with open(os.path.join(RECIPE_ROOT, "README.md"), "w", encoding="utf-8") as f:
     f.write("\n".join(lines))
 
-print(f"Master README.md regenerated successfully with {len(recipes)} recipes across 6 platforms!")
+print(f"Master README.md regenerated successfully with {len(recipes)} recipes across 7 platforms!")
