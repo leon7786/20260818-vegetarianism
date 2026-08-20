@@ -847,34 +847,61 @@
 
   <script>
     const PLATFORMS_DATA = [
-      // === 中国区 / 中华美食 (16个) ===
+      // === 中国区 / 中华美食 (16个，已按指定顺序重排) ===
       {
-        id: "xiachufang",
-        name: "下厨房 (Xiachufang)",
+        id: "knorr-tw",
+        name: "Knorr 康宝素食食谱",
         region: "china",
         category: "china",
         categoryName: "中华美食",
-        icon: "🍳",
-        desc: "国内素食菜谱最集中、质量最高的平台，设有素食专区与热门分类，评分和“做过人数”真实反馈机制成熟，UGC 内容极度丰富。",
-        tags: ["中式家常", "UGC社区", "热门菜谱", "做过反馈"],
-        mainUrl: "https://www.xiachufang.com/special/vegetarian/pop/",
+        icon: "🌿",
+        desc: "联合利华旗下康宝精选素食菜谱，专注调味搭配、便捷烹饪与鲜味提升技巧，适合厨房新手快速调配可口风味。",
+        tags: ["中式家常", "品牌精选", "调味搭配", "快捷料理"],
+        mainUrl: "https://www.knorr.com/tw/recipe-ideas/%E6%96%99%E7%90%86%E7%A8%AE%E9%A1%9E/%E7%B4%A0%E9%A3%9F%E9%A3%9F%E8%AD%9C.html",
         extraUrls: [
-          { label: "素食精选专题", url: "https://www.xiachufang.com/special/vegetarian/pop/" },
-          { label: "素菜全分类", url: "https://m.xiachufang.com/category/51885/" }
+          { label: "素食料理专区", url: "https://www.knorr.com/tw/recipe-ideas/%E6%96%99%E7%90%86%E7%A8%AE%E9%A1%9E/%E7%B4%A0%E9%A3%9F%E9%A3%9F%E8%AD%9C.html" }
         ]
       },
       {
-        id: "douguo",
-        name: "豆果美食 (Douguo)",
+        id: "guanyinshan",
+        name: "觀音山 · 素食料理簡單做",
         region: "china",
         category: "china",
         categoryName: "中华美食",
-        icon: "🥑",
-        desc: "大型综合菜谱社区，素食、轻食、健康菜谱分类完善，搜索“素食”“纯素”能找到海量实用家庭日常做法与营养早餐灵感。",
-        tags: ["中式家常", "轻食健康", "家常素食", "早餐食谱"],
-        mainUrl: "https://www.douguo.com/caipu/%E7%B4%A0%E9%A3%9F",
+        icon: "📿",
+        desc: "倡导慈悲护生、推广植物性饮食，包含大量图文与影音示范，专治“不会做菜”的实用家常素食做法。",
+        tags: ["无五辛纯素", "视频教学", "慈悲素食", "简单易做"],
+        mainUrl: "https://vegan.gys.org.tw/",
         extraUrls: [
-          { label: "素食频道直达", url: "https://www.douguo.com/caipu/%E7%B4%A0%E9%A3%9F" }
+          { label: "观音山蔬食官网", url: "https://vegan.gys.org.tw/" }
+        ]
+      },
+      {
+        id: "justgreen",
+        name: "Just Green Mall 绿色生活",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🌱",
+        desc: "倡导绿色有机与环境可持续，提供以天然蔬果和全植物食材为主的轻食与西式素食配方。",
+        tags: ["全食物", "绿色有机", "健康轻食", "可持续"],
+        mainUrl: "https://www.justgreenmall.com/pages/recipe-world",
+        extraUrls: [
+          { label: "食谱世界", url: "https://www.justgreenmall.com/pages/recipe-world" }
+        ]
+      },
+      {
+        id: "cookpad-tw",
+        name: "Cookpad 台湾",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🍱",
+        desc: "全球最大食谱社区 Cookpad 的台湾站，设有活跃的素食与蔬食专栏，家庭厨师日常分享率高，步骤平实亲切。",
+        tags: ["中式家常", "全球社区台湾站", "日常蔬食", "家庭料理"],
+        mainUrl: "https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E7%B4%A0%E9%A3%9F",
+        extraUrls: [
+          { label: "素食搜索页", url: "https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E7%B4%A0%E9%A3%9F" }
         ]
       },
       {
@@ -893,17 +920,32 @@
         ]
       },
       {
-        id: "cookpad-tw",
-        name: "Cookpad 台湾",
+        id: "douguo",
+        name: "豆果美食 (Douguo)",
         region: "china",
         category: "china",
         categoryName: "中华美食",
-        icon: "🍱",
-        desc: "全球最大食谱社区 Cookpad 的台湾站，设有活跃的素食与蔬食专栏，家庭厨师日常分享率高，步骤平实亲切。",
-        tags: ["中式家常", "全球社区台湾站", "日常蔬食", "家庭料理"],
-        mainUrl: "https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E7%B4%A0%E9%A3%9F",
+        icon: "🥑",
+        desc: "大型综合菜谱社区，素食、轻食、健康菜谱分类完善，搜索“素食”“纯素”能找到海量实用家庭日常做法与营养早餐灵感。",
+        tags: ["中式家常", "轻食健康", "家常素食", "早餐食谱"],
+        mainUrl: "https://www.douguo.com/caipu/%E7%B4%A0%E9%A3%9F",
         extraUrls: [
-          { label: "素食搜索页", url: "https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E7%B4%A0%E9%A3%9F" }
+          { label: "素食频道直达", url: "https://www.douguo.com/caipu/%E7%B4%A0%E9%A3%9F" }
+        ]
+      },
+      {
+        id: "xiachufang",
+        name: "下厨房 (Xiachufang)",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🍳",
+        desc: "国内素食菜谱最集中、质量最高的平台，设有素食专区与热门分类，评分和“做过人数”真实反馈机制成熟，UGC 内容极度丰富。",
+        tags: ["中式家常", "UGC社区", "热门菜谱", "做过反馈"],
+        mainUrl: "https://www.xiachufang.com/special/vegetarian/pop/",
+        extraUrls: [
+          { label: "素食精选专题", url: "https://www.xiachufang.com/special/vegetarian/pop/" },
+          { label: "素菜全分类", url: "https://m.xiachufang.com/category/51885/" }
         ]
       },
       {
@@ -918,6 +960,20 @@
         mainUrl: "https://home.meishichina.com/recipe/sushi/elite/",
         extraUrls: [
           { label: "素食精华菜谱", url: "https://home.meishichina.com/recipe/sushi/elite/" }
+        ]
+      },
+      {
+        id: "hkbuddhist",
+        name: "香港佛教联合会 · 养生素食",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🪷",
+        desc: "提供传统健康禅意素食食谱及养生指导，注重清淡本味、身心调和与天然时令食材运用。",
+        tags: ["无五辛纯素", "禅意素食", "身心养生", "天然本味"],
+        mainUrl: "https://www.hkbuddhist.org/zh/top_page.php?p=medical_menu&cid=7&type_id=2&id=29",
+        extraUrls: [
+          { label: "佛联会素食食谱", url: "https://www.hkbuddhist.org/zh/top_page.php?p=medical_menu&cid=7&type_id=2&id=29" }
         ]
       },
       {
@@ -950,34 +1006,6 @@
         ]
       },
       {
-        id: "hk01-vege",
-        name: "香港01｜20道健康素菜专题",
-        region: "china",
-        category: "china",
-        categoryName: "中华美食",
-        icon: "🥬",
-        desc: "香港01教煮精选专题，主打简单易做、提升免疫力、健康低卡少油的居家素菜，步骤清晰快速上手。",
-        tags: ["中式家常", "媒体精选", "免疫提升", "健康快手"],
-        mainUrl: "https://www.hk01.com/%E6%95%99%E7%85%AE/504254/%E7%B4%A0%E9%A3%9F%E8%AD%9C%E5%A4%A7%E5%85%A8-%E5%B1%85%E5%AE%B6%E6%8A%97%E7%96%AB%E5%BF%85%E5%AD%B820%E9%81%93%E5%81%A5%E5%BA%B7%E7%B4%A0%E8%8F%9C-%E7%B0%A1%E5%96%AE%E6%98%93%E5%AD%B8%E6%8F%90%E5%8D%87%E5%85%8D%E7%96%AB%E5%8A%9B",
-        extraUrls: [
-          { label: "查看专题文章", url: "https://www.hk01.com/%E6%95%99%E7%85%AE/504254/%E7%B4%A0%E9%A3%9F%E8%AD%9C%E5%A4%A7%E5%85%A8-%E5%B1%85%E5%AE%B6%E6%8A%97%E7%96%AB%E5%BF%85%E5%AD%B820%E9%81%93%E5%81%A5%E5%BA%B7%E7%B4%A0%E8%8F%9C-%E7%B0%A1%E5%96%AE%E6%98%93%E5%AD%B8%E6%8F%90%E5%8D%87%E5%85%8D%E7%96%AB%E5%8A%9B" }
-        ]
-      },
-      {
-        id: "hkbuddhist",
-        name: "香港佛教联合会 · 养生素食",
-        region: "china",
-        category: "china",
-        categoryName: "中华美食",
-        icon: "🪷",
-        desc: "提供传统健康禅意素食食谱及养生指导，注重清淡本味、身心调和与天然时令食材运用。",
-        tags: ["无五辛纯素", "禅意素食", "身心养生", "天然本味"],
-        mainUrl: "https://www.hkbuddhist.org/zh/top_page.php?p=medical_menu&cid=7&type_id=2&id=29",
-        extraUrls: [
-          { label: "佛联会素食食谱", url: "https://www.hkbuddhist.org/zh/top_page.php?p=medical_menu&cid=7&type_id=2&id=29" }
-        ]
-      },
-      {
         id: "vegeangel",
         name: "VegeAngel 蔬食天使",
         region: "china",
@@ -989,34 +1017,6 @@
         mainUrl: "https://www.vegeangel.com/category/%e7%b4%a0%e9%a3%9f%e9%a3%9f%e8%b0%b1/?lang=zh-hans",
         extraUrls: [
           { label: "素食食谱目录", url: "https://www.vegeangel.com/category/%e7%b4%a0%e9%a3%9f%e9%a3%9f%e8%b0%b1/?lang=zh-hans" }
-        ]
-      },
-      {
-        id: "knorr-tw",
-        name: "Knorr 康宝素食食谱",
-        region: "china",
-        category: "china",
-        categoryName: "中华美食",
-        icon: "🌿",
-        desc: "联合利华旗下康宝精选素食菜谱，专注调味搭配、便捷烹饪与鲜味提升技巧，适合厨房新手快速调配可口风味。",
-        tags: ["中式家常", "品牌精选", "调味搭配", "快捷料理"],
-        mainUrl: "https://www.knorr.com/tw/recipe-ideas/%E6%96%99%E7%90%86%E7%A8%AE%E9%A1%9E/%E7%B4%A0%E9%A3%9F%E9%A3%9F%E8%AD%9C.html",
-        extraUrls: [
-          { label: "素食料理专区", url: "https://www.knorr.com/tw/recipe-ideas/%E6%96%99%E7%90%86%E7%A8%AE%E9%A1%9E/%E7%B4%A0%E9%A3%9F%E9%A3%9F%E8%AD%9C.html" }
-        ]
-      },
-      {
-        id: "guanyinshan",
-        name: "觀音山 · 素食料理簡單做",
-        region: "china",
-        category: "china",
-        categoryName: "中华美食",
-        icon: "📿",
-        desc: "倡导慈悲护生、推广植物性饮食，包含大量图文与影音示范，专治“不会做菜”的实用家常素食做法。",
-        tags: ["无五辛纯素", "视频教学", "慈悲素食", "简单易做"],
-        mainUrl: "https://vegan.gys.org.tw/",
-        extraUrls: [
-          { label: "观音山蔬食官网", url: "https://vegan.gys.org.tw/" }
         ]
       },
       {
@@ -1032,20 +1032,6 @@
         extraUrls: [
           { label: "素食做法大全", url: "https://m.meishij.net/fenlei/sushi/" },
           { label: "美食杰主站", url: "https://www.meishi.cc/" }
-        ]
-      },
-      {
-        id: "justgreen",
-        name: "Just Green Mall 绿色生活",
-        region: "china",
-        category: "china",
-        categoryName: "中华美食",
-        icon: "🌱",
-        desc: "倡导绿色有机与环境可持续，提供以天然蔬果和全植物食材为主的轻食与西式素食配方。",
-        tags: ["全食物", "绿色有机", "健康轻食", "可持续"],
-        mainUrl: "https://www.justgreenmall.com/pages/recipe-world",
-        extraUrls: [
-          { label: "食谱世界", url: "https://www.justgreenmall.com/pages/recipe-world" }
         ]
       },
       {
@@ -1074,6 +1060,20 @@
         mainUrl: "http://sulian.sushi001.com/category/zhuanyeb",
         extraUrls: [
           { label: "专业专栏", url: "http://sulian.sushi001.com/category/zhuanyeb" }
+        ]
+      },
+      {
+        id: "hk01-vege",
+        name: "香港01｜20道健康素菜专题",
+        region: "china",
+        category: "china",
+        categoryName: "中华美食",
+        icon: "🥬",
+        desc: "香港01教煮精选专题，主打简单易做、提升免疫力、健康低卡少油的居家素菜，步骤清晰快速上手。",
+        tags: ["中式家常", "媒体精选", "免疫提升", "健康快手"],
+        mainUrl: "https://www.hk01.com/%E6%95%99%E7%85%AE/504254/%E7%B4%A0%E9%A3%9F%E8%AD%9C%E5%A4%A7%E5%85%A8-%E5%B1%85%E5%AE%B6%E6%8A%97%E7%96%AB%E5%BF%85%E5%AD%B820%E9%81%93%E5%81%A5%E5%BA%B7%E7%B4%A0%E8%8F%9C-%E7%B0%A1%E5%96%AE%E6%98%93%E5%AD%B8%E6%8F%90%E5%8D%87%E5%85%8D%E7%96%AB%E5%8A%9B",
+        extraUrls: [
+          { label: "查看专题文章", url: "https://www.hk01.com/%E6%95%99%E7%85%AE/504254/%E7%B4%A0%E9%A3%9F%E8%AD%9C%E5%A4%A7%E5%85%A8-%E5%B1%85%E5%AE%B6%E6%8A%97%E7%96%AB%E5%BF%85%E5%AD%B820%E9%81%93%E5%81%A5%E5%BA%B7%E7%B4%A0%E8%8F%9C-%E7%B0%A1%E5%96%AE%E6%98%93%E5%AD%B8%E6%8F%90%E5%8D%87%E5%85%8D%E7%96%AB%E5%8A%9B" }
         ]
       },
 
