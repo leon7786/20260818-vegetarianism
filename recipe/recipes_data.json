@@ -10113,6 +10113,34 @@
     "local_dir": "www.xiachufang.com/100%全麦面包-pt1000面包机"
   },
   {
+    "id": "xcf_《深夜食堂》土豆沙拉",
+    "name": "《深夜食堂》土豆沙拉",
+    "name_hans": "《深夜食堂》土豆沙拉",
+    "name_en": "《深夜食堂》土豆沙拉",
+    "keywords_en": "《深夜食堂》土豆沙拉 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "爽口凉菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "土豆",
+      "黄瓜",
+      "西红柿",
+      "素食者可不加，替换成胡萝卜片之类的蔬菜即可香肠"
+    ],
+    "steps": [
+      "土豆用沸水过后，剥去外皮，碾碎",
+      "趁热放入洋葱，再加入黄瓜片、西红柿丁和香肠丁",
+      "要土豆冷却后，加入沙拉酱"
+    ],
+    "desc": "所有《深夜食堂》系列的菜谱，材料、过程等都尊重原作的做法写出。 （图片也来自剧中截图~）    我是素食者，自己制作时遇到非素食的菜谱会根据素食的材料和做法改动。  不是想要复刻的多么完美，只是想给自己一个坚持做一件事的动力。  一直很佩服有毅力去坚持做一件事的人，比如小白的每天一道菜，克叔的365道不重样早餐。    2011的最后几天，开始实战深夜食堂。  吃货的毅力养成，从做吃开始。",
+    "source_url": "https://www.xiachufang.com/recipe/1012275/",
+    "image": "recipe/www.xiachufang.com/《深夜食堂》土豆沙拉/cover.jpg",
+    "local_dir": "www.xiachufang.com/《深夜食堂》土豆沙拉"
+  },
+  {
     "id": "xcf_《深夜食堂》鸡蛋三明治",
     "name": "《深夜食堂》鸡蛋三明治",
     "name_hans": "《深夜食堂》鸡蛋三明治",
@@ -10265,6 +10293,37 @@
     "source_url": "https://www.xiachufang.com/recipe/102760951/",
     "image": "recipe/www.xiachufang.com/一抿即化酥到掉渣的珍妮曲奇云顶小花 烘焙视频饼干篇1/cover.jpg",
     "local_dir": "www.xiachufang.com/一抿即化酥到掉渣的珍妮曲奇云顶小花 烘焙视频饼干篇1"
+  },
+  {
+    "id": "xcf_三杯土豆",
+    "name": "三杯土豆",
+    "name_hans": "三杯土豆",
+    "name_en": "三杯土豆",
+    "keywords_en": "三杯土豆 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "两三个土豆",
+      "2大匙生抽",
+      "2个红辣椒",
+      "一块生姜",
+      "一大把九层塔",
+      "2大匙麻油（香油）",
+      "1小匙糖"
+    ],
+    "steps": [
+      "备料，姜一大块切片，红辣椒（干鲜皆可）切段。",
+      "土豆去皮切成滚刀块，然后炸至表面金黄（自从有了空气炸锅，就不用我大热天在油锅前站着了哈哈哈，而且可以只用一点点油就有很好的效果）",
+      "锅烧热，下2大匙香油，下姜片小火慢煸至姜微微发焦发干（煸姜很重要），接着下辣椒翻一下，接着下炸好的土豆，关小火加糖、生抽小火翻炒让糖融化（火大了糖很快会焦掉），调料都附在土豆上，关火。再利用余温下入九层塔拌匀即可"
+    ],
+    "desc": "三杯里的姜要多放！不能像平时炒菜就放两片哈，怎么也放个十片  九层塔多放也好，用余温烫软的九层塔，裹着调料好香  最后说下香油是否高温加热的问题  香油分为小磨香油和机榨香油  如果你用的小磨香油，建议最后加，之前爆锅用其他油  如果用的是机榨的就无所谓了，反正在加工过程已经高温过了。。。    ps:九层塔是罗勒的一种，属亚洲罗勒，与西餐常用的甜罗勒味道不太一样哦，如没有也可用其他罗勒替代",
+    "source_url": "https://www.xiachufang.com/recipe/1048692/",
+    "image": "recipe/www.xiachufang.com/三杯土豆/cover.jpg",
+    "local_dir": "www.xiachufang.com/三杯土豆"
   },
   {
     "id": "xcf_不消泡的巧克力戚风胚 「戚风及其衍生」烘焙视频蛋糕篇2",
@@ -10420,6 +10479,39 @@
     "local_dir": "www.xiachufang.com/什锦素饺子"
   },
   {
+    "id": "xcf_传统桃酥",
+    "name": "传统桃酥",
+    "name_hans": "传统桃酥",
+    "name_en": "传统桃酥",
+    "keywords_en": "传统桃酥 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "30g熟核桃仁",
+      "100g普通面粉",
+      "30g白糖",
+      "1/4小匙泡打粉",
+      "1/8小匙苏打粉",
+      "40g玉米油",
+      "15毫升水"
+    ],
+    "steps": [
+      "先将熟核桃仁捣碎待用",
+      "想粉质的面粉、糖、泡打粉和苏打粉过筛到容器中，加上核桃仁拌匀",
+      "加入油和水先拌成粗粒状，然后揉成团，分成四等分",
+      "每份团成球，再用手压成1cm厚的饼，中间镶嵌上一块核桃仁",
+      "平铺在烤盘上，入预热好的烤箱170度 中层烤25分钟--30分钟表面上色即可"
+    ],
+    "desc": "热乎的时候可能不酥，晾凉冷却后会就特别酥~  烘焙用油以无异味为佳，也可用葵花籽油",
+    "source_url": "https://www.xiachufang.com/recipe/1011693/",
+    "image": "recipe/www.xiachufang.com/传统桃酥/cover.jpg",
+    "local_dir": "www.xiachufang.com/传统桃酥"
+  },
+  {
     "id": "xcf_做碗糖水铺一样香滑的芝麻糊，其实不难",
     "name": "做碗糖水铺一样香滑的芝麻糊，其实不难",
     "name_hans": "做碗糖水铺一样香滑的芝麻糊，其实不难",
@@ -10462,6 +10554,42 @@
     "source_url": "https://www.xiachufang.com/recipe/102806170/",
     "image": "recipe/www.xiachufang.com/做碗糖水铺一样香滑的芝麻糊，其实不难/cover.jpg",
     "local_dir": "www.xiachufang.com/做碗糖水铺一样香滑的芝麻糊，其实不难"
+  },
+  {
+    "id": "xcf_全素罗宋汤",
+    "name": "全素罗宋汤",
+    "name_hans": "全素罗宋汤",
+    "name_en": "全素罗宋汤",
+    "keywords_en": "全素罗宋汤 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "土豆",
+      "胡萝卜",
+      "西红柿",
+      "圆白菜",
+      "西芹",
+      "番茄沙司",
+      "盐",
+      "黑胡椒粉",
+      "综合香草"
+    ],
+    "steps": [
+      "将西红柿，胡萝卜，土豆切滚刀块",
+      "手撕几片圆白菜",
+      "西芹切成段",
+      "烧开一锅水，将切好的胡萝卜，土豆，西红柿放入，水开后改小火慢慢将西红柿煮烂，胡萝卜土豆煮软",
+      "然后将西芹，圆白菜放入一起煮片刻",
+      "加番茄沙司（依口味，如果想让汤浓可多加西红柿和番茄沙司），盐，黑胡椒粉，综合香草碎"
+    ],
+    "desc": "看了下综合香草的配料，我买的是带研磨器的，有加碘海盐，迷迭香，百里香，红椒碎，粉红胡椒，香薄荷，罗勒，龙蒿。如果家里没有综合香草可不加，一样美味。",
+    "source_url": "https://www.xiachufang.com/recipe/36115/",
+    "image": "recipe/www.xiachufang.com/全素罗宋汤/cover.jpg",
+    "local_dir": "www.xiachufang.com/全素罗宋汤"
   },
   {
     "id": "xcf_全老师家的辣白菜 韩国的一种家庭做法",
@@ -10666,6 +10794,134 @@
     "local_dir": "www.xiachufang.com/减糖好做的烧果子"
   },
   {
+    "id": "xcf_几分甜香芋奶冻卷 卷不裂配方+新鲜香芋奶油+入口即化奶冻 烘焙视频蛋糕篇7「薄卷」",
+    "name": "几分甜香芋奶冻卷 卷不裂配方+新鲜香芋奶油+入口即化奶冻 烘焙视频蛋糕篇7「薄卷」",
+    "name_hans": "几分甜香芋奶冻卷 卷不裂配方+新鲜香芋奶油+入口即化奶冻 烘焙视频蛋糕篇7「薄卷」",
+    "name_en": "几分甜香芋奶冻卷 卷不裂配方+新鲜香芋奶油+入口即化奶冻 烘焙视频蛋糕篇7「薄卷」",
+    "keywords_en": "几分甜香芋奶冻卷 卷不裂配方+新鲜香芋奶油+入口即化奶冻 烘焙视频蛋糕篇7「薄卷」 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "蛋奶素 Ovo-Lacto",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "#（28*28不沾烤盘）蛋糕卷配方#",
+      "4个鸡蛋",
+      "40克植物油",
+      "50克细砂糖",
+      "50克牛奶",
+      "50克低筋面粉",
+      "几滴香草精",
+      "五面奶糖四油蛋_(:зゝ∠)_）（简称：",
+      "#（3*3*3cm正方体7块）奶冻#",
+      "100克淡奶油",
+      "100克牛奶",
+      "2.5片（12.5克）吉利丁片",
+      "18克细砂糖",
+      "#香芋奶油#",
+      "200克生芋头",
+      "200克淡奶油",
+      "40克细砂糖"
+    ],
+    "steps": [
+      "烤箱预热至180℃。",
+      "倒入牛奶",
+      "植物油",
+      "香草精。",
+      "筛入面粉。",
+      "搅拌成糊。",
+      "加入蛋黄，搅拌均匀。",
+      "打发蛋白，分两次下糖。",
+      "打发到膨胀发白后下一半糖。",
+      "打发到泡沫细腻，但提起打蛋器会滑落时下剩余的糖。",
+      "打发到纹路清晰，提起打蛋器会呈现小弯钩，轻轻晃动盆子，蛋白霜会轻微移动即可。",
+      "倒一勺蛋白霜和蛋黄糊拌匀。",
+      "倒回蛋白霜中。",
+      "一边转动一边捞拌均匀。",
+      "最后用刮刀紧贴底部整理面糊。",
+      "高处入模消去大气泡。",
+      "向四角倾斜，使面糊均匀分布。",
+      "注意：蛋白霜不要打太硬，否则无法自然流平。",
+      "震模，消去气泡同时使面糊分布均匀。",
+      "180℃，中层，烘焙17分钟后转2分钟热风。",
+      "出炉后震出热气，正面朝上晾凉。",
+      "接下来制作奶冻。",
+      "奶锅中倒入牛奶。",
+      "开火。",
+      "倒入砂糖。",
+      "不断搅拌，直到砂糖溶解，奶锅边缘出现气泡。",
+      "关火，加入泡软的吉利丁片。",
+      "倒入淡奶油，搅拌均匀。",
+      "做出正正方方棱角分明的奶冻，不需要特制的模具，只需要你家的冰格b(￣▽￣)d",
+      "倒入冰格。",
+      "放入冰箱冷冻。",
+      "关火后加入吉利丁片（不然会烧焦）",
+      "如果没有冰格，可以直接把液体倒入保鲜袋，冷藏凝固后取出切碎使用。",
+      "接下来给蛋糕脱模。",
+      "盖上硅油纸（前后各长15-20cm方便后期整理蛋糕）",
+      "倒盖晾网。",
+      "翻转倒扣。",
+      "脱模。",
+      "撕掉油纸。",
+      "接下来制作香芋奶油。",
+      "如果按通常的方法蒸熟/煮熟，会有多余水分，但是普通的搅拌机打不动，还得下牛奶，然后就得到了一盆浆糊，于是咱们还得开锅炒干芋泥（听起来有点累觉不爱_(:зゝ∠)_）",
+      "过筛的方法依旧是一物多用，使用擀面棍一端，用力将芋丁摁过筛网。",
+      "不时用刮刀把背面的芋泥刮下来。",
+      "接下来打发奶油。",
+      "打发至奶油变稠（大约六分发）",
+      "加入芋泥。",
+      "搅打均匀，不要打太久。",
+      "低速缓提甩掉打蛋头上的香芋奶油。",
+      "卷制前再取出奶冻脱模。",
+      "铺上硅胶垫防滑，放上蛋糕。",
+      "抹一层香芋奶油。",
+      "在身侧排列上奶油，注意中间紧贴不要留有空隙。",
+      "将剩余的奶油涂在奶冻上。",
+      "边缘修圆，成为弧形。",
+      "用擀面杖卷起油纸提起蛋糕。",
+      "压实定型。",
+      "一鼓作气往前卷，直到擀面棍碰到垫子。",
+      "之前的「胖乎乎奶油芒果卷」http://www.xiachufang.com/recipe/102311306/",
+      "左手往前拉，右手往后推，拉实蛋糕。",
+      "蛋糕卷就做好啦~"
+    ],
+    "desc": "蛋糕卷注意事项： 1.要想不掉皮，17分钟烤完最后多烤2分钟热风。（一共19分钟） 2.蛋白霜不要打太硬。 奶冻注意事项： 1.关火后再加吉利丁片不然会烧焦 2.倒入冰格冷冻而非冷藏。 3.卷制前再脱模。 香芋奶油注意事项： 1.芋头要好！微波完先吃一口不好吃不要做！  我们又不是小天使能化腐朽为神奇_(:зゝ∠)_ 2.趁热过筛。 3.看看筛网的目数，不要用筛糖粉的糖粉筛（否则··· 接受我的祝",
+    "source_url": "https://www.xiachufang.com/recipe/102334416/",
+    "image": "recipe/www.xiachufang.com/几分甜香芋奶冻卷 卷不裂配方+新鲜香芋奶油+入口即化奶冻 烘焙视频蛋糕篇7「薄卷」/cover.jpg",
+    "local_dir": "www.xiachufang.com/几分甜香芋奶冻卷 卷不裂配方+新鲜香芋奶油+入口即化奶冻 烘焙视频蛋糕篇7「薄卷」"
+  },
+  {
+    "id": "xcf_剁椒芋头",
+    "name": "剁椒芋头",
+    "name_hans": "剁椒芋头",
+    "name_en": "剁椒芋头",
+    "keywords_en": "剁椒芋头 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "芋头",
+      "1大匙剁椒",
+      "2小匙生抽"
+    ],
+    "steps": [
+      "芋头洗净表面，带皮放入锅中蒸熟",
+      "蒸好的芋头待凉，剥掉皮，切成滚刀块",
+      "锅烧热下少许油，下剁椒酱炒香，下入芋头一同翻炒",
+      "加生抽和水小火加热入味即可",
+      "装盘后撒少许香芹碎点缀",
+      "剁椒酱的做法：1.朝天椒洗干净，去蒂，晾干表面水分，用刀剁碎 2.加入适量盐拌匀静置一会，装入无水无油干净瓶中，淋上高度白酒，密封发酵两周即可"
+    ],
+    "desc": "我用的剁椒酱是已经放了盐的，所以没再加盐，根据情况调整   生芋头的粘液沾到手上会发痒，所以干脆蒸熟了在去皮~",
+    "source_url": "https://www.xiachufang.com/recipe/1004421/",
+    "image": "recipe/www.xiachufang.com/剁椒芋头/cover.jpg",
+    "local_dir": "www.xiachufang.com/剁椒芋头"
+  },
+  {
     "id": "xcf_北海道吐司",
     "name": "北海道吐司",
     "name_hans": "北海道吐司",
@@ -10846,6 +11102,157 @@
     "source_url": "https://www.xiachufang.com/recipe/1049299/",
     "image": "recipe/www.xiachufang.com/卤菇饭/cover.jpg",
     "local_dir": "www.xiachufang.com/卤菇饭"
+  },
+  {
+    "id": "xcf_卤香菇",
+    "name": "卤香菇",
+    "name_hans": "卤香菇",
+    "name_en": "卤香菇",
+    "keywords_en": "卤香菇 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "300g小香菇",
+      "2片生姜",
+      "一块桂皮",
+      "一个八角",
+      "1/2小匙丁香",
+      "1大匙冰糖",
+      "1小匙老抽",
+      "1小匙盐"
+    ],
+    "steps": [
+      "新鲜香菇洗净切掉蒂（如果是干香菇就要提前泡发反复洗净），调料准备好",
+      "香菇用刀子刻花或者直接划十字，以便更好的入味",
+      "锅烧热下一点点油，下入姜桂皮八角丁香小火煸出香味，然后下处理好的香菇翻炒一下，接着加入没过香菇的水和其他所有调料，大火烧开后转小火卤半小时",
+      "吃的时候淋上一点香油即可，冷热均佳"
+    ],
+    "desc": "新鲜香菇和干香菇都可以做这道菜，干香菇的味道更浓郁，新鲜香菇的口感更好，不过用干香菇有一个缺点就是容易洗的不够干净会牙碜~",
+    "source_url": "https://www.xiachufang.com/recipe/1045518/",
+    "image": "recipe/www.xiachufang.com/卤香菇/cover.jpg",
+    "local_dir": "www.xiachufang.com/卤香菇"
+  },
+  {
+    "id": "xcf_双重巧克力浓郁卷 香香香香···香喷喷的巧克力卷~ 烘焙视频蛋糕篇10「中卷」",
+    "name": "双重巧克力浓郁卷 香香香香···香喷喷的巧克力卷~ 烘焙视频蛋糕篇10「中卷」",
+    "name_hans": "双重巧克力浓郁卷 香香香香···香喷喷的巧克力卷~ 烘焙视频蛋糕篇10「中卷」",
+    "name_en": "双重巧克力浓郁卷 香香香香···香喷喷的巧克力卷~ 烘焙视频蛋糕篇10「中卷」",
+    "keywords_en": "双重巧克力浓郁卷 香香香香···香喷喷的巧克力卷~ 烘焙视频蛋糕篇10「中卷」 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "蛋奶素 Ovo-Lacto",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "#真巧克力蛋糕胚（28*28cm）#",
+      "4个鸡蛋",
+      "55g牛奶",
+      "50g植物油",
+      "60g低筋面粉",
+      "15g可可粉",
+      "60g细砂糖",
+      "1g（1/4小勺）盐",
+      "25g黑巧克力",
+      "#巧克力奶油#",
+      "150g淡奶油",
+      "10g细砂糖",
+      "30g黑巧克力"
+    ],
+    "steps": [
+      "提早一天制作巧克力奶油。",
+      "淡奶油放在可入微波炉的容器内，加入细砂糖。",
+      "加入巧克力。",
+      "晃一晃，让淡奶油没过巧克力。",
+      "盖上盖子。",
+      "中火微波30秒左右。",
+      "趁热搅拌至砂糖和巧克力都融化掉。",
+      "盖好，冷藏一夜备用。",
+      "第二天我们来烤蛋糕。",
+      "摸摸锅壁有一点点烫就关火。",
+      "如果你的锅很薄（冷却速度快），那么可以直接筛入可可粉。",
+      "倒入液体。",
+      "搅拌均匀。",
+      "此时摸摸盆壁，略有温度但不会烫手，大概在35-40℃左右。",
+      "搅拌过程也是帮助降温过程，待巧克力完全溶解后，筛入低筋面粉。",
+      "搅拌成团。",
+      "加入蛋黄。",
+      "拿出捣糍粑的力气用力搅拌成粘稠的蛋糕糊。",
+      "接下来打发蛋白，分三次下糖（糖和盐混合一起）。",
+      "直到湿性发泡，提起打蛋器，会弯起一个小弯钩。",
+      "低速缓提甩掉打蛋头上的蛋白霜。",
+      "挖一勺蛋白霜和蛋黄糊拌匀。",
+      "一开始不好拌匀，因为蛋黄糊比较稠。",
+      "速度要快，姿势帅不帅无所谓。",
+      "倒回蛋白霜中。",
+      "捞拌均匀。",
+      "用刮刀贴紧盆壁整理面糊。",
+      "高处入模倒入铺有硅胶垫的烤盘里。",
+      "向四角倾斜。",
+      "震出大气泡。",
+      "180℃ 中层 20分钟左右。",
+      "出炉后震出热气。",
+      "马上脱模。",
+      "盖上油纸。",
+      "盖回去防止水分流失。",
+      "等待蛋糕冷却时打发巧克力奶油。",
+      "隔冰水低速打发巧克力奶油。",
+      "直到非常结实。",
+      "准备卷制。",
+      "盖上油纸，左右各长15-20cm。",
+      "放上硅胶垫（防滑）",
+      "翻转。",
+      "撕掉表面油纸。",
+      "斜切掉前后边缘。",
+      "抹上奶油。",
+      "双手提起擀面棍拉起油纸。",
+      "轻压定型。",
+      "擀面棍提起油纸在蛋糕前上方往前拉，利用油纸均匀发力将蛋糕往前卷。",
+      "直到擀面棍碰到垫子。",
+      "冷藏定型后切块，可以开动啦！"
+    ],
+    "desc": "公众号搜索爱烘焙的阿猪，可以找到提纲挈领的重点详解。  蛋糕体和奶油中都添加了巧克力，是完全不同于可可粉的浓郁口感。  请选择优质的黑巧克力，直接决定蛋糕的口感。 余味绕梁而令人印象深刻，像在吃一大块巧克力。  蛋黄糊非常粘稠，是迄今为止最难的一款蛋糕卷。 新手慎试，如果依旧想尝试，请仔仔细细看完（特别是提醒事项）视频+图文内容。  这是中卷配方，另一中卷配方「咸摩卡奶油卷」：http://www",
+    "source_url": "https://www.xiachufang.com/recipe/102418992/",
+    "image": "recipe/www.xiachufang.com/双重巧克力浓郁卷 香香香香···香喷喷的巧克力卷~ 烘焙视频蛋糕篇10「中卷」/cover.jpg",
+    "local_dir": "www.xiachufang.com/双重巧克力浓郁卷 香香香香···香喷喷的巧克力卷~ 烘焙视频蛋糕篇10「中卷」"
+  },
+  {
+    "id": "xcf_口水香干",
+    "name": "口水香干",
+    "name_hans": "口水香干",
+    "name_en": "口水香干",
+    "keywords_en": "口水香干 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "1大匙熟花生碎",
+      "少许香芹碎",
+      "2块香干",
+      "2小匙辣椒粉",
+      "1小匙花椒粉",
+      "1小匙糖",
+      "2大匙生抽",
+      "2小匙陈醋",
+      "3大匙白开水或素高汤",
+      "1小匙白芝麻"
+    ],
+    "steps": [
+      "这种立方体的卤制香干，市场都有卖，洗净切片，摆在盘中",
+      "制辣油，取无水的碗一只，加2小匙辣椒粉，1小匙花椒粉、1小匙白芝麻，干净锅里烧适量油，烧热后泼在小碗里，用勺子快速搅拌匀成辣椒油",
+      "再加入1小匙糖、2大匙生抽、2小匙陈醋及3大匙开水或素高汤拌匀成为浇汁，浇在香干上，撒熟花生碎和少许香芹碎即可"
+    ],
+    "desc": "1.我喜欢用黄飞红花生做花生碎，麻麻辣辣很香  2.可以提前备好这道菜，让汁充分浸泡香干，入味更足~",
+    "source_url": "https://www.xiachufang.com/recipe/1015810/",
+    "image": "recipe/www.xiachufang.com/口水香干/cover.jpg",
+    "local_dir": "www.xiachufang.com/口水香干"
   },
   {
     "id": "xcf_味噌萝卜暖身汤",
@@ -11429,6 +11836,40 @@
     "local_dir": "www.xiachufang.com/山药薏米蘑菇汤"
   },
   {
+    "id": "xcf_岩石巧克力",
+    "name": "岩石巧克力",
+    "name_hans": "岩石巧克力",
+    "name_en": "岩石巧克力",
+    "keywords_en": "岩石巧克力 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "80g即食麦片",
+      "80g黑巧克力"
+    ],
+    "steps": [
+      "首先把黑巧克力掰成小块待用",
+      "即食麦片我用的是家里现成的，肉桂味的，为了让它更脆，用平底锅小火干烤一下，晾凉待用",
+      "挑一个模具，我用的是迷你马芬模，在内部均匀涂上薄薄的植物油，以便后面更轻易的脱模",
+      "隔水加热巧克力",
+      "大锅加适量水，黑巧克力放入小锅或小容器中，把小容器放入大锅中，开火加热不时搅拌下，至巧克力全部融化即可关火，拿出小锅放在一旁让巧克力温度降至摸起来温温即可",
+      "注意，巧克力不能过度加热，否则会有分离显现，融化就马上停止加热",
+      "让巧克力降温这样能保证麦片口感脆脆的",
+      "将降温的巧克力与麦片搅拌均匀",
+      "装入模具中，压实压平（也可以挑个普通的盘子来做模具，凉透后再切块，注意一定要厚一点，有个三四厘米厚才过瘾！）",
+      "移入冰箱冷藏半小时，或者，干脆冷冻一会",
+      "取出，轻敲容器底，脱模即可~"
+    ],
+    "desc": "用不同口味的巧克力，比如白巧克力，抹茶巧克力也有非常好的效果~  如果愿意琢磨，加点黑咖啡粉进去来个咖啡味的也不错~  建议不要用太甜的巧克力~  还有，最好用即食麦片，那种需要煮了才能吃的我没试过  估计先烤香了也可以用",
+    "source_url": "https://www.xiachufang.com/recipe/1070518/",
+    "image": "recipe/www.xiachufang.com/岩石巧克力/cover.jpg",
+    "local_dir": "www.xiachufang.com/岩石巧克力"
+  },
+  {
     "id": "xcf_巧克力奶油蛋糕 巧克力奶油的操作手法。 「戚风及其衍生」烘焙视频蛋糕篇2",
     "name": "巧克力奶油蛋糕 巧克力奶油的操作手法。 「戚风及其衍生」烘焙视频蛋糕篇2",
     "name_hans": "巧克力奶油蛋糕 巧克力奶油的操作手法。 「戚风及其衍生」烘焙视频蛋糕篇2",
@@ -11825,6 +12266,38 @@
     "local_dir": "www.xiachufang.com/手捏菜炒蘑菇"
   },
   {
+    "id": "xcf_披萨饼皮",
+    "name": "披萨饼皮",
+    "name_hans": "披萨饼皮",
+    "name_en": "披萨饼皮",
+    "keywords_en": "披萨饼皮 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "130g高筋面粉",
+      "30g全麦粉",
+      "100g35度左右温水",
+      "1小匙酵母",
+      "1小匙糖",
+      "1/2小匙盐",
+      "1小匙油"
+    ],
+    "steps": [
+      "将高粉和全麦粉混合均匀，如果喜欢更粗糙或更营养可适量增加全麦粉比例",
+      "将温水与酵母、糖、盐、油混合均匀，静置10分钟待用",
+      "将水混合物与面粉混合均匀，揉成光滑面团，然后容器底撒上面粉，将面团放入，盖上保鲜膜入冰箱冷藏一夜后取出，面团里发酵成蜂窝状。将面团按压排气，继续放在温暖地方发酵至两倍大小（低温发酵适合第二天要招待客人，提前揉好面准备，不但节省时间还可以获得更好的口感，面团在低温发酵状态可在冰箱保存三天。如果时间限制可省略掉低温发酵步骤，直接将面团放在温暖地方发酵两倍大小即可）",
+      "将发酵好的面团擀成0.5厘米厚的饼，用叉子随意扎上眼即可。如果为了节省时间，可以一次多做些，擀好后放平盘上入冰箱冷冻，冻实取出入密封袋继续冷冻保存，随吃随取。（尽量在两个月内食用）"
+    ],
+    "desc": "冷冻食品储存越久风味越差，还是尽量早食用  另外低温发酵法时候大多数需要发面的东东，非常食用，不用怕温度过高面会变酸，还可以发酵的非常完美，力荐",
+    "source_url": "https://www.xiachufang.com/recipe/1015394/",
+    "image": "recipe/www.xiachufang.com/披萨饼皮/cover.jpg",
+    "local_dir": "www.xiachufang.com/披萨饼皮"
+  },
+  {
     "id": "xcf_抹茶红豆大福",
     "name": "抹茶红豆大福",
     "name_hans": "抹茶红豆大福",
@@ -11976,6 +12449,39 @@
     "local_dir": "www.xiachufang.com/日式照烧海苔豆腐"
   },
   {
+    "id": "xcf_时蔬卷饼",
+    "name": "时蔬卷饼",
+    "name_hans": "时蔬卷饼",
+    "name_en": "时蔬卷饼",
+    "keywords_en": "时蔬卷饼 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "四张卷饼皮",
+      "一棵生菜",
+      "一个牛油果（酪梨）",
+      "一个彩椒",
+      "适量平菇",
+      "几个圣女果",
+      "1大匙杏仁片（或其他坚果）",
+      "1大匙黄芥末酱（或其他喜欢的酱）",
+      "1/2小匙盐",
+      "一点点黑胡椒粉"
+    ],
+    "steps": [
+      "所有蔬菜洗净，把需要炒熟的平菇撕成条，彩椒切条，放入加了少许油的锅中炒熟，加少许盐和胡椒粉调味，其他生食的蔬菜，圣女果切开，牛油果去皮去核切片待用。杏仁片用平底锅小火干烤香待用。",
+      "取卷饼皮（卷饼皮就是做墨西哥卷的那种，大型超市或淘宝都很容易买到，本身是熟的，吃的时候热一下即可，冷冻可保存很久）放入加热好的平底锅中加热两面烤软待用。首先在饼的中央抹上黄芥末酱（是芥末籽做的酱，不是日本料理里的青芥末哦）然后铺上生菜，摆上炒好的平菇和彩椒，切好的圣女果和牛油果，撒上烤好的杏仁片，从一端卷起，卷的紧一点，然后斜切两段即可。"
+    ],
+    "desc": "蔬菜根据情况灵活调整~  虽然种类很多但是并不麻烦，晚上睡觉前洗好菜放入冰箱，早上加工一下就好了  记住每天要多吃几种蔬菜哦",
+    "source_url": "https://www.xiachufang.com/recipe/1064459/",
+    "image": "recipe/www.xiachufang.com/时蔬卷饼/cover.jpg",
+    "local_dir": "www.xiachufang.com/时蔬卷饼"
+  },
+  {
     "id": "xcf_朴素的混汤面",
     "name": "朴素的混汤面",
     "name_hans": "朴素的混汤面",
@@ -12124,6 +12630,37 @@
     "source_url": "https://www.xiachufang.com/recipe/1000784/",
     "image": "recipe/www.xiachufang.com/柠檬薄荷苏打水/cover.jpg",
     "local_dir": "www.xiachufang.com/柠檬薄荷苏打水"
+  },
+  {
+    "id": "xcf_梅子茶泡饭",
+    "name": "梅子茶泡饭",
+    "name_hans": "梅子茶泡饭",
+    "name_en": "梅子茶泡饭",
+    "keywords_en": "梅子茶泡饭 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "米食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "少许海苔丝",
+      "一碗米饭",
+      "一颗盐渍紫苏梅",
+      "1小匙熟芝麻",
+      "1/2小匙盐",
+      "1/2小匙日本酱油",
+      "少许绿芥末",
+      "适量玄米茶"
+    ],
+    "steps": [
+      "将米饭盛到碗中，撒上盐、酱油、熟芝麻、海苔丝最后摆上梅子",
+      "用烫烫的水沏茶，倒入碗中，没过米饭2/3处即可"
+    ],
+    "desc": "梅子：要买日式的盐渍黄梅，淘宝有售  茶：通常用日式玄米茶或煎茶，总而言之是蒸青绿茶，没有的话普通绿茶也可  芥末：可有可无，根据个人口味    梅子酸的过瘾，第一口下去就停不下来了，开胃的好东西~必须连吃好几碗  茶泡饭，只要细嚼慢咽就不会消化不良~",
+    "source_url": "https://www.xiachufang.com/recipe/1009040/",
+    "image": "recipe/www.xiachufang.com/梅子茶泡饭/cover.jpg",
+    "local_dir": "www.xiachufang.com/梅子茶泡饭"
   },
   {
     "id": "xcf_梅干菜炒饭",
@@ -12473,6 +13010,34 @@
     "local_dir": "www.xiachufang.com/浇汁香菇油菜"
   },
   {
+    "id": "xcf_清炒山药",
+    "name": "清炒山药",
+    "name_hans": "清炒山药",
+    "name_en": "清炒山药",
+    "keywords_en": "清炒山药 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "一段山药",
+      "半根胡萝卜",
+      "几根菜心",
+      "1/2小匙盐"
+    ],
+    "steps": [
+      "戴手套给山药去皮，斜切成段，再把段竖切成菱形片，放入水中洗掉粘液， 胡萝卜也这样切，菜心也切段",
+      "锅中烧开水，下入山药和胡萝卜烫至水再次开起，捞出，菜心烫一下马上捞出",
+      "重新起锅下少许油，下烫好的蔬菜加1/2小匙盐大火快速炒匀出锅即可"
+    ],
+    "desc": "清脆爽口~清炒真是适合各种蔬菜呢   山药的好处不用多说了吧，据说连皮一起吃能发挥最佳作用，带着皮怎么才能好吃呢？我研究研究~",
+    "source_url": "https://www.xiachufang.com/recipe/1005994/",
+    "image": "recipe/www.xiachufang.com/清炒山药/cover.jpg",
+    "local_dir": "www.xiachufang.com/清炒山药"
+  },
+  {
     "id": "xcf_清炒西葫芦",
     "name": "清炒西葫芦",
     "name_hans": "清炒西葫芦",
@@ -12704,6 +13269,68 @@
     "local_dir": "www.xiachufang.com/照烧杏鲍菇"
   },
   {
+    "id": "xcf_燃面",
+    "name": "燃面",
+    "name_hans": "燃面",
+    "name_en": "燃面",
+    "keywords_en": "燃面 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "1人份鲜面条",
+      "1大匙碎米芽菜",
+      "2大匙油炸花生（或烤的炒的）",
+      "2小匙香油",
+      "1大匙香芹碎（可略）",
+      "1大匙生抽",
+      "1小匙醋",
+      "2小匙辣椒油",
+      "1小匙花椒粉",
+      "1/2小匙糖"
+    ],
+    "steps": [
+      "鲜面条放入锅中煮熟，捞出控干水分与1大匙香油拌匀防止粘在一起",
+      "今天家里没碎米芽菜了，用了同是芥菜腌制成的四川酸菜切碎替代。花生（黄飞红）用石臼捣碎",
+      "用香油拌过的面条，加入酸菜碎、花生碎、生抽、辣椒油、醋、花椒粉和糖拌匀即可",
+      "自己又烫了几棵菠菜配在旁边"
+    ],
+    "desc": "1.碎米芽菜是四川的一种小菜，用芥菜剁碎加盐和红糖及香料腌渍而成，在四川的大小超市都有一小袋 一小袋的出售~。估计其他地方不是特别好买，其实用四川酸菜也可替代，都是芥菜做的~。一般市场 都有卖四川酸菜的，如果实在没有，用点袋装的小咸菜替代吧~   2.花生碎只要用油炸的花生米都可以，如果没有石臼可以放在保鲜袋中用擀面杖压碎。   3.如果嫌麻烦，香芹碎也可省略，不会影响风味。",
+    "source_url": "https://www.xiachufang.com/recipe/1004043/",
+    "image": "recipe/www.xiachufang.com/燃面/cover.jpg",
+    "local_dir": "www.xiachufang.com/燃面"
+  },
+  {
+    "id": "xcf_燕麦南瓜豆浆",
+    "name": "燕麦南瓜豆浆",
+    "name_hans": "燕麦南瓜豆浆",
+    "name_en": "燕麦南瓜豆浆",
+    "keywords_en": "燕麦南瓜豆浆 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "25g（豆浆机量豆杯半杯）黄豆",
+      "112g（差不多1个中等苹果那么大）去皮南瓜",
+      "10g（豆浆机量豆杯半杯）燕麦片"
+    ],
+    "steps": [
+      "将黄豆泡发",
+      "南瓜切成黄豆大小",
+      "所有材料入豆浆机用五谷豆浆功能键即可"
+    ],
+    "desc": "燕麦片，用的西麦片或农贸市场里现轧的燕麦片都可以，不要那种加了味道哦~  南瓜用的黄花皮、长型的那种南瓜，如果用质地比较紧密或比较老的南瓜，去皮切粒时要小心操作以免切到手~  也可以在煲饭时顺便蒸好南瓜，直接用熟南瓜来做豆浆，能更省事省力一些~  直接把熟南瓜加在成品豆浆里，用料理机搅打亦美味~",
+    "source_url": "https://www.xiachufang.com/recipe/98476/",
+    "image": "recipe/www.xiachufang.com/燕麦南瓜豆浆/cover.jpg",
+    "local_dir": "www.xiachufang.com/燕麦南瓜豆浆"
+  },
+  {
     "id": "xcf_爽口蓑衣黄瓜",
     "name": "爽口蓑衣黄瓜",
     "name_hans": "爽口蓑衣黄瓜",
@@ -12788,6 +13415,37 @@
     "source_url": "https://www.xiachufang.com/recipe/1042457/",
     "image": "recipe/www.xiachufang.com/玫瑰洛神饮/cover.jpg",
     "local_dir": "www.xiachufang.com/玫瑰洛神饮"
+  },
+  {
+    "id": "xcf_生拌西葫芦",
+    "name": "生拌西葫芦",
+    "name_hans": "生拌西葫芦",
+    "name_en": "生拌西葫芦",
+    "keywords_en": "生拌西葫芦 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "一根嫩西葫芦",
+      "2小匙陈醋",
+      "1小匙生抽",
+      "1/2小匙盐",
+      "1/2小匙糖",
+      "2小匙老干妈豆豉辣酱",
+      "几滴香油"
+    ],
+    "steps": [
+      "挑选嫩西葫芦一根，表面撒盐揉搓后用水清洗干净",
+      "西葫芦去掉两端，切成两段，取一段竖起来切片如图，然后切细丝，要顺着西葫芦的瓤切，因凉拌口感不好，所以把籽和瓤去掉，留下皮和肉切丝（籽和瓤和留烧汤用）",
+      "切好的西葫芦丝加入所有调料拌匀即可食用"
+    ],
+    "desc": "去重庆之前真的不知道西葫芦还能生吃  但是真的好吃清新爽口呢，极力推荐给大家  回家也忍不住自己试做~  炎炎夏日再拌个凉面或者提前熬好粥放凉，吃着真舒坦",
+    "source_url": "https://www.xiachufang.com/recipe/1046639/",
+    "image": "recipe/www.xiachufang.com/生拌西葫芦/cover.jpg",
+    "local_dir": "www.xiachufang.com/生拌西葫芦"
   },
   {
     "id": "xcf_番茄口蘑意面",
@@ -12934,6 +13592,36 @@
     "source_url": "https://www.xiachufang.com/recipe/1009170/",
     "image": "recipe/www.xiachufang.com/白菜炒年糕/cover.jpg",
     "local_dir": "www.xiachufang.com/白菜炒年糕"
+  },
+  {
+    "id": "xcf_省时少油的干煸四季豆",
+    "name": "省时少油的干煸四季豆",
+    "name_hans": "省时少油的干煸四季豆",
+    "name_en": "省时少油的干煸四季豆",
+    "keywords_en": "省时少油的干煸四季豆 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "一把四季豆",
+      "一手心花椒",
+      "四五个干辣椒",
+      "盐",
+      "糖"
+    ],
+    "steps": [
+      "四季豆洗净掐掉两端，顺势撕掉老筋，掰成段",
+      "放入盘中，微波炉高火四五分钟，中途取出搅拌一下",
+      "起锅烧油，下花椒和干辣椒小火炒香，铲出花椒~以防吃到小地雷",
+      "下入四季豆翻炒，炒出虎皮后加盐和糖调味即可"
+    ],
+    "desc": "以前炒这道菜经常遇到这个问题，外面都糊掉了，里面还夹生~而且在油锅前一站就是20分钟  今天这种方法特别省时间，而且很容易炒出虎皮，不需要担心四季豆夹生",
+    "source_url": "https://www.xiachufang.com/recipe/1000859/",
+    "image": "recipe/www.xiachufang.com/省时少油的干煸四季豆/cover.jpg",
+    "local_dir": "www.xiachufang.com/省时少油的干煸四季豆"
   },
   {
     "id": "xcf_砂锅土豆粉",
@@ -13259,6 +13947,37 @@
     "local_dir": "www.xiachufang.com/素卤藕片"
   },
   {
+    "id": "xcf_素咖喱饭",
+    "name": "素咖喱饭",
+    "name_hans": "素咖喱饭",
+    "name_en": "素咖喱饭",
+    "keywords_en": "素咖喱饭 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "土豆",
+      "青椒",
+      "西红柿",
+      "青豆",
+      "咖喱粉",
+      "盐",
+      "椰浆"
+    ],
+    "steps": [
+      "土豆切滚刀块，青椒切片，西红柿切块。新鲜玉米粒与大米一起进电饭锅",
+      "锅内放少许油，把切好的蔬菜放入翻炒，然后加入没过蔬菜的水慢慢炖，土豆熟后加入咖喱粉，盐，椰浆",
+      "米饭熟后装入小碗压紧然后扣到盘上"
+    ],
+    "desc": "咖喱里面加一个西红柿味道灰常好，记住一开始就加进去煮烂，让西红柿的酸甜与咖喱充分融合。   为防止青豆煮时间长颜色不好看，可焯水后最后放。",
+    "source_url": "https://www.xiachufang.com/recipe/1000519/",
+    "image": "recipe/www.xiachufang.com/素咖喱饭/cover.jpg",
+    "local_dir": "www.xiachufang.com/素咖喱饭"
+  },
+  {
     "id": "xcf_素炸酱面",
     "name": "素炸酱面",
     "name_hans": "素炸酱面",
@@ -13480,6 +14199,35 @@
     "local_dir": "www.xiachufang.com/红烧白萝卜"
   },
   {
+    "id": "xcf_红红辣椒油",
+    "name": "红红辣椒油",
+    "name_hans": "红红辣椒油",
+    "name_en": "红红辣椒油",
+    "keywords_en": "红红辣椒油 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "3大匙粗辣椒粉",
+      "1大匙熟芝麻",
+      "4大匙（60ML）油",
+      "1小匙盐"
+    ],
+    "steps": [
+      "首先准备粗辣椒粉，太细的泼的时候容易颜色黑。增加香味所以添了多多的熟芝麻",
+      "先将2大匙辣椒粉、1小匙盐、1大匙芝麻放入无水干爽的碗中混合均匀",
+      "锅中烧热60ml的油，烧到油微微冒烟了即可关火，把锅移开灶台10秒钟，浇入混合辣椒的碗中，快速用小勺搅拌均匀",
+      "等几分钟，用手摸碗壁，微微有些烫手的程度时，加入一小匙辣椒粉拌匀。再静置一会，用手摸碗壁，摸起来不烫手但是温温的，此时再加1小匙辣椒粉进去拌匀。接着静置到辣椒油冷却至常温，摸碗壁是凉的，再加入最后1小匙辣椒粉拌匀即可"
+    ],
+    "desc": "用这种方法作出的辣椒油不但味道香，而且颜色特别漂亮~淋一点在凉菜上~立马增色不少，艳丽的红色起到很好的装饰作用  常温可保存两个月没问题~  分三次加辣椒粉的，有点像西餐里用油浸泡东西的原理，低温浸泡，不破坏颜色",
+    "source_url": "https://www.xiachufang.com/recipe/1025892/",
+    "image": "recipe/www.xiachufang.com/红红辣椒油/cover.jpg",
+    "local_dir": "www.xiachufang.com/红红辣椒油"
+  },
+  {
     "id": "xcf_红色系茄汁炒饭",
     "name": "红色系茄汁炒饭",
     "name_hans": "红色系茄汁炒饭",
@@ -13578,6 +14326,86 @@
     "source_url": "https://www.xiachufang.com/recipe/1000505/",
     "image": "recipe/www.xiachufang.com/红豆羊羹/cover.jpg",
     "local_dir": "www.xiachufang.com/红豆羊羹"
+  },
+  {
+    "id": "xcf_红豆薏米粥 Red Bean and Pearl Barley Congee",
+    "name": "红豆薏米粥 Red Bean and Pearl Barley Congee",
+    "name_hans": "红豆薏米粥 Red Bean and Pearl Barley Congee",
+    "name_en": "红豆薏米粥 Red Bean and Pearl Barley Congee",
+    "keywords_en": "红豆薏米粥 Red Bean and Pearl Barley Congee www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "米食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "60克红豆",
+      "30克薏米",
+      "适量红糖"
+    ],
+    "steps": [
+      "红豆和薏米各泡四个小时以上；",
+      "泡豆的水倒掉把豆子洗净，放入装了一升水的锅内，水开后盖盖中小火煮一个小时以上，看到红豆和薏米软烂就可以了，如果要放糖的话在出锅之前放。"
+    ],
+    "desc": "红豆薏米健脾祛湿，推荐梅雨季节喝。可以多放点水煮红豆薏米茶，也可以根据此方做成 两人份",
+    "source_url": "https://www.xiachufang.com/recipe/1089551/",
+    "image": "recipe/www.xiachufang.com/红豆薏米粥 Red Bean and Pearl Barley Congee/cover.jpg",
+    "local_dir": "www.xiachufang.com/红豆薏米粥 Red Bean and Pearl Barley Congee"
+  },
+  {
+    "id": "xcf_经典海绵蛋糕 「海绵及其衍生」烘焙视频蛋糕篇3",
+    "name": "经典海绵蛋糕 「海绵及其衍生」烘焙视频蛋糕篇3",
+    "name_hans": "经典海绵蛋糕 「海绵及其衍生」烘焙视频蛋糕篇3",
+    "name_en": "经典海绵蛋糕 「海绵及其衍生」烘焙视频蛋糕篇3",
+    "keywords_en": "经典海绵蛋糕 「海绵及其衍生」烘焙视频蛋糕篇3 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "蛋奶素 Ovo-Lacto",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "#6寸配方，八寸翻倍#",
+      "2个鸡蛋",
+      "60克低筋面粉",
+      "20克牛奶",
+      "20克黄油",
+      "50克细砂糖"
+    ],
+    "steps": [
+      "不同于戚风，海绵蛋糕需要垫油纸。",
+      "再剪一个圆形垫片。",
+      "模具内侧涂黄油。",
+      "铺上油纸。",
+      "烤箱预热到170℃。",
+      "准备一锅水，加热到略微烫手后关火，隔水加热蛋液。",
+      "放上打蛋盆，底部接触水面。",
+      "搅打至砂糖融化，蛋液温度与指尖接近。",
+      "最高速打发鸡蛋。",
+      "直到蛋糊蓬松结实，划8字痕迹不会消失。",
+      "打发完成后，低速搅打30秒消除大气泡。",
+      "取出蛋糊，换油奶混合物隔水加热至黄油融化。",
+      "与此同时我们来搅拌面糊。",
+      "用蛋抽以捞拌手法拌匀面糊。",
+      "蛋抽自转（手腕转动蛋抽）",
+      "左手转动打蛋盆。",
+      "蛋抽划过打蛋盆底部向上捞起。",
+      "蛋糊会附着在蛋抽上，砸回去。",
+      "混合到看不见干粉就停止。",
+      "利用蛋抽引流，均匀地倒在蛋糊上。",
+      "继续按之前的方式捞拌均匀。",
+      "最后用刮刀将盆壁面糊整理干净。",
+      "入模。",
+      "表面轻轻抹平。",
+      "震出大气泡。",
+      "170℃，30-35分钟，直至表面金褐色。",
+      "出炉后马上脱模，正面朝上晾凉。"
+    ],
+    "desc": "如果要做多层蛋糕的承重胚，可以晾凉后用保鲜袋装好扎紧冷藏一夜再切片。 这样蛋糕会紧实好切片，也会更结实。 同时也给蛋糕回油的时间，刚刚烤出来会比较干。",
+    "source_url": "https://www.xiachufang.com/recipe/102280309/",
+    "image": "recipe/www.xiachufang.com/经典海绵蛋糕 「海绵及其衍生」烘焙视频蛋糕篇3/cover.jpg",
+    "local_dir": "www.xiachufang.com/经典海绵蛋糕 「海绵及其衍生」烘焙视频蛋糕篇3"
   },
   {
     "id": "xcf_老奶洋芋",
@@ -13686,6 +14514,30 @@
     "source_url": "https://www.xiachufang.com/recipe/102311306/",
     "image": "recipe/www.xiachufang.com/胖乎乎奶油芒果卷 不开裂不掉皮全过程详细图解烘焙视频 蛋糕篇6：「厚卷」/cover.jpg",
     "local_dir": "www.xiachufang.com/胖乎乎奶油芒果卷 不开裂不掉皮全过程详细图解烘焙视频 蛋糕篇6：「厚卷」"
+  },
+  {
+    "id": "xcf_胡萝卜苹果汁",
+    "name": "胡萝卜苹果汁",
+    "name_hans": "胡萝卜苹果汁",
+    "name_en": "胡萝卜苹果汁",
+    "keywords_en": "胡萝卜苹果汁 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "2根胡萝卜",
+      "1个苹果"
+    ],
+    "steps": [
+      "材料全部切碎，先榨胡萝卜汁再榨苹果"
+    ],
+    "desc": "1、因为苹果氧化快，一般放在最后榨汁。  2、鲜榨果汁要尽快饮用，半小时内最佳。",
+    "source_url": "https://www.xiachufang.com/recipe/257528/",
+    "image": "recipe/www.xiachufang.com/胡萝卜苹果汁/cover.jpg",
+    "local_dir": "www.xiachufang.com/胡萝卜苹果汁"
   },
   {
     "id": "xcf_腌西兰花梗",
@@ -13815,6 +14667,34 @@
     "source_url": "https://www.xiachufang.com/recipe/1001808/",
     "image": "recipe/www.xiachufang.com/自制无添加樱桃果酱/cover.jpg",
     "local_dir": "www.xiachufang.com/自制无添加樱桃果酱"
+  },
+  {
+    "id": "xcf_自制无添加橘子果酱",
+    "name": "自制无添加橘子果酱",
+    "name_hans": "自制无添加橘子果酱",
+    "name_en": "自制无添加橘子果酱",
+    "keywords_en": "自制无添加橘子果酱 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "500g橘子",
+      "50g冰糖"
+    ],
+    "steps": [
+      "取一只结实的橘子洗干净表面，用柠檬皮刀或擦丝器将表面橘红色皮擦成细丝，不要白色部分，会发苦，然后将橘皮丝加少许盐腌10分钟左右，用水反复洗净，挤掉水分待用",
+      "所有的橘子剥掉外皮，再去掉白色的筋和内膜，并去掉籽，留果肉和汁",
+      "用手将果肉抓散，连汁倒入锅中，加入冰糖和橘皮丝开始小火煮，大概煮半个小时，期间隔三差五的 搅拌一下，直到开始变得粘稠，就可以关火了，冷却后会更加粘稠",
+      "趁热装入可密封的瓶子中，密封好后倒置，冷却后移冰箱可保存很久",
+      "每次用干净无水的勺子取果酱，以防变质~"
+    ],
+    "desc": "橘子皮用一两只橘子的就够了，用结实的橘子擦皮比较省力，橘子皮可以增加口感和香气，因为橘皮是提炼精油的原料哦~  可抹面包，也可以舀一勺与红茶一起用沸水冲泡~  颜色多漂亮~食物本身的色彩，搞不懂为啥外面卖的果酱还要放色素~",
+    "source_url": "https://www.xiachufang.com/recipe/1011244/",
+    "image": "recipe/www.xiachufang.com/自制无添加橘子果酱/cover.jpg",
+    "local_dir": "www.xiachufang.com/自制无添加橘子果酱"
   },
   {
     "id": "xcf_自制无添加番茄酱",
@@ -14069,6 +14949,37 @@
     "local_dir": "www.xiachufang.com/花生酱海苔意面"
   },
   {
+    "id": "xcf_芹菜拌腐竹",
+    "name": "芹菜拌腐竹",
+    "name_hans": "芹菜拌腐竹",
+    "name_en": "芹菜拌腐竹",
+    "keywords_en": "芹菜拌腐竹 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "1根腐竹",
+      "2根芹菜",
+      "麻油",
+      "盐",
+      "生抽",
+      "醋",
+      "熟芝麻"
+    ],
+    "steps": [
+      "腐竹泡发，切丝",
+      "芹菜摘叶洗净，热火中焯一下立即放入冷水中（这样可以让绿色菜更鲜艳），沥干水份",
+      "先撒盐拌匀，再依个人口味加生抽、醋，最后撒点熟的芝麻（最好破皮，更易吸收）"
+    ],
+    "desc": "1、芹菜叶不要随意丢哦，平常我最常做的是蒸芹菜叶  2、其实芹菜根可以熬素高汤，我还没有试做成功，等成功后再发上来跟大家分享",
+    "source_url": "https://www.xiachufang.com/recipe/95451/",
+    "image": "recipe/www.xiachufang.com/芹菜拌腐竹/cover.jpg",
+    "local_dir": "www.xiachufang.com/芹菜拌腐竹"
+  },
+  {
     "id": "xcf_芹菜胡萝卜碎",
     "name": "芹菜胡萝卜碎",
     "name_hans": "芹菜胡萝卜碎",
@@ -14270,6 +15181,33 @@
     "local_dir": "www.xiachufang.com/草莓伯爵"
   },
   {
+    "id": "xcf_菠萝饭",
+    "name": "菠萝饭",
+    "name_hans": "菠萝饭",
+    "name_en": "菠萝饭",
+    "keywords_en": "菠萝饭 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "米食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "1/3碗香米",
+      "一个菠萝",
+      "1/3碗糯米"
+    ],
+    "steps": [
+      "菠萝从侧面1/4处切开，然后用勺子将里面的果肉都挖出，如图。留少许切成丁，剩下的菠萝肉吃掉~糯米和香米提前一夜用水浸泡，然后与菠萝丁一起拌匀填入菠萝中，加水即将没过米",
+      "将菠萝盖子盖在上面，用牙签固定，放入蒸锅蒸40分钟。如果没有那么大的锅子，可以将菠萝的一半浸入锅中，盖上盖子蒸煮",
+      "这里说的米量的碗是小碗，但是实际分量要根据菠萝的大小来调整"
+    ],
+    "desc": "菠萝饭~一半香米一半糯米，软糯香甜正合适，个人不喜欢添加太多东西，还是原味最美",
+    "source_url": "https://www.xiachufang.com/recipe/1017020/",
+    "image": "recipe/www.xiachufang.com/菠萝饭/cover.jpg",
+    "local_dir": "www.xiachufang.com/菠萝饭"
+  },
+  {
     "id": "xcf_萝卜素丸子",
     "name": "萝卜素丸子",
     "name_hans": "萝卜素丸子",
@@ -14368,6 +15306,40 @@
     "source_url": "https://www.xiachufang.com/recipe/1071156/",
     "image": "recipe/www.xiachufang.com/蒸豆腐饼/cover.jpg",
     "local_dir": "www.xiachufang.com/蒸豆腐饼"
+  },
+  {
+    "id": "xcf_蓝罐曲奇配方分享",
+    "name": "蓝罐曲奇配方分享",
+    "name_hans": "蓝罐曲奇配方分享",
+    "name_en": "蓝罐曲奇配方分享",
+    "keywords_en": "蓝罐曲奇配方分享 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "奶素 Lacto-Vegetarian",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "160g发酵黄油（据石小团童鞋的经验 发酵黄油才有蓝罐独特的风味 请不要用普通黄油）",
+      "200g低粉",
+      "80g椰蓉",
+      "50g糖粉",
+      "100g淡奶油",
+      "1小勺泡打粉",
+      "1/2小勺盐"
+    ],
+    "steps": [
+      "1.椰蓉焙香至金黄色 晾凉备用",
+      "2.黄油软化 加入糖粉 打发至发白",
+      "多次少量加入淡奶油 打至完全融合 奶油成蓬松白色 蓬松轻盈 不会出现油水分离和乳液状。",
+      "筛入低粉 泡打粉和盐 加入椰蓉 切拌均匀",
+      "虽然加入了分量不少的淡奶油 但是成型的饼干质感应该像普通造型曲奇一样湿软而蓬松 可以通过花嘴轻松挤出 也可以做冰箱饼干。",
+      "建议撒上砂糖 我第二次做时尝试过了 确实有酥脆丰富的口感。"
+    ],
+    "desc": "ps： 1.选择淡奶油是因为国内无论牛奶还是奶粉都已经到了‘可以淡出鸟来’的地步 我尝试过加入20g奶粉 吃到了一嘴香精味和奶腥味。 2.如果觉得不够香 可以加入一包椰子粉。 3.如果加入了一包椰子粉还觉得没有蓝罐的香味 那么我认为你吃到的是国内的蓝罐曲奇。 ——说这话绝对没有其他含义^_^  下一章是珍妮曲奇配方揭晓··· 期待大家提出更多的建议 不要让美味只留在记忆里。",
+    "source_url": "https://www.xiachufang.com/recipe/100390111/",
+    "image": "recipe/www.xiachufang.com/蓝罐曲奇配方分享/cover.jpg",
+    "local_dir": "www.xiachufang.com/蓝罐曲奇配方分享"
   },
   {
     "id": "xcf_薄荷菠萝",
@@ -14513,6 +15485,32 @@
     "local_dir": "www.xiachufang.com/血糯红枣粥"
   },
   {
+    "id": "xcf_西芹腰果",
+    "name": "西芹腰果",
+    "name_hans": "西芹腰果",
+    "name_en": "西芹腰果",
+    "keywords_en": "西芹腰果 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "西芹",
+      "一把腰果",
+      "1/2小匙盐"
+    ],
+    "steps": [
+      "西芹，用削皮刀把靠近根部的外侧的过于粗的纤维削掉，省得塞牙~其他部分的不妨保留，吃点粗纤维有助消化~当然如果喜欢嫩嫩的口感也可以把外皮都削掉。然后用刀斜切成块，斜切不光好看，因为横截面大，在最后加盐短暂的拌炒时会很容易入味。",
+      "锅烧热下一点油，下西芹翻炒颜色翠绿加入腰果和盐拌匀即可。如果有的童鞋对火候掌握不好不妨先烧一锅水，把西芹放入焯烫半分钟，捞出来过下冷水，然后再拌炒一下即可"
+    ],
+    "desc": "这道菜真的不需要盐以外的任何调味料",
+    "source_url": "https://www.xiachufang.com/recipe/1089673/",
+    "image": "recipe/www.xiachufang.com/西芹腰果/cover.jpg",
+    "local_dir": "www.xiachufang.com/西芹腰果"
+  },
+  {
     "id": "xcf_豆渣变身豆松",
     "name": "豆渣变身豆松",
     "name_hans": "豆渣变身豆松",
@@ -14632,6 +15630,30 @@
     "local_dir": "www.xiachufang.com/酥软馥郁的乳酪椰子三明治酥饼 烘焙视频饼干篇8"
   },
   {
+    "id": "xcf_酥黄豆",
+    "name": "酥黄豆",
+    "name_hans": "酥黄豆",
+    "name_en": "酥黄豆",
+    "keywords_en": "酥黄豆 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面点小吃",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "一杯黄豆"
+    ],
+    "steps": [
+      "做法一：适合掌握不好火候，怕迸油的新手 1.黄豆浸泡一夜，捞出沥干水分，放入锅中，倒冷油没过黄豆 2.开小火，慢炸约15分钟左右，锅里不怎么噼里啪啦了就差不多了 捞出用吸油纸吸下油，撒点盐，晾凉后更酥脆~",
+      "做法二：需要一定的经验，要把握好火候 1.黄豆浸泡一夜，捞出沥干水分 2.锅中下油，烧至五成热（约100度），下入黄豆炸两三分钟（可能动静会挺大的，不要怕~） 3.捞出黄豆晾一会，再次开火将油烧到五成热，下入黄豆回锅炸到不会噼里啪啦的即可"
+    ],
+    "desc": "可以用来做担担面、酸辣粉的配料~来勺这个确实更正宗好吃   也可以给家里的男同志当小菜当零食~     晾凉后放干燥地方保存可放2周左右",
+    "source_url": "https://www.xiachufang.com/recipe/1006071/",
+    "image": "recipe/www.xiachufang.com/酥黄豆/cover.jpg",
+    "local_dir": "www.xiachufang.com/酥黄豆"
+  },
+  {
     "id": "xcf_酱油素炒饭",
     "name": "酱油素炒饭",
     "name_hans": "酱油素炒饭",
@@ -14741,6 +15763,50 @@
     "local_dir": "www.xiachufang.com/酸辣粉"
   },
   {
+    "id": "xcf_酸酸辣辣素臊子面",
+    "name": "酸酸辣辣素臊子面",
+    "name_hans": "酸酸辣辣素臊子面",
+    "name_en": "酸酸辣辣素臊子面",
+    "keywords_en": "酸酸辣辣素臊子面 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "两个番茄",
+      "四朵香菇",
+      "一截莴笋",
+      "一个土豆",
+      "一块老豆腐",
+      "少许木耳",
+      "一碟腌胡萝卜（可略）",
+      "几根小葱",
+      "#调料",
+      "1大匙辣椒粉",
+      "1大匙酱油",
+      "1/2小匙盐",
+      "一点点十三香",
+      "2小匙米醋",
+      "#",
+      "根据胃口调节！鲜面条"
+    ],
+    "steps": [
+      "原料一览~",
+      "土豆去皮切丁、莴笋去皮切丁、西红柿顶部划十字烫掉皮切丁（懒的话带着皮也行）、豆腐切丁、香菇切丁、木耳泡发后切丁。泡菜胡萝卜切丁。小葱切碎。",
+      "热锅宽油，把切好的豆腐丁煎的香香的金黄的",
+      "另起锅，1大匙油，把香菇和香葱炒香，然后下入辣椒粉同炒，炒香即可不要炒糊哦",
+      "接着然后番茄同炒，炒化以后，加入两碗水烧开，然后把莴笋丁土豆丁木耳、煎好的豆腐丁一起放入煮熟，然后加泡菜胡萝卜，再加酱油醋盐十三香调味，稍煮即可",
+      "另烧一锅水煮面，顺便烫几颗青菜。",
+      "煮好的面捞入碗中，舀面卤和汤在面上，旁边摆青菜，如果喜欢再辣一点淋一勺油辣子~"
+    ],
+    "desc": "番茄、泡菜还有香醋在一起的丰富的酸味儿 起锅时就把辣椒粉炒香让它辣在汤底里 土豆莴笋木耳蘑菇煎香的豆腐在一起却口感不同 还有劲道的面条都被红红的汤汁包围 咕嘟咕嘟咕嘟",
+    "source_url": "https://www.xiachufang.com/recipe/103018937/",
+    "image": "recipe/www.xiachufang.com/酸酸辣辣素臊子面/cover.jpg",
+    "local_dir": "www.xiachufang.com/酸酸辣辣素臊子面"
+  },
+  {
     "id": "xcf_陈皮红豆小圆子",
     "name": "陈皮红豆小圆子",
     "name_hans": "陈皮红豆小圆子",
@@ -14767,6 +15833,38 @@
     "source_url": "https://www.xiachufang.com/recipe/1077184/",
     "image": "recipe/www.xiachufang.com/陈皮红豆小圆子/cover.jpg",
     "local_dir": "www.xiachufang.com/陈皮红豆小圆子"
+  },
+  {
+    "id": "xcf_青团",
+    "name": "青团",
+    "name_hans": "青团",
+    "name_en": "青团",
+    "keywords_en": "青团 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "90G红小豆",
+      "30G红糖",
+      "135g糯米粉",
+      "25g糖",
+      "30g新鲜艾草嫩叶",
+      "90g水"
+    ],
+    "steps": [
+      "提前做好红豆馅，豆沙或豆粒的都可以，依个人喜好。90g红小豆泡一下或者不泡，放电饭锅加3倍水慢慢煮，利用预热再闷半小时一小时的。豆软熟了即可，加入红糖放入锅中炒至水分蒸发的差不多，晾凉后分成8小团待用。（如想要豆沙就在豆煮好用用搅拌器打碎即可，我喜欢有豆子的口感于是在炒的过程中用勺子压一压，一半成砂，一半是豆）",
+      "艾叶取嫩芽30G，洗净，锅中烧滚水下点盐，放入艾叶烫一下捞出，过下凉水（这样可以多保留点艾叶的绿）挤掉水分，加90G水用搅拌机打成泥待用",
+      "把艾草泥与糯米粉和糖一起混合揉成光滑的面团（我用这个比例刚刚好，但是依湿度及面吸水程度不同请灵活掌握，干了加点水，湿了添点面）分成8等份，大约每个35G的剂子，团成团待用",
+      "取一份放在两手之间用手掌的力量一边转一边压扁，当然如果你想用擀面杖也成，中间放上一份豆馅，收严口，翻过来~整圆",
+      "蒸锅水烧开后蒸15分钟即可，刚刚整好会沾手，稍晾凉后就不粘了哈~"
+    ],
+    "desc": "特别喜欢艾草的清香  我妈说，我刚刚出生时就按照当地传统用艾叶水洗了人生第一个澡捏  难怪我身体好不生病吼吼",
+    "source_url": "https://www.xiachufang.com/recipe/1088192/",
+    "image": "recipe/www.xiachufang.com/青团/cover.jpg",
+    "local_dir": "www.xiachufang.com/青团"
   },
   {
     "id": "xcf_青酱意面",
@@ -14984,6 +16082,37 @@
     "local_dir": "www.xiachufang.com/香煎土豆泥茄盒"
   },
   {
+    "id": "xcf_香煎藕饼",
+    "name": "香煎藕饼",
+    "name_hans": "香煎藕饼",
+    "name_en": "香煎藕饼",
+    "keywords_en": "香煎藕饼 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "面食主食",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "一节莲藕",
+      "各少许红椒青椒",
+      "三朵香菇",
+      "4大匙（60ml)面粉",
+      "1小匙盐",
+      "少许白胡椒粉"
+    ],
+    "steps": [
+      "莲藕去皮，剁碎，或用擦丝器擦碎，香菇洗净去蒂切碎，青红椒切碎",
+      "将莲藕碎用手挤一下，挤掉一部分水分，不要挤太干。香菇碎放锅中加油炒香待用",
+      "将莲藕碎与香菇碎、青红椒碎、面粉、盐、白胡椒粉拌匀",
+      "用手将混合物拍成小饼，放平底锅加少许油中小火煎至两面金黄即可"
+    ],
+    "desc": "香煎藕饼 · 精選素食家常美味",
+    "source_url": "https://www.xiachufang.com/recipe/1009718/",
+    "image": "recipe/www.xiachufang.com/香煎藕饼/cover.jpg",
+    "local_dir": "www.xiachufang.com/香煎藕饼"
+  },
+  {
     "id": "xcf_香菇烧栗子",
     "name": "香菇烧栗子",
     "name_hans": "香菇烧栗子",
@@ -15044,6 +16173,35 @@
     "local_dir": "www.xiachufang.com/香菇芋头炊饭"
   },
   {
+    "id": "xcf_香蒸荔浦芋头",
+    "name": "香蒸荔浦芋头",
+    "name_hans": "香蒸荔浦芋头",
+    "name_en": "香蒸荔浦芋头",
+    "keywords_en": "香蒸荔浦芋头 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "一块荔浦芋头",
+      "1/2小匙盐",
+      "2小匙生抽",
+      "1大匙水",
+      "2小匙油"
+    ],
+    "steps": [
+      "荔浦芋头是这种很大的芋头哦，不是小芋头，通常菜场会像卖冬瓜一样切开来卖",
+      "芋头去皮，切成较小的滚刀块（这样可减少蒸的时间，也更加入味）将油、水、盐和生抽混合与芋头块拌匀，装入盘中",
+      "蒸锅中的水烧开后，将芋头连盘放入，大火蒸25分钟即可。出锅点缀青菜碎装饰"
+    ],
+    "desc": "出差20天，终于回京  吃了20天油腻的饭馆，回到家自己煮了混汤素面捧起碗满满幸福  秋天芋头季，发过栗子烧芋艿，不同的芋头适合不同的烹饪方法  荔浦芋头不太适合炖容易碎掉，（除非先微炸后再烹饪）却非常适合这样做，切块摆盘，调个极简单的汁淋上，大火蒸个二十几分钟，香~  每次吃的时候都是一个人干掉一大盘~荔浦芋头你怎么那么香啊~  最近喜欢各种蒸菜",
+    "source_url": "https://www.xiachufang.com/recipe/1069039/",
+    "image": "recipe/www.xiachufang.com/香蒸荔浦芋头/cover.jpg",
+    "local_dir": "www.xiachufang.com/香蒸荔浦芋头"
+  },
+  {
     "id": "xcf_香酥鹰嘴豆",
     "name": "香酥鹰嘴豆",
     "name_hans": "香酥鹰嘴豆",
@@ -15068,5 +16226,38 @@
     "source_url": "https://www.xiachufang.com/recipe/1008581/",
     "image": "recipe/www.xiachufang.com/香酥鹰嘴豆/cover.jpg",
     "local_dir": "www.xiachufang.com/香酥鹰嘴豆"
+  },
+  {
+    "id": "xcf_麻酱豇豆",
+    "name": "麻酱豇豆",
+    "name_hans": "麻酱豇豆",
+    "name_en": "麻酱豇豆",
+    "keywords_en": "麻酱豇豆 www.xiachufang.com vegetarian vegan recipe chinese food",
+    "category": "家常蔬食 / 经典热菜",
+    "diet": "全素 Vegan",
+    "servings": "2-4 人份",
+    "prep_time": "10 分鐘",
+    "cook_time": "15 分鐘",
+    "total_time": "25 分鐘",
+    "ingredients": [
+      "一把豇豆",
+      "2小匙芝麻酱",
+      "1大匙生抽",
+      "2小匙醋",
+      "1/2小匙糖",
+      "1小匙腐乳汁",
+      "1大匙水"
+    ],
+    "steps": [
+      "这是豇豆",
+      "豇豆洗净，去掉两端，掰成长段",
+      "锅中烧开水，下少许盐，下豇豆焯3分钟，捞出过冷水（掐表计时3分钟豇豆已经完全熟了，有朋友留言说要6分钟，然后另一些厨友反馈6分钟太过头了，大家灵活把握，菜有老🈶️嫩，有粗有细，您家的火有大有小，请同时结合目测：是否熟透的方法就是，看是否都变绿了，如果绿里还有点白就是没熟透，再不行咬一下尝尝，没熟就继续啊）ps：有厨友反馈这样做没煮熟中毒了，首先深表歉意，无论是吃什么吃坏了，都会很难受的，没人希望别人难受。但是如果按照本步骤中的时间+后面括弧中的目测方法，不可能不熟呀，豇豆是非常容易熟的蔬菜，因为它很细，食品安全问题写菜谱的人不会开玩笑的，请注意是水开后，如果您冷水下锅那肯定是熟不了啊，吃的时候感觉吃起来有点生那请停止食用啊。如果心里担忧请把豇豆主到咸菜绿，祝大家平安健康！",
+      "将芝麻酱、生抽、醋、糖、腐乳汁和水一起搅拌均匀（这里说的芝麻酱是稀释前的，纯芝麻酱，腐乳汁是红豆腐乳里面的汁，可以增加风味）",
+      "将酱汁浇在沥干水的豇豆上即可"
+    ],
+    "desc": "这是款清淡的汁，无麻无辣O(∩_∩)O~",
+    "source_url": "https://www.xiachufang.com/recipe/1048577/",
+    "image": "recipe/www.xiachufang.com/麻酱豇豆/cover.jpg",
+    "local_dir": "www.xiachufang.com/麻酱豇豆"
   }
 ]
