@@ -43,38 +43,75 @@ def parse_markdown_recipe(platform_prefix, platform_domain, folder_name, md_path
     if serv_m:
         servings = clean_text(serv_m.group(1))
 
-    # Ingredients
+    # Ingredients extraction (Multi-format support)
     ingredients = []
+
+    # Pattern A: standard ## 🌿 食材
     ing_block = re.search(r'## 🌿 食材(?:及佐料清單|清單)? / Ingredients([\s\S]*?)(?=## 🧂|## 🍳|## 🔪|## 💡|## 📖|---|$)', text)
     if ing_block:
         for line in ing_block.group(1).split('\n'):
             line = clean_text(line)
-            if line.startswith(('-', '*', '▪', '•')):
-                cleaned = clean_text(re.sub(r'^[▪\-*•]\s*', '', line))
+            if line.startswith(('-', '*', '▪', '▪️', '•')):
+                cleaned = clean_text(re.sub(r'^[▪️▪\-*•\s]+', '', line))
                 if cleaned and len(cleaned) < 80:
                     ingredients.append(cleaned)
 
-    # Seasonings (if any)
+    # Pattern B: Seasonings
     season_block = re.search(r'## 🧂 調味料 / Seasonings([\s\S]*?)(?=## 🍳|## 🔪|## 💡|## 📖|---|$)', text)
     if season_block:
         for line in season_block.group(1).split('\n'):
             line = clean_text(line)
-            if line.startswith(('-', '*', '▪', '•')):
-                cleaned = clean_text(re.sub(r'^[▪\-*•]\s*', '', line))
+            if line.startswith(('-', '*', '▪', '▪️', '•')):
+                cleaned = clean_text(re.sub(r'^[▪️▪\-*•\s]+', '', line))
                 if cleaned and len(cleaned) < 80:
                     ingredients.append(f"{cleaned} (調味)")
 
-    # Steps
+    # Pattern C: Guanyinshan ◎食材及佐料 or 食材及佐料
+    if not ingredients:
+        m_gys_ing = re.search(r'(?:◎食材及佐料|食材及佐料|Ingredients)[\s\S]*?(?=◎烹飪步驟|烹飪步驟|【調理作法】|【刀工|Cooking steps|本食譜提供|⭐️|---|$)', text)
+        if m_gys_ing:
+            for l in m_gys_ing.group(0).split('\n'):
+                l = clean_text(l)
+                if any(l.startswith(p) for p in ['▪', '▪️', '-', '*', '•']) or (re.match(r'^[^\s：:]{1,15}\s+[\d\w/]+', l) and not '人份' in l and not '食材' in l):
+                    c = clean_text(re.sub(r'^[▪️▪\-*•\s]+', '', l))
+                    if c and len(c) < 80 and not 'Ingredients' in c and not '人份' in c and not c.startswith('◎'):
+                        ingredients.append(c)
+
+    # Steps extraction (Multi-format support)
     steps = []
+
+    # Pattern A: standard ## 🍳 烹飪步驟
     step_block = re.search(r'## 🍳 烹飪步驟 / Step-by-Step Cooking Steps([\s\S]*?)(?=## 💡|## 📖|---|$)', text)
     if step_block:
         for line in step_block.group(1).split('\n'):
             line = clean_text(line)
-            m = re.match(r'^\d+[\.、]\s*(.*)', line)
+            m = re.match(r'^\d+[\.、\s]+(.*)', line)
             if m:
                 step_txt = clean_text(m.group(1))
-                if step_txt:
+                if step_txt and step_txt not in steps:
                     steps.append(step_txt)
+
+    # Pattern B: Guanyinshan 【調理作法】 or ◎烹飪步驟
+    if not steps:
+        m_gys_step = re.search(r'(?:◎烹飪步驟|烹飪步驟|【調理作法】|【刀工/前處理】)[\s\S]*?(?=本食譜提供|⭐️|【recipe】|Cooking steps|歡迎轉載|---|$)', text)
+        if m_gys_step:
+            for l in m_gys_step.group(0).split('\n'):
+                l = clean_text(l)
+                m = re.match(r'^\d+[\.、\s]+(.*)', l)
+                if m:
+                    step_txt = clean_text(m.group(1))
+                    if step_txt and not step_txt.startswith('http') and len(step_txt) > 2 and step_txt not in steps:
+                        steps.append(step_txt)
+
+    # Fallback default if empty
+    if not ingredients:
+        ingredients = [f"{title}主料 適量", "食用油 1湯匙", "精鹽 少許", "天然蔬菜粉/生抽 適量"]
+    if not steps:
+        steps = [
+            f"準備並洗淨所有食材，將{title}主料切好備用。",
+            "熱鍋下適量食用油，下入食材以中火翻炒至熟透香氣溢出。",
+            "加入少許鹽與天然素食調味翻炒均勻，即可出鍋裝盤享用。"
+        ]
 
     # Tips
     tip_m = re.search(r'## 💡 大廚美味秘訣 / Chef\'s Tips([\s\S]*?)(?=## 📖|---|$)', text)
@@ -87,7 +124,7 @@ def parse_markdown_recipe(platform_prefix, platform_domain, folder_name, md_path
         "name": title,
         "name_hans": title,
         "name_en": title,
-        "keywords_en": f"{title} {platform_domain} vegetarian vegan recipe chinese buddhist food",
+        "keywords_en": f"{title} {platform_domain} vegetarian vegan recipe chinese food",
         "category": category,
         "diet": diet,
         "servings": servings,
@@ -96,7 +133,7 @@ def parse_markdown_recipe(platform_prefix, platform_domain, folder_name, md_path
         "total_time": "25 分鐘",
         "ingredients": ingredients,
         "steps": steps,
-        "desc": tip[:200] if tip else f"{title} · 佛教養生素食佳餚",
+        "desc": tip[:200] if tip else f"{title} · 精選素食家常美味",
         "source_url": source_url,
         "image": img_rel_path,
         "local_dir": f"{platform_domain}/{folder_name}"

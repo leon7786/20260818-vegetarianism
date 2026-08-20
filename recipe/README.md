@@ -2,7 +2,8 @@
 
 > **說明**：本目錄為 Antigravity 素食導航項目的本地食譜庫，提供結構化 Markdown、高清成品圖與多語言（簡體 / 繁體 / 英文）檢索支援，方便搜尋引擎快速抓取索引與使用者本地查詢。
 
-**當前已歸檔食譜總數**：`746` 道精選素食料理
+**當前已歸檔食譜總數**：`846` 道精選素食料理
+- 🥬 **現代中華素菜 Top 100 (01-蔬菜本味類)**：`100` 道
 - 🥢 **下廚房 (Xiachufang)**：`194` 道
 - 🍲 **豆果美食 (Douguo)**：`179` 道
 - 🌿 **觀音山蔬食館 (Guanyinshan)**：`173` 道
@@ -808,8 +809,130 @@
 
 ---
 
+## 📚 8. 現代中華素菜 Top 100 · 01 蔬菜本味類 (100 道)
+
+> **分類口徑**：以時蔬本身的清鮮、脆嫩、醬香為主，不靠菌菇、豆腐、仿葷撐場。油燜筍、白灼、蒜蓉、干煸、醋溜都算。全量 100 道均已完成中英雙語標準食譜與本地高清實拍圖 (`cover.jpg`) 完整歸檔。
+
+| 序號 | 食譜名稱 | 英文名稱 | 飲食流派 | 分類 | 特色與工藝摘要 | 食譜詳情 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | **白灼菜心** | Cantonese Poached Choy Sum with Sizzling Garlic Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可依戒律去蒜做纯净素)</span> | 粤菜经典 / 白灼时蔬 | 广东家常第一青菜。滚水加盐油焯至翠绿，蒜蓉、生抽、素蚝油淋热油，脆嫩清甜。 | [白灼菜心](1Top/01-蔬菜本味类/白灼菜心/README.md) |
+| 2 | **蒜蓉油麦菜** | Stir-Fried You Mai Cai with Minced Garlic (Chinese Lettuce) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可依戒律去蒜做纯净素)</span> | 经典家常 / 粤式快炒 | 粤式快炒。蒜爆香大火翻炒，断生即起，翠绿不发黄，三分钟上桌。 | [蒜蓉油麦菜](1Top/01-蔬菜本味类/蒜蓉油麦菜/README.md) |
+| 3 | **蚝油生菜** | Cantonese Poached Lettuce with Vegetarian Oyster Sauce & Garlic Glaze | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 港式家常 / 粤式时蔬 | 港式家常。生菜焯水或快炒，素蚝油蒜蓉芡汁，清脆鲜甜。 | [蚝油生菜](1Top/01-蔬菜本味类/蚝油生菜/README.md) |
+| 4 | **清炒空心菜** | Stir-Fried Water Spinach with Garlic and Chili | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 南方家常 / 快手时蔬 | 南方高频菜。蒜爆香大火快炒，可加豆豉或辣椒，鲜香脆嫩。 | [清炒空心菜](1Top/01-蔬菜本味类/清炒空心菜/README.md) |
+| 5 | **蒜蓉空心菜** | Cantonese Garlic Water Spinach (Kong Xin Cai) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 粤式快炒 / 经典素馔 | 空心菜梗叶分开，蒜蓉先炒梗再下叶，比清炒更香。 | [蒜蓉空心菜](1Top/01-蔬菜本味类/蒜蓉空心菜/README.md) |
+| 6 | **上汤娃娃菜** | Baby Chinese Cabbage Poached in Vegetarian Supreme Broth | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯净素 / 无五辛)</span> | 粤式上汤 / 清雅素筵 | 娃娃菜剖开，菌菇上汤或清汤浸熟，鲜嫩多汁。 | [上汤娃娃菜](1Top/01-蔬菜本味类/上汤娃娃菜/README.md) |
+| 7 | **蒜蓉粉丝娃娃菜** | Cantonese Steamed Baby Cabbage with Glass Noodles and Golden Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 粤式清蒸 / 酒楼经典 | 粤式蒸菜。娃娃菜铺底，泡软粉丝与大量炒香蒜蓉清蒸。 | [蒜蓉粉丝娃娃菜](1Top/01-蔬菜本味类/蒜蓉粉丝娃娃菜/README.md) |
+| 8 | **醋溜白菜** | Northern Chinese Sweet & Sour Crispy Cabbage (Cu Liu Bai Cai) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含葱姜蒜五辛素；可依戒律去蒜葱做纯净素)</span> | 鲁菜经典 / 传统家常 | 鲁菜、东北家常。帮叶分开，醋糖盐干辣椒快炒，酸甜清脆，火候要准。 | [醋溜白菜](1Top/01-蔬菜本味类/醋溜白菜/README.md) |
+| 9 | **手撕包菜** | Hand-Torn Cabbage Stir-Fried with Dried Chilies and Sichuan Peppercorns | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 川湘家常 / 旺火爆炒 | 包菜手撕，干辣椒蒜花椒爆香大火快炒，少许醋，脆嫩爽口。 | [手撕包菜](1Top/01-蔬菜本味类/手撕包菜/README.md) |
+| 10 | **虎皮青椒** | Pan-Seared Tiger-Skin Green Peppers in Sweet-Sour Garlic Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 川湘经典 / 经典开胃菜 | 青椒煸至虎皮焦斑，蒜、生抽、醋、糖，微辣酸甜开胃。 | [虎皮青椒](1Top/01-蔬菜本味类/虎皮青椒/README.md) |
+| 11 | **虎皮尖椒** | Pan-Seared Tiger-Skin Hot Chilies in Sichuan Garlic Glaze | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 川味家常 / 辛香佐餐 | 青尖椒干煸起斑再调味，比青椒更辣，川味家常。 | [虎皮尖椒](1Top/01-蔬菜本味类/虎皮尖椒/README.md) |
+| 12 | **干煸四季豆** | Sichuan Dry-Fried String Beans with Preserved Mustard Greens | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 川菜经典 / 干香名馔 | 豆角炸或煸至起皱，干辣椒花椒蒜末干煸，干香麻辣。 | [干煸四季豆](1Top/01-蔬菜本味类/干煸四季豆/README.md) |
+| 13 | **干煸豇豆** | Sichuan Dry-Fried Chinese Long Beans with Yibin Yacai | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 川味经典 / 下饭神菜 | 长豇豆煸皱，可加芽菜或干椒，川式干香。 | [干煸豇豆](1Top/01-蔬菜本味类/干煸豇豆/README.md) |
+| 14 | **蒜蓉西兰花** | Stir-Fried Broccoli with Golden Minced Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 全国家常 / 快手健康菜 | 快手清炒，保留清脆，全国饭桌常见。 | [蒜蓉西兰花](1Top/01-蔬菜本味类/蒜蓉西兰花/README.md) |
+| 15 | **蚝油芥兰** | Cantonese Gai Lan (Chinese Broccoli) in Savory Vegetarian Oyster Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 粤菜经典 / 酒楼名菜 | 粤菜经典。芥兰焯或炒，素蚝油蒜蓉，微苦回甘。 | [蚝油芥兰](1Top/01-蔬菜本味类/蚝油芥兰/README.md) |
+| 16 | **白灼芥兰** | Cantonese Poached Gai Lan with Sizzling Ginger & Soy Dressing | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 粤菜经典 / 纯本清甜 | 滚水焯芥兰，淋蒜油豉油，比炒更清。 | [白灼芥兰](1Top/01-蔬菜本味类/白灼芥兰/README.md) |
+| 17 | **清炒上海青** | Jiangnan Stir-Fried Shanghai Bok Choy with Garlic Oil | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 江南家常 / 经典时蔬 | 江南家常。上海青大火快炒，盐油即可，清甜。 | [清炒上海青](1Top/01-蔬菜本味类/清炒上海青/README.md) |
+| 18 | **蒜蓉菜心** | Cantonese Wok-Fried Choy Sum with Fragrant Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 粤港家常 / 经典镬气 | 菜心蒜蓉爆炒，广东、香港酒楼与家常都点。 | [蒜蓉菜心](1Top/01-蔬菜本味类/蒜蓉菜心/README.md) |
+| 19 | **清炒菠菜** | Quick Stir-Fried Spinach with Garlic and Sesame Oil | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 经典家常 / 快手高纤 | 菠菜快炒，可加蒜，铁质高、极快手。 | [清炒菠菜](1Top/01-蔬菜本味类/清炒菠菜/README.md) |
+| 20 | **麻酱拌菠菜** | Northern Chinese Chilled Spinach Tower with Savory Sesame Dressing & Peanuts | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 北方凉菜 / 传统清供 | 北方凉菜。焯水切段，芝麻酱花生碎，清爽有分量。 | [麻酱拌菠菜](1Top/01-蔬菜本味类/麻酱拌菠菜/README.md) |
+| 21 | **蒜蓉茼蒿** | Stir-Fried Garland Chrysanthemum Greens with Minced Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜五辛素；可依戒律去蒜做纯净素)</span> | 江南粤式 / 清香时蔬 | 水油焖或爆炒，蒿香浓，广东、上海都爱。 | [蒜蓉茼蒿](1Top/01-蔬菜本味类/蒜蓉茼蒿/README.md) |
+| 22 | **清炒韭菜** | Quick Stir-Fried Fresh Chinese Garlic Chives | <span style='color:#15803d;'>全素 / 纯素 Vegan (含韭五辛素；纯素五辛斋食)</span> | 春季时令 / 经典快炒 | 春韭快炒，可纯素不放蛋，香辣下饭。 | [清炒韭菜](1Top/01-蔬菜本味类/清炒韭菜/README.md) |
+| 23 | **素炒韭黄** | Stir-Fried Yellow Chives with Ginger and Light Soy Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含韭黄，依五辛戒律属五辛素；纯植物原料)</span> | 家常小炒 / 鲜香时蔬 | 韭黄柔嫩，快炒断生，香而不冲。 | [素炒韭黄](1Top/01-蔬菜本味类/素炒韭黄/README.md) |
+| 24 | **清炒绿豆芽** | Crispy Stir-Fried Mung Bean Sprouts | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 经典小炒 / 清爽脆嫩 | 大火快炒，可加醋辣椒蒜，脆嫩解腻。 | [清炒绿豆芽](1Top/01-蔬菜本味类/清炒绿豆芽/README.md) |
+| 25 | **醋炒绿豆芽** | Northern-Style Vinegar Stir-Fried Mung Bean Sprouts | <span style='color:#15803d;'>全素 / 纯素 Vegan (含花椒、干椒、蒜；可依戒律去五辛)</span> | 北方家常 / 爽脆开胃 | 北方家常，醋提脆，成本极低。 | [醋炒绿豆芽](1Top/01-蔬菜本味类/醋炒绿豆芽/README.md) |
+| 26 | **拍黄瓜** | Classic Smashed Cucumber Salad with Garlic Vinegar Dressing | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 夏日经典 / 爽口凉菜 | 夏天第一凉菜。拍裂腌水，蒜醋香油，可选辣椒油。 | [拍黄瓜](1Top/01-蔬菜本味类/拍黄瓜/README.md) |
+| 27 | **蒜泥黄瓜** | Garlic Cucumber Salad with Sesame Soy Dressing | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大量大蒜，五辛素)</span> | 家常凉菜 / 浓香蒜味 | 拍或切条，蒜泥生抽香油，比拍黄瓜更蒜。 | [蒜泥黄瓜](1Top/01-蔬菜本味类/蒜泥黄瓜/README.md) |
+| 28 | **蓑衣黄瓜** | Chinese Accordion Cucumber Salad (Suoyi Cucumber) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜、花椒、干椒；可去五辛)</span> | 传统鲁菜刀工 / 爽脆凉菜 | 花刀蓑衣，盐醋蒜，造型与口感都清爽。 | [蓑衣黄瓜](1Top/01-蔬菜本味类/蓑衣黄瓜/README.md) |
+| 29 | **红烧茄子** | Homestyle Braised Eggplant in Savory Brown Garlic Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜改生姜丝做纯净素)</span> | 传统家常 / 软糯浓香 | 少油煎软，生抽老抽糖蒜红烧收汁，软糯酱香极下饭。 | [红烧茄子](1Top/01-蔬菜本味类/红烧茄子/README.md) |
+| 30 | **鱼香茄子** | Sichuan Vegetarian Fish-Fragrant Eggplant (Yuxiang Eggplant) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含葱姜蒜、川味豆瓣酱；可依戒律去五辛)</span> | 川味经典 / 酸甜微辣 | 川味。茄条煎软，豆瓣酱糖醋生抽鱼香汁，无鱼也下饭。 | [鱼香茄子](1Top/01-蔬菜本味类/鱼香茄子/README.md) |
+| 31 | **蒜蓉蒸茄子** | Steamed Eggplant with Golden Garlic Sauce and Soy Dressing | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜，五辛素)</span> | 粤式蒸菜 / 少油软糯 | 茄子蒸软淋蒜蓉生抽香油，少油软糯。 | [蒜蓉蒸茄子](1Top/01-蔬菜本味类/蒜蓉蒸茄子/README.md) |
+| 32 | **地三鲜** | Di San Xian (Stir-Fried Potato, Eggplant and Green Pepper) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；可去蒜做纯净素)</span> | 东北名菜 / 咸鲜浓郁 | 东北国民菜。茄、土豆、青椒过油再酱炒，外酥里嫩咸鲜回甜。 | [地三鲜](1Top/01-蔬菜本味类/地三鲜/README.md) |
+| 33 | **干煸茄子** | Sichuan Dry-Fried Eggplant with Dried Chili and Sichuan Peppercorn | <span style='color:#15803d;'>全素 / 纯素 Vegan (含花椒、干红椒、蒜；可去蒜)</span> | 川菜干煸 / 干香微辣 | 茄子煸出水分再干椒蒜，干香微辣。 | [干煸茄子](1Top/01-蔬菜本味类/干煸茄子/README.md) |
+| 34 | **清蒸茄子** | Tender Steamed Whole Eggplant with Aromatic Dipping Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯植物本味；蘸料含姜醋或蒜末可选)</span> | 原汁原味 / 清淡健康 | 整条或切条清蒸，蘸汁，最本味。 | [清蒸茄子](1Top/01-蔬菜本味类/清蒸茄子/README.md) |
+| 35 | **凉拌茄子** | Northern-Style Shredded Eggplant Salad with Garlic Chili Dressing | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜、香油、辣椒油)</span> | 传统凉菜 / 软嫩开胃 | 蒸或烤软撕条，蒜醋辣椒油，东北、华北凉菜。 | [凉拌茄子](1Top/01-蔬菜本味类/凉拌茄子/README.md) |
+| 36 | **酸辣土豆丝** | Hot and Sour Shredded Potatoes with Sichuan Peppercorns and Vinegar | <span style='color:#15803d;'>全素 / 纯素 Vegan (含干辣椒、花椒、蒜；可去蒜做纯净素)</span> | 国民家常 / 酸辣爽脆 | 家常素菜之王。去淀粉，干椒花椒醋盐糖快炒，五分钟出锅。 | [酸辣土豆丝](1Top/01-蔬菜本味类/酸辣土豆丝/README.md) |
+| 37 | **青椒土豆片** | Homestyle Stir-Fried Potato Slices with Green Pepper and Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 家常经典 / 咸香微辣 | 全国高频。青椒配土豆片，咸香微辣。 | [青椒土豆片](1Top/01-蔬菜本味类/青椒土豆片/README.md) |
+| 38 | **醋溜土豆丝** | Northern Chinese Vinegar Glazed Shredded Potatoes (Culiu) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含花椒、葱蒜可选；依戒律微调)</span> | 鲁式家常 / 醋香清脆 | 偏醋香，与酸辣土豆丝近亲，更清。 | [醋溜土豆丝](1Top/01-蔬菜本味类/醋溜土豆丝/README.md) |
+| 39 | **清炒西葫芦** | Quick Homestyle Stir-Fried Zucchini Slices with Garlic and Dried Chili | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜、干椒；可去蒜做纯净素)</span> | 家常快手 / 清鲜嫩滑 | 快炒保嫩，可加干椒，华北家常。 | [清炒西葫芦](1Top/01-蔬菜本味类/清炒西葫芦/README.md) |
+| 40 | **干锅花菜** | Sichuan-Hunan Dry Pot Organic Cauliflower with Chili and Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含干辣椒、花椒、大蒜、豆豉/豆瓣；可去五辛)</span> | 湘川干锅 / 焦香爽脆 | 花菜煸香，干椒花椒，现代家常干香。 | [干锅花菜](1Top/01-蔬菜本味类/干锅花菜/README.md) |
+| 41 | **素炒花椰菜** | Homestyle Stir-Fried Cauliflower with Garlic and Carrots | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 经典家常 / 清甜微脆 | 清炒或蒜蓉，保留微脆。 | [素炒花椰菜](1Top/01-蔬菜本味类/素炒花椰菜/README.md) |
+| 42 | **白灼生菜** | Cantonese Poached Lettuce with Sizzling Garlic Soy Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜蓉；可去蒜做纯净素)</span> | 粤菜经典 / 白灼时蔬 | 滚水焯生菜，蒜蓉豉油，比炒更脆。 | [白灼生菜](1Top/01-蔬菜本味类/白灼生菜/README.md) |
+| 43 | **蒜蓉生菜** | Stir-Fried Lettuce with Minced Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 经典家常 / 粤式快炒 | 生炒蒜蓉生菜，粤式、家常都常见。 | [蒜蓉生菜](1Top/01-蔬菜本味类/蒜蓉生菜/README.md) |
+| 44 | **清炒小白菜** | Stir-Fried Baby Bok Choy with Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 经典家常 / 快炒时蔬 | 最基础青菜，盐油蒜，全国都做。 | [清炒小白菜](1Top/01-蔬菜本味类/清炒小白菜/README.md) |
+| 45 | **蒜蓉苋菜** | Stir-Fried Red Amaranth with Sizzling Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 夏季时令 / 传统家常 | 夏菜。苋菜遇蒜油更香，出汤红亮。 | [蒜蓉苋菜](1Top/01-蔬菜本味类/蒜蓉苋菜/README.md) |
+| 46 | **清炒苋菜** | Stir-Fried Chinese Amaranth with Ginger | <span style='color:#15803d;'>纯素 Vegan (纯净素，无五辛)</span> | 夏季时令 / 清素本味 | 少蒜版，清甜，南方夏天高频。 | [清炒苋菜](1Top/01-蔬菜本味类/清炒苋菜/README.md) |
+| 47 | **素炒芹菜** | Stir-Fried Celery with Dried Chili | <span style='color:#15803d;'>全素 / 纯素 Vegan (五辛素/纯净素通用，含蒜可去)</span> | 脆嫩爽口 / 家常素炒 | 芹菜段快炒，可加干椒，清香有嚼劲。 | [素炒芹菜](1Top/01-蔬菜本味类/素炒芹菜/README.md) |
+| 48 | **清炒莴笋** | Stir-Fried Stem Lettuce (Celtuce) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 脆嫩爽口 / 江南家常 | 莴笋片或丝，清炒或凉拌，脆甜。 | [清炒莴笋](1Top/01-蔬菜本味类/清炒莴笋/README.md) |
+| 49 | **凉拌莴笋** | Chilled Crispy Celtuce Salad with Garlic and Sesame Oil | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 夏日凉菜 / 清爽脆嫩 | 盐醋蒜香油，夏天凉菜。 | [凉拌莴笋](1Top/01-蔬菜本味类/凉拌莴笋/README.md) |
+| 50 | **油焖笋** | Braised Bamboo Shoots in Sweet Soy Sauce | <span style='color:#15803d;'>纯素 Vegan (纯净素，无五辛)</span> | 杭帮名菜 / 浓油赤酱 | 杭帮节令。嫩笋重油重糖焖红亮，鲜甜酱香。 | [油焖笋](1Top/01-蔬菜本味类/油焖笋/README.md) |
+| 51 | **油焖春笋** | Hangzhou Braised Spring Bamboo Shoots | <span style='color:#15803d;'>纯素 Vegan (纯净素，无五辛)</span> | 江南时令 / 经典名菜 | 春笋时令款，江南名素菜。 | [油焖春笋](1Top/01-蔬菜本味类/油焖春笋/README.md) |
+| 52 | **干烧冬笋** | Dry-Braised Winter Bamboo Shoots | <span style='color:#15803d;'>全素 / 纯素 Vegan (五辛素/纯净素通用，含姜)</span> | 浙派山珍 / 干烧名菜 | 浙菜山珍素菜，冬笋干烧鲜香浓郁。 | [干烧冬笋](1Top/01-蔬菜本味类/干烧冬笋/README.md) |
+| 53 | **素炒芦笋** | Stir-Fried Asparagus with Minced Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 清脆爽口 / 宴席家常 | 芦笋快炒蒜蓉，清脆。 | [素炒芦笋](1Top/01-蔬菜本味类/素炒芦笋/README.md) |
+| 54 | **白灼芦笋** | Cantonese Poached Asparagus with Seasoned Soy Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 粤菜经典 / 白灼本味 | 焯水淋豉油蒜油，更本味。 | [白灼芦笋](1Top/01-蔬菜本味类/白灼芦笋/README.md) |
+| 55 | **清炒荷兰豆** | Stir-Fried Snow Peas with Minced Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯净素)</span> | 脆嫩爽口 / 经典家常 | 荷兰豆大火快炒，翠绿甜脆。 | [清炒荷兰豆](1Top/01-蔬菜本味类/清炒荷兰豆/README.md) |
+| 56 | **素炒甜豆** | Stir-Fried Sugar Snap Peas with Bell Peppers | <span style='color:#15803d;'>纯素 Vegan (纯净素/五辛素通用，含蒜可去)</span> | 甜脆多汁 / 经典素炒 | 甜豆快炒，可配彩椒。 | [素炒甜豆](1Top/01-蔬菜本味类/素炒甜豆/README.md) |
+| 57 | **清炒秋葵** | Stir-Fried Okra with Garlic and Chili | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯素)</span> | 润滑清爽 / 健康轻食 | 秋葵快炒或焯拌，减少黏液、保脆。 | [清炒秋葵](1Top/01-蔬菜本味类/清炒秋葵/README.md) |
+| 58 | **凉拌秋葵** | Chilled Okra Salad with Garlic Dressing | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯素)</span> | 夏日凉菜 / 清爽低脂 | 焯水蒜蓉，清爽。 | [凉拌秋葵](1Top/01-蔬菜本味类/凉拌秋葵/README.md) |
+| 59 | **蒜蓉丝瓜** | Stir-Fried Luffa / Sponge Gourd with Minced Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯素)</span> | 鲜甜滑嫩 / 经典夏菜 | 丝瓜蒜蓉快炒，出水即起，嫩滑。 | [蒜蓉丝瓜](1Top/01-蔬菜本味类/蒜蓉丝瓜/README.md) |
+| 60 | **素炒丝瓜** | Stir-Fried Sponge Gourd (Luffa) with Ginger | <span style='color:#15803d;'>纯素 Vegan (纯净素，无五辛)</span> | 南方夏菜 / 原汁原味 | 清炒保本味，南方夏菜。 | [素炒丝瓜](1Top/01-蔬菜本味类/素炒丝瓜/README.md) |
+| 61 | **清炒苦瓜** | Stir-Fried Bitter Melon with Fermented Black Beans | <span style='color:#15803d;'>全素 / 纯素 Vegan (含大蒜；五辛素，可去蒜改纯素)</span> | 清热消暑 / 经典家常 | 苦瓜快炒，可加豆豉，苦后回甘。 | [清炒苦瓜](1Top/01-蔬菜本味类/清炒苦瓜/README.md) |
+| 62 | **干煸苦瓜** | Sichuan Dry-Fried Bitter Melon with Dried Chili and Black Beans | <span style='color:#15803d;'>全素 / 纯素 Vegan (五辛素/纯净素通用，含蒜可去)</span> | 川味干香 / 经典干煸 | 苦瓜煸去部分苦水，干香。 | [干煸苦瓜](1Top/01-蔬菜本味类/干煸苦瓜/README.md) |
+| 63 | **素炒南瓜** | Stir-Fried Pumpkin with Garlic (Chinese Sautéed Pumpkin) | <span style='color:#15803d;'>纯素 Vegan（含大蒜；戒五辛者可去蒜改用姜丝）</span> | 家常素菜 / 甜糯清鲜 | 南瓜块或丝清炒，甜软。 | [素炒南瓜](1Top/01-蔬菜本味类/素炒南瓜/README.md) |
+| 64 | **清炒胡萝卜丝** | Stir-Fried Shredded Carrots (Quick-Fried Carrot Julienne) | <span style='color:#15803d;'>纯素 Vegan（含葱花标明五辛素；纯素以生姜丝替代）</span> | 家常素菜 / 脆爽微甜 | 胡萝卜丝快炒，可醋溜，家常配菜。 | [清炒胡萝卜丝](1Top/01-蔬菜本味类/清炒胡萝卜丝/README.md) |
+| 65 | **素炒三丝** | Stir-Fried Vegetarian Three Shreds (Bamboo Shoots, Carrots & Bell Pepper) | <span style='color:#15803d;'>纯素 Vegan</span> | 传统宴席素菜 / 经典小炒 | 胡萝卜、笋、青椒或芹菜丝合炒，宴席家常都用。 | [素炒三丝](1Top/01-蔬菜本味类/素炒三丝/README.md) |
+| 66 | **清炒卷心菜** | Crisp Stir-Fried Green Cabbage | <span style='color:#15803d;'>纯素 Vegan</span> | 家常快炒 / 脆嫩爽口 | 圆白菜快炒，可加醋干椒。 | [清炒卷心菜](1Top/01-蔬菜本味类/清炒卷心菜/README.md) |
+| 67 | **炝炒圆白菜** | Sichuan Spicy & Tangy Stir-Fried Cabbage (Qiang-Chao Cabbage) | <span style='color:#15803d;'>纯素 Vegan</span> | 川北经典 / 炝炒时蔬 | 热油炝椒再下菜，东北、华北家常。 | [炝炒圆白菜](1Top/01-蔬菜本味类/炝炒圆白菜/README.md) |
+| 68 | **素炒大白菜** | Stir-Fried Chinese Cabbage (Sautéed Napa Cabbage) | <span style='color:#15803d;'>纯素 Vegan</span> | 经典家常 / 清甜原味 | 大白菜帮叶分开炒，比醋溜更淡。 | [素炒大白菜](1Top/01-蔬菜本味类/素炒大白菜/README.md) |
+| 69 | **素炒韭菜花** | Stir-Fried Garlic Chive Blossoms (Sautéed Chive Scapes) | <span style='color:#15803d;'>纯素 / 五辛素（含韭菜，标明五辛素；严格佛教纯净素可用嫩芦笋/蒜薹替代）</span> | 时令鲜蔬 / 鲜嫩脆甜 | 韭菜花快炒，春末夏初。 | [素炒韭菜花](1Top/01-蔬菜本味类/素炒韭菜花/README.md) |
+| 70 | **素炒蒜苔** | Stir-Fried Garlic Scapes (Crisp Sautéed Garlic Sprouts) | <span style='color:#15803d;'>纯素 / 五辛素（含蒜苔，标明五辛素）</span> | 家常快炒 / 脆爽回甘 | 蒜苔快炒，可纯素不放肉，脆香。 | [素炒蒜苔](1Top/01-蔬菜本味类/素炒蒜苔/README.md) |
+| 71 | **素炒豌豆苗** | Stir-Fried Pea Shoots with Sizzling Garlic (Sautéed Pea Tendrils) | <span style='color:#15803d;'>纯素 Vegan（含蒜；戒五辛者可去蒜改用姜汁与白酒提香）</span> | 粤苏经典 / 极鲜时蔬 | 豆苗大火快炒，极嫩，酒楼与家常。 | [素炒豌豆苗](1Top/01-蔬菜本味类/素炒豌豆苗/README.md) |
+| 72 | **白灼菜胆** | Cantonese Blanched Choy Sum Hearts with Sizzling Soy Sauce | <span style='color:#15803d;'>纯素 Vegan（含葱姜点缀；纯净素以姜丝生抽热油淋汁）</span> | 港式酒楼名菜 / 粤式白灼 | 菜心最嫩的菜胆焯水，港式酒楼青菜。 | [白灼菜胆](1Top/01-蔬菜本味类/白灼菜胆/README.md) |
+| 73 | **蚝油菜胆** | Braised Choy Sum Hearts in Vegetarian Oyster Sauce (Glazed Bok Choy Hearts) | <span style='color:#15803d;'>纯素 Vegan</span> | 粤式经典 / 酱香时蔬 | 菜胆配素蚝油，比白灼更酱香。 | [蚝油菜胆](1Top/01-蔬菜本味类/蚝油菜胆/README.md) |
+| 74 | **上汤浸时蔬** | Seasonal Greens Poached in Superior Vegetarian Broth | <span style='color:#15803d;'>纯素 Vegan</span> | 粤菜素席 / 上汤浸菜 | 时令菜浸上汤，粤式素席常见。 | [上汤浸时蔬](1Top/01-蔬菜本味类/上汤浸时蔬/README.md) |
+| 75 | **清炒鸡毛菜** | Shanghai Quick-Fried Baby Bok Choy (Stir-Fried Baby Greens) | <span style='color:#15803d;'>纯素 Vegan</span> | 江南家常 / 清甜脆嫩 | 上海小青菜，快炒清甜。 | [清炒鸡毛菜](1Top/01-蔬菜本味类/清炒鸡毛菜/README.md) |
+| 76 | **素炒芥菜** | Stir-Fried Chinese Mustard Greens with Ginger and Garlic | <span style='color:#15803d;'>纯素 Vegan</span> | 岭南时蔬 / 苦尽甘来 | 芥菜快炒或白灼，微苦开胃。 | [素炒芥菜](1Top/01-蔬菜本味类/素炒芥菜/README.md) |
+| 77 | **清炒雪里蕻** | Stir-Fried Fresh Potherb Mustard Greens (Fresh Xue Li Hong) | <span style='color:#15803d;'>纯素 Vegan</span> | 江南乡土菜 / 清鲜微辣 | 鲜雪里蕻快炒，未腌的本味。 | [清炒雪里蕻](1Top/01-蔬菜本味类/清炒雪里蕻/README.md) |
+| 78 | **素炒枸杞叶** | Sautéed Chinese Boxthorn Leaves (Goji Greens with Garlic) | <span style='color:#15803d;'>纯素 Vegan（含蒜；纯素以生姜丝替代）</span> | 岭南闽南药膳 / 时令养生 | 枸杞叶蒜蓉炒，两广、闽南时令。 | [素炒枸杞叶](1Top/01-蔬菜本味类/素炒枸杞叶/README.md) |
+| 79 | **清炒马兰头** | Stir-Fried Kalimeris Indica (Jiangnan Spring Wild Greens) | <span style='color:#15803d;'>纯素 Vegan</span> | 江南春季野菜 / 清鲜解毒 | 江南春野菜，清炒或拌香干。 | [清炒马兰头](1Top/01-蔬菜本味类/清炒马兰头/README.md) |
+| 80 | **素炒香椿** | Sautéed Spring Chinese Toon Shoots (Spring Toon Bud Stir-Fry) | <span style='color:#15803d;'>纯素 Vegan</span> | 时令春鲜 / 极品树生野菜 | 春椿芽快炒或拌，香气极冲，时令。 | [素炒香椿](1Top/01-蔬菜本味类/素炒香椿/README.md) |
+| 81 | **清炒红薯叶** | Sautéed Sweet Potato Leaves with Garlic (Yam Greens) | <span style='color:#15803d;'>纯素 Vegan（含蒜；纯素以生姜丝替代）</span> | 闽粤台经典 / 鲜嫩甘甜 | 番薯叶蒜蓉，闽粤台家常，清甜。 | [清炒红薯叶](1Top/01-蔬菜本味类/清炒红薯叶/README.md) |
+| 82 | **素炒南瓜尖** | Stir-Fried Pumpkin Shoots (Tender Pumpkin Vine Shoots) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜、干辣椒；可去蒜做纯净素)</span> | 西南华南乡土时令 / 快炒青菜 | 南瓜嫩尖快炒，西南、华南。 | [素炒南瓜尖](1Top/01-蔬菜本味类/素炒南瓜尖/README.md) |
+| 83 | **素炒青椒** | Stir-Fried Green Bell Peppers | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素/五辛素均可)</span> | 经典家常 / 极简下饭菜 | 青椒块或丝清炒，最简下饭。 | [素炒青椒](1Top/01-蔬菜本味类/素炒青椒/README.md) |
+| 84 | **素炒尖椒** | Stir-Fried Hot Green Peppers with Aromatic Vinegar | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 川湘家常 / 辣香开胃 | 尖椒快炒，可加醋，辣香。 | [素炒尖椒](1Top/01-蔬菜本味类/素炒尖椒/README.md) |
+| 85 | **素炒彩椒** | Stir-Fried Tri-Color Bell Peppers | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 缤纷时蔬 / 快炒甜脆 | 彩椒快炒，颜色好看，口感脆甜。 | [素炒彩椒](1Top/01-蔬菜本味类/素炒彩椒/README.md) |
+| 86 | **素炒玉米笋** | Stir-Fried Baby Corn with Wood Ear and Carrots | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 爽脆清炒 / 宴席家常 | 玉米笋快炒或做配，甜脆。 | [素炒玉米笋](1Top/01-蔬菜本味类/素炒玉米笋/README.md) |
+| 87 | **清炒茭白** | Stir-Fried Water Bamboo Shoots (Jiangnan Style) | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 江南淮扬 / 鲜甜清炒 | 茭白片清炒，江南夏秋，鲜甜如笋。 | [清炒茭白](1Top/01-蔬菜本味类/清炒茭白/README.md) |
+| 88 | **油焖茭白** | Shanghainese Braised Water Bamboo Shoots in Sweet Soy Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 本帮江浙 / 浓油赤酱素替 | 茭白油焖，酱香，可作家常荤菜的素替。 | [油焖茭白](1Top/01-蔬菜本味类/油焖茭白/README.md) |
+| 89 | **素炒瓠瓜** | Stir-Fried Calabash / Bottle Gourd with Garlic | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 夏季瓜类 / 嫩滑清甜 | 瓠子或蒲瓜清炒，嫩滑。 | [素炒瓠瓜](1Top/01-蔬菜本味类/素炒瓠瓜/README.md) |
+| 90 | **素炒节瓜** | Cantonese Stir-Fried Fuzzy Melon with Vegetarian Oyster Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 经典粤菜 / 岭南夏瓜 | 粤式夏瓜，蒜蓉或咸蛋黄改素蚝油。 | [素炒节瓜](1Top/01-蔬菜本味类/素炒节瓜/README.md) |
+| 91 | **素炒冬瓜片** | Stir-Fried Winter Melon Slices | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 家常清热 / 晶莹滑嫩 | 冬瓜薄片快炒，比红烧清。 | [素炒冬瓜片](1Top/01-蔬菜本味类/素炒冬瓜片/README.md) |
+| 92 | **白灼娃娃菜** | Cantonese Poached Baby Chinese Cabbage with Garlic Soy Sauce | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 粤式白灼 / 清甜爽口 | 整棵或剖开焯水淋汁，比上汤更淡。 | [白灼娃娃菜](1Top/01-蔬菜本味类/白灼娃娃菜/README.md) |
+| 93 | **清炒油菜** | Stir-Fried Shanghai Bok Choy (Rapeseed Greens) | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 江南家常 / 基础经典 | 油菜心快炒，全国基础青菜。 | [清炒油菜](1Top/01-蔬菜本味类/清炒油菜/README.md) |
+| 94 | **蒜蓉油菜** | Garlic Stir-Fried Shanghai Bok Choy | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 浓香家常 / 经典炒青菜 | 油菜加蒜，比清炒香。 | [蒜蓉油菜](1Top/01-蔬菜本味类/蒜蓉油菜/README.md) |
+| 95 | **素炒紫甘蓝** | Stir-Fried Red Cabbage (with White Vinegar) | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 护色快炒 / 脆甜爽口 | 紫甘蓝丝快炒或凉拌，脆甜。 | [素炒紫甘蓝](1Top/01-蔬菜本味类/素炒紫甘蓝/README.md) |
+| 96 | **凉拌包菜丝** | Crispy Shredded Cabbage Salad (Sweet, Sour & Spicy) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜、花椒、干辣椒；可去蒜做纯净素)</span> | 经典凉菜 / 酸辣爽脆 | 包菜丝醋糖辣椒，凉菜。 | [凉拌包菜丝](1Top/01-蔬菜本味类/凉拌包菜丝/README.md) |
+| 97 | **素炒菠菜豆腐** | Stir-Fried Spinach with Pan-Seared Golden Tofu | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素/五辛素均可)</span> | 经典家常 / 菠菜为主 | 菠菜为主料快炒，豆腐仅点缀则仍算蔬菜本味；纯豆腐菜归豆制品。 | [素炒菠菜豆腐](1Top/01-蔬菜本味类/素炒菠菜豆腐/README.md) |
+| 98 | **清炒豌豆** | Stir-Fried Fresh Sweet Green Peas | <span style='color:#15803d;'>全素 / 纯素 Vegan (纯素)</span> | 时令甜豆 / 鲜甜可口 | 嫩豌豆快炒，甜。 | [清炒豌豆](1Top/01-蔬菜本味类/清炒豌豆/README.md) |
+| 99 | **素炒扁豆** | Stir-Fried Flat Green Beans (Hyacinth Beans) | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 家常时令 / 焖炒透熟 | 扁豆或四季豆清炒（非干煸），家常。 | [素炒扁豆](1Top/01-蔬菜本味类/素炒扁豆/README.md) |
+| 100 | **白灼时蔬拼盘** | Cantonese Assorted Poached Seasonal Vegetables Platter | <span style='color:#15803d;'>全素 / 纯素 Vegan (含蒜；可去蒜做纯净素)</span> | 粤式宴席 / 缤纷白灼 | 多种时蔬分别焯水拼盘，淋统一蒜蓉豉油，粤式素席青菜。 | [白灼时蔬拼盘](1Top/01-蔬菜本味类/白灼时蔬拼盘/README.md) |
+
+---
+
 ## 📂 資料夾目錄結構 (Repository Structure)
 
+```text
+recipe/
+├── README.md               # 全局搜尋引擎檢索索引文件
+├── recipes_data.json       # 前端 SPA 搜尋框即時檢索結構化數據 (746 道)
+├── 1Top/                   # 現代中華素菜 12 大分類 Top 100 精選菜譜庫
+│   └── 01-蔬菜本味类/      # 蔬菜本味類 (100 道全量中英圖文食譜 + cover.jpg)
+├── www.hkbuddhist.org/     # 香港佛教聯合會養生素食庫 (82 道)
+├── home.meishichina.com/   # 美食天下精華素食食譜庫 (99 道)
+├── www.xiachufang.com/     # 下廚房熱門素食食譜庫 (194 道)
+├── www.douguo.com/         # 豆果美食素食食譜庫 (179 道)
+├── vegan.gys.org.tw/       # 觀音山蔬食館食譜庫 (173 道)
+├── www.knorr.com/          # 康寶官方素食食譜庫 (15 道)
+└── www.justgreenmall.com/  # 植境 JustGreen Mall 素食食譜庫 (4 道)
 ```text
 recipe/
 ├── README.md               # 全局搜尋引擎檢索索引文件

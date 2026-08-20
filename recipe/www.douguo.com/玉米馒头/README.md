@@ -4,7 +4,7 @@
 
 ## 📋 基本資訊 / Recipe Overview
 - **料理名稱**：玉米馒头
-- **原始標題**：#助力高考营养餐#玉米馒头
+- **原始標題**：玉米馒头
 - **素食流派 / Diet**：全素 Vegan
 - **料理分類 / Category**：家常蔬食 / 經典熱菜
 - **來源平台 / Source**：[豆果美食 · 素食專區](https://www.douguo.com/cookbook/3096572.html)
