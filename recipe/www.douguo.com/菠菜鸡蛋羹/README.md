@@ -7,19 +7,14 @@
 - **原始標題**：菠菜鸡蛋羹
 - **素食流派 / Diet**：蛋素 Ovo-Vegetarian
 - **料理分類 / Category**：湯品羹湯
-- **難易度 / Difficulty**：切墩(初级)
-- **烹飪時間 / Cooking Time**：10分钟左右
 - **來源平台 / Source**：[豆果美食 · 素食專區](https://www.douguo.com/cookbook/2394747.html)
 
-## 📝 料理故事與簡介 / Story & Introduction
-> 菠菜鸡蛋羹，好吃又营养。
-
 ## 🌿 食材及佐料清單 / Ingredients
-- 鸡蛋：2个
-- 菠菜：2棵
-- 盐：适量
-- 油：少许
-- 海鲜酱油：1小勺
+- 鸡蛋 2个
+- 菠菜 2棵
+- 盐 适量
+- 油 少许
+- 海鲜酱油 1小勺
 
 ## 🍳 烹飪步驟 / Step-by-Step Cooking Steps
 1. 准备好食材
@@ -45,4 +40,4 @@
 - 蛋液过滤两遍，这样蒸出来的蛋羹会更加细腻
 
 ---
-*食譜歸檔時間：2026-08-20 · 來源：豆果美食 (www.douguo.com)*
+*食譜歸檔時間：2026-08-21 · 來源：豆果美食 (www.douguo.com)*

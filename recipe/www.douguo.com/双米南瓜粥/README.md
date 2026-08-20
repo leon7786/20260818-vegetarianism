@@ -7,18 +7,13 @@
 - **原始標題**：双米南瓜粥
 - **素食流派 / Diet**：全素 Vegan
 - **料理分類 / Category**：米食料理
-- **難易度 / Difficulty**：切墩(初级)
-- **烹飪時間 / Cooking Time**：30~60分钟
 - **來源平台 / Source**：[豆果美食 · 素食專區](https://www.douguo.com/cookbook/2303796.html)
 
-## 📝 料理故事與簡介 / Story & Introduction
-> 双米南瓜粥，搭配了大米和小米。营养丰富，清甜可口！
-
 ## 🌿 食材及佐料清單 / Ingredients
-- 大米：30g
-- 小米：20g
-- 南瓜：1块
-- 饮用水：600ml
+- 大米 30g
+- 小米 20g
+- 南瓜 1块
+- 饮用水 600ml
 
 ## 🍳 烹飪步驟 / Step-by-Step Cooking Steps
 1. 准备好食材
@@ -39,4 +34,4 @@
 2、大米、小米各浸泡二十分钟
 
 ---
-*食譜歸檔時間：2026-08-20 · 來源：豆果美食 (www.douguo.com)*
+*食譜歸檔時間：2026-08-21 · 來源：豆果美食 (www.douguo.com)*
