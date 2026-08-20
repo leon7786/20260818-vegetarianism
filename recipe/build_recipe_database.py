@@ -1,20 +1,43 @@
 import os
 import re
 import json
+import urllib.parse
+from curl_cffi import requests
+from bs4 import BeautifulSoup
 
 TARGET_BASE = "/root/1CT-Share/20260818-vegetarianism/recipe/www.knorr.com"
 RECIPE_ROOT = "/root/1CT-Share/20260818-vegetarianism/recipe"
 
-ALL_KNORR_URLS = [
+ALL_RECIPE_URLS = [
+    # 1. 蕈菇南瓜素麵
     "https://www.knorr.com/tw/r/%E8%95%88%E8%8F%87%E5%8D%97%E7%93%9C%E7%B4%A0%E9%BA%B5.html/159588",
+    # 2. 鮮菇豆腐煲(素)
     "https://www.knorr.com/tw/r/%E9%AE%AE%E8%8F%87%E8%B1%86%E8%85%90%E7%85%B2(%E7%B4%A0).html/176042",
+    # 3. 三絲豆腐羹(素)
     "https://www.knorr.com/tw/r/%E4%B8%89%E7%B5%B2%E8%B1%86%E8%85%90%E7%BE%B9(%E7%B4%A0).html/176044",
+    # 4. 涼拌素什錦(素)
     "https://www.knorr.com/tw/r/%E6%B6%BC%E6%8B%8C%E7%B4%A0%E4%BB%80%E9%8C%A6(%E7%B4%A0).html/176045",
+    # 5. 炸海苔腐皮卷 (全素)
     "https://www.knorr.com/tw/r/%E7%82%B8%E6%B5%B7%E8%8B%94%E8%85%90%E7%9A%AE%E5%8D%B7-(%E5%85%A8%E7%B4%A0).html/179568",
+    # 6. 鹹酥菇菇 (蛋奶素)
     "https://www.knorr.com/tw/r/%E9%B9%B9%E9%85%A5%E8%8F%87%E8%8F%87-(%E8%9B%8B%E5%A5%B6%E7%B4%A0).html/188824",
-    "https://www.knorr.com/tw/r/%E8%8F%87%E8%8F%87%E7%B4%A0%E7%B1%B3%E7%B3%95.html/255111",
+    # 7. 香菇南瓜米粉(素)
+    "https://www.knorr.com/tw/r/%E9%A6%99%E8%8F%87%E5%8D%97%E7%93%9C%E7%B1%B3%E7%B2%89(%E7%B4%A0).html/188973",
+    # 8. 菌菇南瓜湯(素)
     "https://www.knorr.com/tw/r/%E8%8F%8C%E8%8F%87%E5%8D%97%E7%93%9C%E6%B9%AF(%E7%B4%A0).html/229648",
+    # 9. 五福腐皮捲
+    "https://www.knorr.com/tw/r/%E4%BA%94%E7%A6%8F%E8%85%90%E7%9A%AE%E6%8D%B2.html/233570",
+    # 10. 香菇油豆腐煲
+    "https://www.knorr.com/tw/r/%E9%A6%99%E8%8F%87%E6%B2%B9%E8%B1%86%E8%85%90%E7%85%B2.html/233589",
+    # 11. 芋頭南瓜煲
+    "https://www.knorr.com/tw/r/%E8%8A%8B%E9%A0%AD%E5%8D%97%E7%93%9C%E7%85%B2.html/234529",
+    # 12. 草莓油醋沙拉
+    "https://www.knorr.com/tw/r/%E8%8D%89%E8%8E%93%E6%B2%B9%E9%86%8B%E6%B2%99%E6%8B%89.html/300592",
+    # 13. 菇菇素米糕
+    "https://www.knorr.com/tw/r/%E8%8F%87%E8%8F%87%E7%B4%A0%E7%B1%B3%E7%B3%95.html/255111",
+    # 14. 如意冬瓜卷
     "https://www.knorr.com/tw/r/%E5%A6%82%E6%84%8F%E5%86%AC%E7%93%9C%E5%8D%B7.html/255110",
+    # 15. 金沙豆腐
     "https://www.knorr.com/tw/r/%E9%87%91%E6%B2%99%E8%B1%86%E8%85%90.html/232937"
 ]
 
@@ -22,28 +45,28 @@ MULTILINGUAL_MAP = {
     "蕈菇南瓜素麵": {
         "name_zh_hans": "蕈菇南瓜素面",
         "name_en": "Mushroom Pumpkin Vegetarian Noodles",
-        "keywords_en": "mushroom pumpkin vegetarian noodle soba soup noodles",
+        "keywords_en": "mushroom pumpkin vegetarian noodle soba soup noodles nangua",
         "category": "麵食 / 主食",
         "diet": "全素 Vegan"
     },
     "鮮菇豆腐煲(素)": {
         "name_zh_hans": "鲜菇豆腐煲(素)",
         "name_en": "Fresh Mushroom Tofu Claypot",
-        "keywords_en": "fresh mushroom tofu claypot casserole braised tofu stew",
+        "keywords_en": "fresh mushroom tofu claypot casserole braised tofu stew doufu",
         "category": "煲仔 / 熱炒",
         "diet": "奶素 Lacto-Vegetarian"
     },
     "三絲豆腐羹(素)": {
         "name_zh_hans": "三丝豆腐羹(素)",
         "name_en": "Three Shreds Tofu Thick Soup",
-        "keywords_en": "three shreds tofu thick soup broth羹",
+        "keywords_en": "three shreds tofu thick soup broth geng tang doufu",
         "category": "羹湯 / 湯品",
         "diet": "全素 Vegan"
     },
     "涼拌素什錦(素)": {
         "name_zh_hans": "凉拌素什锦(素)",
         "name_en": "Cold Tossed Assorted Vegetarian Salad",
-        "keywords_en": "cold dressed tossed assorted vegetarian vegetable salad appetizers",
+        "keywords_en": "cold dressed tossed assorted vegetarian vegetable salad appetizers liangban",
         "category": "涼拌 / 前菜",
         "diet": "全素 Vegan"
     },
@@ -61,31 +84,66 @@ MULTILINGUAL_MAP = {
         "category": "炸物 / 小吃",
         "diet": "蛋奶素 Ovo-Lacto"
     },
-    "菇菇素米糕": {
-        "name_zh_hans": "菇菇素米糕",
-        "name_en": "Savory Mushroom Vegetarian Sticky Rice Cake",
-        "keywords_en": "mushroom vegetarian sticky glutinous rice cake traditional",
-        "category": "米食 / 點心",
-        "diet": "全素 Vegan"
+    "香菇南瓜米粉(素)": {
+        "name_zh_hans": "香菇南瓜米粉(素)",
+        "name_en": "Mushroom Pumpkin Rice Vermicelli",
+        "keywords_en": "mushroom pumpkin rice vermicelli noodles mifen nangua stir fry",
+        "category": "麵食 / 米粉",
+        "diet": "奶素 Lacto-Vegetarian"
     },
     "菌菇南瓜湯(素)": {
         "name_zh_hans": "菌菇南瓜汤(素)",
         "name_en": "Creamy Mushroom Pumpkin Soup (Vegetarian)",
-        "keywords_en": "creamy mushroom pumpkin puree soup potage",
+        "keywords_en": "creamy mushroom pumpkin puree soup potage nangua tang",
         "category": "湯品 / 西式濃湯",
         "diet": "奶素 Lacto-Vegetarian"
+    },
+    "五福腐皮捲": {
+        "name_zh_hans": "五福腐皮卷",
+        "name_en": "Five Blessings Bean Curd Skin Rolls",
+        "keywords_en": "five blessings bean curd skin tofu roll new year banquet vegan fupi",
+        "category": "精緻熱菜 / 年菜",
+        "diet": "全素 Vegan"
+    },
+    "香菇油豆腐煲": {
+        "name_zh_hans": "香菇油豆腐煲",
+        "name_en": "Braised Shiitake Mushroom with Fried Tofu Claypot",
+        "keywords_en": "braised shiitake mushroom fried tofu claypot pot doufu stew",
+        "category": "煲仔 / 熱炒",
+        "diet": "全素 Vegan"
+    },
+    "芋頭南瓜煲": {
+        "name_zh_hans": "芋头南瓜煲",
+        "name_en": "Braised Taro and Pumpkin Pot",
+        "keywords_en": "braised taro pumpkin pot casserole corn soup puree creamy",
+        "category": "煲仔 / 濃醇料理",
+        "diet": "蛋奶素 Ovo-Lacto"
+    },
+    "草莓油醋沙拉": {
+        "name_zh_hans": "草莓油醋沙拉",
+        "name_en": "Fresh Strawberry Vinaigrette Salad",
+        "keywords_en": "fresh strawberry vinaigrette salad green light healthy fruit appetizer",
+        "category": "沙拉 / 輕食",
+        "diet": "全素 Vegan"
+    },
+    "菇菇素米糕": {
+        "name_zh_hans": "菇菇素米糕",
+        "name_en": "Savory Mushroom Vegetarian Sticky Rice Cake",
+        "keywords_en": "mushroom vegetarian sticky glutinous rice cake traditional migao",
+        "category": "米食 / 點心",
+        "diet": "全素 Vegan"
     },
     "如意冬瓜卷": {
         "name_zh_hans": "如意冬瓜卷",
         "name_en": "Ruyi Winter Melon Rolls with Mushroom Stuffing",
-        "keywords_en": "ruyi winter melon roll stuffed banquet vegetarian gourmet",
+        "keywords_en": "ruyi winter melon roll stuffed banquet vegetarian gourmet donggua juan",
         "category": "精緻熱菜 / 宴席料理",
         "diet": "全素 Vegan"
     },
     "金沙豆腐": {
         "name_zh_hans": "金沙豆腐",
         "name_en": "Golden Salted Egg Tofu",
-        "keywords_en": "golden yolk salted egg tofu crispy soft stir fry",
+        "keywords_en": "golden yolk salted egg tofu crispy soft stir fry jinsha doufu",
         "category": "熱炒 / 經典家常",
         "diet": "蛋素 Ovo-Vegetarian"
     }
@@ -94,19 +152,19 @@ MULTILINGUAL_MAP = {
 def clean_time(time_str):
     if not time_str:
         return "未標註"
-    m = re.findall(r'(\d+)M', time_str)
+    m = re.findall(r'(\d+)M', str(time_str))
     if m:
         return f"{m[0]} 分鐘"
-    h = re.findall(r'(\d+)H', time_str)
+    h = re.findall(r'(\d+)H', str(time_str))
     if h:
         return f"{h[0]} 小時"
-    return time_str.replace("PT", "").replace("M", "分鐘").replace("H", "小時")
+    return str(time_str).replace("PT", "").replace("M", "分鐘").replace("H", "小時")
 
 def scrape_all():
     os.makedirs(TARGET_BASE, exist_ok=True)
     all_recipes = []
 
-    for url in ALL_KNORR_URLS:
+    for url in ALL_RECIPE_URLS:
         print(f"[*] 正在抓取: {url}")
         headers = {
             "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
@@ -178,7 +236,7 @@ def scrape_all():
             prep_time = clean_time(recipe_data.get("prepTime"))
             cook_time = clean_time(recipe_data.get("cookTime"))
             total_time = clean_time(recipe_data.get("totalTime"))
-            yield_servings = recipe_data.get("recipeYield", "2-4 人份")
+            yield_servings = recipe_data.get("recipeYield", "2 人份")
             desc = recipe_data.get("description", "").strip()
 
             meta = MULTILINGUAL_MAP.get(name, {
@@ -243,10 +301,10 @@ def scrape_all():
                 "keywords_en": meta["keywords_en"],
                 "category": meta["category"],
                 "diet": meta["diet"],
-                "servings": str(yield_servings),
+                "servings": str(yield_servings) + " 人份" if str(yield_servings).isdigit() else str(yield_servings),
                 "prep_time": prep_time,
                 "cook_time": cook_time,
-                "total_time": total_time,
+                "total_time": total_time if total_time != "未標註" else f"{prep_time} + {cook_time}",
                 "ingredients": ingredients,
                 "steps": step_texts,
                 "desc": desc,
@@ -265,41 +323,8 @@ def scrape_all():
         json.dump(all_recipes, f, ensure_ascii=False, indent=2)
     print(f"[✓] 已輸出 recipes_data.json: {len(all_recipes)} 條食譜")
 
-    # 生成方便搜尋引擎檢索的 master README.md / INDEX.md
+    # 生成 master README.md
     generate_master_readme(all_recipes)
-
-RECIPE_GROUPS = [
-    {
-        "group_id": "group_1",
-        "group_name_zh": "第 1 組：麵食與米食主食料理 (Staple Noodles & Sticky Rice)",
-        "group_desc": "包含香濃南瓜蕎麥湯麵與傳統麻油香菇長糯米糕，提供高飽足感與優質碳水化合物。",
-        "recipes": ["蕈菇南瓜素麵", "菇菇素米糕"]
-    },
-    {
-        "group_id": "group_2",
-        "group_name_zh": "第 2 組：豆腐與經典豆製品料理 (Tofu & Bean Curd Delicacies)",
-        "group_desc": "包含滑嫩鮮香的煲仔豆腐煲與金黃鹹香的熱炒金沙豆腐，富含豐富大豆植物蛋白。",
-        "recipes": ["鮮菇豆腐煲(素)", "金沙豆腐"]
-    },
-    {
-        "group_id": "group_3",
-        "group_name_zh": "第 3 組：溫潤羹湯與西式濃湯料理 (Thick Soups & Creamy Potages)",
-        "group_desc": "包含爽脆三絲勾芡素羹與絲滑香甜的野菇南瓜濃湯，鮮美溫潤、老少咸宜。",
-        "recipes": ["三絲豆腐羹(素)", "菌菇南瓜湯(素)"]
-    },
-    {
-        "group_id": "group_4",
-        "group_name_zh": "第 4 組：香酥炸物與夜市特色小吃 (Crispy Fried & Street Snacks)",
-        "group_desc": "包含酥脆低油氣炸海苔腐皮卷與台式經典九層塔鹹酥雙菇，酥脆誘人、外酥內嫩。",
-        "recipes": ["炸海苔腐皮卷 (全素)", "鹹酥菇菇 (蛋奶素)"]
-    },
-    {
-        "group_id": "group_5",
-        "group_name_zh": "第 5 組：開胃涼拌與精緻宴席手卷 (Appetizers & Banquet Rolls)",
-        "group_desc": "包含酸甜清爽的五彩涼拌什錦與晶瑩剔透的翡翠如意冬瓜卷，色香味美、清雅甘甜。",
-        "recipes": ["涼拌素什錦(素)", "如意冬瓜卷"]
-    }
-]
 
 def generate_master_readme(recipes):
     readme_path = os.path.join(RECIPE_ROOT, "README.md")
@@ -308,44 +333,19 @@ def generate_master_readme(recipes):
         "",
         "> **說明**：本目錄為 Antigravity 素食導航項目的本地食譜庫，提供結構化 Markdown、高清成品圖與多語言（簡體 / 繁體 / 英文）檢索支援，方便搜尋引擎快速抓取索引與使用者本地查詢。",
         "",
-        f"**當前已歸檔食譜數量**：`{len(recipes)}` 道精選素食料理（劃分為 `5` 大經典料理主題分組）",
+        f"**當前已歸檔食譜數量**：`{len(recipes)}` 道精選素食料理",
         "",
-        "---",
-        "",
-        "## 🍱 5 大精選料理主題分類匯總 (5 Thematic Recipe Groups)",
-        ""
-    ]
-
-    for g in RECIPE_GROUPS:
-        lines.append(f"### 🥢 {g['group_name_zh']}")
-        lines.append(f"*{g['group_desc']}*")
-        lines.append("")
-        lines.append("| 食譜名稱 (繁/簡/英) | 素食流派 | 烹飪耗時 | 核心食材 | 圖文詳情 |")
-        lines.append("| :--- | :--- | :--- | :--- | :--- |")
-        for r_name in g["recipes"]:
-            r = next((item for item in recipes if item["name"] == r_name), None)
-            if not r:
-                continue
-            ing_summary = "、".join([i.split(" ")[0] for i in r["ingredients"][:4]])
-            time_display = f"備料 {r['prep_time']} / 烹飪 {r['cook_time']}"
-            link_md = f"[{r['name']}](www.knorr.com/{r['id']}/README.md)"
-            lines.append(
-                f"| **{r['name']}**<br>*{r['name_hans']}*<br>`{r['name_en']}` | <span style='color:#15803d;'>{r['diet']}</span> | {time_display} | {ing_summary}... | {link_md} |"
-            )
-        lines.append("")
-
-    lines.extend([
         "---",
         "",
         "## 📚 食譜目錄總覽 (Master Recipe Catalog)",
         "",
         "| 序號 | 食譜名稱 (繁/簡/英) | 分類 / 流派 | 耗時 | 食材精選摘要 | 食譜詳情與圖文 |",
         "| :--- | :--- | :--- | :--- | :--- | :--- |"
-    ])
+    ]
 
     for idx, r in enumerate(recipes, 1):
         ing_summary = "、".join([i.split(" ")[0] for i in r["ingredients"][:4]])
-        time_display = f"備料 {r['prep_time']} / 烹飪 {r['cook_time']}"
+        time_display = f"備料{r['prep_time']} / 烹飪{r['cook_time']}"
         link_md = f"[{r['name']}](www.knorr.com/{r['id']}/README.md)"
         lines.append(
             f"| {idx} | **{r['name']}**<br>*{r['name_hans']}*<br>`{r['name_en']}` | {r['category']}<br><span style='color:#15803d;'>{r['diet']}</span> | {time_display} | {ing_summary}... | {link_md} |"
@@ -396,6 +396,4 @@ def generate_master_readme(recipes):
     print(f"[✓] 已成功生成搜索引擎專用檢索文件: {readme_path}")
 
 if __name__ == "__main__":
-    with open(os.path.join(RECIPE_ROOT, "recipes_data.json"), "r", encoding="utf-8") as f:
-        recipes_data = json.load(f)
-    generate_master_readme(recipes_data)
+    scrape_all()
