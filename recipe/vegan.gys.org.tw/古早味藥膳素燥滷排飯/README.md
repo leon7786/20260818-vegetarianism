@@ -6,7 +6,6 @@
 - **料理名稱**：古早味藥膳素燥滷排飯
 - **原始標題**：傳統料理 ｜古早味藥膳素燥滷排飯｜全素
 - **素食流派 / Diet**：全素 Vegan
-- **料理分類 / Category**：主食種類 / 米麵主食 (Staple Food)
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/vegetarian-stewed-pork-rice2023042804/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)

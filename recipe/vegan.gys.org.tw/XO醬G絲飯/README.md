@@ -6,7 +6,6 @@
 - **料理名稱**：XO醬G絲飯
 - **原始標題**：地方特色美食｜XO醬G絲飯｜全素
 - **素食流派 / Diet**：全素 Vegan
-- **料理分類 / Category**：主食種類 / 米麵主食 (Staple Food)
 - **來源平台 / Source**：[觀音山 · 素食料理簡單做](https://vegan.gys.org.tw/g-silk-rice20230414/)
 
 ## 📖 食譜圖文詳情 (中英雙語對照)
