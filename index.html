@@ -66,6 +66,8 @@
         radial-gradient(at 100% 0%, rgba(204, 251, 241, 0.5) 0px, transparent 50%),
         radial-gradient(at 50% 100%, rgba(254, 243, 199, 0.35) 0px, transparent 50%);
       background-attachment: fixed;
+      -webkit-tap-highlight-color: transparent;
+      padding-bottom: env(safe-area-inset-bottom);
     }
 
     a {
@@ -159,12 +161,12 @@
 
     .nav-search-box {
       position: relative;
-      width: 320px;
+      width: 360px;
       transition: var(--transition);
     }
 
     .nav-search-box:focus-within {
-      width: 380px;
+      width: 420px;
     }
 
     .nav-search-input {
@@ -238,7 +240,6 @@
       transition: var(--transition);
       white-space: nowrap;
       touch-action: manipulation;
-      -webkit-tap-highlight-color: transparent;
     }
 
     .btn:active {
@@ -409,7 +410,6 @@
       overflow: hidden;
       cursor: pointer;
       touch-action: manipulation;
-      -webkit-tap-highlight-color: transparent;
     }
 
     .site-card:active {
@@ -603,6 +603,320 @@
       border-color: var(--primary-300);
     }
 
+    /* =========================================
+       食谱卡片专用样式 (Recipe Card)
+       ========================================= */
+    .recipe-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--primary-400);
+    }
+
+    .recipe-card:active {
+      transform: scale(0.985);
+    }
+
+    .recipe-img-box {
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      position: relative;
+      background: var(--primary-100);
+    }
+
+    .recipe-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .recipe-card:hover .recipe-img-box img {
+      transform: scale(1.05);
+    }
+
+    .recipe-diet-pill {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background: rgba(20, 83, 45, 0.88);
+      backdrop-filter: blur(6px);
+      color: #ffffff;
+      font-size: 0.725rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .recipe-time-pill {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(6px);
+      color: var(--text-main);
+      font-size: 0.725rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+    }
+
+    .recipe-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .recipe-title {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 0.2rem;
+      line-height: 1.35;
+    }
+
+    .recipe-en-sub {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      margin-bottom: 0.65rem;
+      font-weight: 500;
+    }
+
+    .recipe-ingredients-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .recipe-ing-chip {
+      font-size: 0.72rem;
+      background: var(--primary-50);
+      color: var(--primary-800);
+      border: 1px solid var(--primary-200);
+      padding: 0.1rem 0.45rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .recipe-card-footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .recipe-meta-text {
+      font-size: 0.775rem;
+      color: var(--text-muted);
+    }
+
+    .btn-view-recipe {
+      background: var(--primary-600);
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: var(--transition);
+    }
+
+    .btn-view-recipe:hover {
+      background: var(--primary-700);
+      transform: translateY(-1px);
+    }
+
+    /* =========================================
+       食谱详情弹窗 (Recipe Detail Modal)
+       ========================================= */
+    .recipe-modal-content {
+      background: #ffffff;
+      width: 100%;
+      max-width: 800px;
+      max-height: 90vh;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-color);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+    }
+
+    .recipe-modal-cover {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .recipe-modal-inner {
+      padding: 1.75rem;
+    }
+
+    .recipe-modal-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary-900);
+      margin-bottom: 0.25rem;
+    }
+
+    .recipe-modal-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .recipe-info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .recipe-info-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      background: var(--primary-50);
+      color: var(--primary-800);
+      border: 1px solid var(--primary-200);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .recipe-section-h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary-800);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .recipe-ing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .ing-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg-card-subtle);
+      padding: 0.6rem 0.85rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .ing-checkbox {
+      accent-color: var(--primary-600);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .step-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 0.85rem;
+      background: var(--bg-card-subtle);
+      padding: 0.9rem 1.1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+
+    .step-num {
+      width: 26px;
+      height: 26px;
+      background: var(--primary-600);
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .recipe-tip-box {
+      background: var(--primary-50);
+      border: 1px solid var(--primary-200);
+      padding: 1.1rem;
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--primary-900);
+      line-height: 1.6;
+    }
+
+    .modal-close-top {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-color);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-main);
+      z-index: 10;
+      transition: var(--transition);
+    }
+
+    .modal-close-top:hover {
+      background: #ffffff;
+      transform: scale(1.1);
+    }
+
     /* Modal Guide */
     .modal-overlay {
       position: fixed;
@@ -775,10 +1089,6 @@
       margin-bottom: 0.85rem;
     }
 
-    /* =========================================
-       平板与手机极致响应式适配 (Responsive)
-       ========================================= */
-
     /* 平板端适配 (Tablet: 641px ~ 960px) */
     @media (max-width: 960px) {
       .header-inner {
@@ -833,7 +1143,7 @@
         font-size: 1.075rem;
       }
       .brand-text p {
-        display: none; /* 手机端隐藏次要英文字，防止换行拥挤 */
+        display: none;
       }
       .btn {
         padding: 0.45rem 0.75rem;
@@ -886,6 +1196,15 @@
       .card-desc {
         font-size: 0.825rem;
       }
+      .recipe-img-box {
+        height: 160px;
+      }
+      .recipe-modal-cover {
+        height: 200px;
+      }
+      .recipe-modal-inner {
+        padding: 1.25rem;
+      }
       .guide-grid {
         grid-template-columns: 1fr;
       }
@@ -930,7 +1249,7 @@
         </div>
       </div>
 
-      <!-- 顶部右侧 / 手机端下方：搜索栏 -->
+      <!-- 顶部右侧 / 手机端下方：食谱多语言搜索栏 -->
       <div class="nav-right">
         <div class="nav-search-box">
           <span class="search-icon">
@@ -938,7 +1257,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
           </span>
-          <input type="text" id="searchInput" class="nav-search-input" placeholder="搜索菜谱、平台、食材、标签..." oninput="handleSearch()">
+          <input type="text" id="searchInput" class="nav-search-input" placeholder="搜索食谱 (支持简体 / 繁體 / English，如: 豆腐, pumpkin, 蕈菇)..." oninput="handleSearch()">
           <button id="clearSearchBtn" class="clear-search" onclick="clearSearch()">✕</button>
         </div>
       </div>
@@ -950,13 +1269,13 @@
     <!-- Hero 区域 -->
     <section class="hero">
       <div class="hero-badge">
-        <span>✨ 严选全球权威测评 · 科学实测实验室 · 顶级名厨博客 · 中文精选</span>
+        <span>✨ 严选全球权威测评 · 本地精选食谱库 · 科学实测实验室 · 中文精选</span>
       </div>
       <h2 class="hero-title">
         探索全球最严谨、最美味的<br><span class="highlight">素食与蔬食料理指南</span>
       </h2>
       <p class="hero-subtitle">
-        收录大中华区主流社区、北美顶尖测试厨房、百年实验室、名厨纯素专栏与万道精选食谱，开启纯净健康的植物性饮食生活。
+        收录大中华区主流社区、北美顶尖测试厨房、百年实验室、名厨纯素专栏与本地归档精选食谱，开启纯净健康的植物性饮食生活。
       </p>
 
       <!-- 统计数据看板 -->
@@ -980,11 +1299,21 @@
       </div>
     </section>
 
-    <!-- 结果展示列表主容器 (直接展示中华美食与寰宇美食所有卡片) -->
+    <!-- 结果展示列表主容器 (JS 动态渲染) -->
     <div id="mainDisplayArea" style="padding-bottom: 4rem;">
       <!-- JS 动态渲染 -->
     </div>
   </main>
+
+  <!-- 食谱详情交互弹窗 (Recipe Detail Modal) -->
+  <div class="modal-overlay" id="recipeDetailModal" onclick="closeRecipeModalOnOverlay(event)">
+    <div class="recipe-modal-content">
+      <button class="modal-close-top" onclick="closeRecipeModal()">✕</button>
+      <div id="recipeModalBody">
+        <!-- JS 动态填入食谱内容 -->
+      </div>
+    </div>
+  </div>
 
   <!-- 素食与蔬食基础小指南弹窗 -->
   <div class="modal-overlay" id="guideModal" onclick="closeModalOnOverlay(event)">
@@ -1014,18 +1343,17 @@
       </div>
 
       <div style="background: var(--primary-50); border: 1px solid var(--primary-200); padding: 1rem; border-radius: var(--radius-md);">
-        <h4 style="font-weight: 700; color: var(--primary-900); margin-bottom: 0.3rem;">💡 如何使用本站找到适合的菜谱？</h4>
+        <h4 style="font-weight: 700; color: var(--primary-900); margin-bottom: 0.3rem;">💡 如何使用本站快速找到食谱？</h4>
         <ul style="padding-left: 1.2rem; font-size: 0.85rem; color: var(--primary-800); line-height: 1.6;">
-          <li>想要<strong>家常中式快手菜</strong>：浏览「中华美食」查看下厨房、豆果、爱料理等平台。</li>
-          <li>想要<strong>绝对不失败的经典配方</strong>：查看 America's Test Kitchen 与 Serious Eats。</li>
-          <li>想要<strong>探索全球风味与打卡高分</strong>：浏览「寰宇美食」查看 TasteAtlas 世界排名或 BBC Good Food。</li>
-          <li>想要<strong>高颜值日常美餐与派对料理</strong>：查看 101 Cookbooks 与 Love and Lemons。</li>
+          <li>右上角搜索支持<strong>简体、繁体、英文</strong>（例如搜 <code>tofu</code>、<code>南瓜</code>、<code>mushroom</code>、<code>素面</code>）。</li>
+          <li>点击食谱卡片可直接调出<strong>用料清单（支持食材勾选备料）</strong>与详细烹饪图文步骤。</li>
+          <li>浏览各大权威板块即可直达下厨房、Serious Eats、TasteAtlas 等全球平台。</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 悬浮返回顶部按钮 (手机/平板浏览体验更佳) -->
+  <!-- 悬浮返回顶部按钮 -->
   <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()" title="返回顶部" aria-label="返回顶部">
     <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
@@ -1046,6 +1374,346 @@
   </footer>
 
   <script>
+    // === 本地归档食谱数据集 (支持简体、繁体、英文多语言搜索) ===
+    const RECIPES_DATA = [
+      {
+        id: "蕈菇南瓜素麵",
+        name: "蕈菇南瓜素麵",
+        name_hans: "蕈菇南瓜素面",
+        name_en: "Mushroom Pumpkin Vegetarian Noodles",
+        keywords_en: "mushroom pumpkin vegetarian noodle soba soup noodles nangua",
+        category: "麵食 / 主食",
+        diet: "全素 Vegan",
+        servings: "2 人份",
+        prep_time: "5 分鐘",
+        cook_time: "10 分鐘",
+        total_time: "15 分鐘",
+        ingredients: [
+          "南瓜絲 180公克",
+          "柳松菇 80公克",
+          "青江菜絲 60公克",
+          "薑絲 5公克",
+          "蕎麥麵 200公克",
+          "水 500㏄",
+          "香菇湯塊 1塊",
+          "白胡椒粉 1/4茶匙",
+          "香油 1/2茶匙"
+        ],
+        steps: [
+          "煮一鍋滾水，放入麵條，以小火煮約1分鐘後撈出瀝乾，放入湯碗中備用。",
+          "熱鍋，加入1大匙油，放入薑絲炒香，再加入南瓜絲及柳松菇炒軟，倒入水煮滾，加香菇湯塊、白胡椒調味，淋上香油後，最後放入青江菜絲煮熟，將湯料倒入作法(1)盛裝麵條的碗中即可。"
+        ],
+        desc: "吃多了大魚大肉，偶爾來點清淡的變化，不妨嘗試素食新選擇，香菇湯塊配上南瓜與菇類，絕對是此時的最佳首選。",
+        source_url: "https://www.knorr.com/tw/r/%E8%95%88%E8%8F%87%E5%8D%97%E7%93%9C%E7%B4%A0%E9%BA%B5.html/159588",
+        image: "recipe/www.knorr.com/蕈菇南瓜素麵/cover.jpg",
+        local_dir: "www.knorr.com/蕈菇南瓜素麵"
+      },
+      {
+        id: "鮮菇豆腐煲(素)",
+        name: "鮮菇豆腐煲(素)",
+        name_hans: "鲜菇豆腐煲(素)",
+        name_en: "Fresh Mushroom Tofu Claypot",
+        keywords_en: "fresh mushroom tofu claypot casserole braised tofu stew doufu",
+        category: "煲仔 / 熱炒",
+        diet: "奶素 Lacto-Vegetarian",
+        servings: "4 人份",
+        prep_time: "5 分鐘",
+        cook_time: "15 分鐘",
+        total_time: "20 分鐘",
+        ingredients: [
+          "蛋豆腐 2盒（600g）",
+          "鴻喜菇 50公克",
+          "雪白菇 50公克",
+          "鮮香菇 80公克",
+          "花椰菜 60公克",
+          "紅蘿蔔 30公克",
+          "薑末 5公克",
+          "水 400㏄",
+          "康寶鮮味炒手(奶素) 2匙",
+          "白胡椒粉 1/4茶匙",
+          "太白粉水 2大匙"
+        ],
+        steps: [
+          "鴻喜菇、雪白菇洗淨剝散，花椰菜切小朵，紅蘿蔔切小片。",
+          "蛋豆腐切厚片，鮮香菇洗淨去蒂頭。",
+          "熱鍋倒入3大匙油，放入蛋豆腐煎至兩面金黃後，取出備用。",
+          "再熱鍋倒入1大匙油，加入薑末炒香，放入做法1的材料及水、鮮味炒手(奶素)、白胡椒粉，煮滾後放入蛋豆腐及鮮香菇同煮。",
+          "以小火煮約1分鐘後，用太白粉水勾薄芡即可。"
+        ],
+        desc: "以豐富鮮菇與滑嫩豆腐細火慢煮，湯汁鮮美濃郁，是一道營養滿分的經典家常素煲。",
+        source_url: "https://www.knorr.com/tw/r/%E9%AE%AE%E8%8F%87%E8%B1%86%E8%85%90%E7%85%B2(%E7%B4%A0).html/176042",
+        image: "recipe/www.knorr.com/鮮菇豆腐煲(素)/cover.jpg",
+        local_dir: "www.knorr.com/鮮菇豆腐煲(素)"
+      },
+      {
+        id: "三絲豆腐羹(素)",
+        name: "三絲豆腐羹(素)",
+        name_hans: "三丝豆腐羹(素)",
+        name_en: "Three Shreds Tofu Thick Soup",
+        keywords_en: "three shreds tofu thick soup broth geng tang doufu",
+        category: "羹湯 / 湯品",
+        diet: "全素 Vegan",
+        servings: "2 人份",
+        prep_time: "8 分鐘",
+        cook_time: "12 分鐘",
+        total_time: "20 分鐘",
+        ingredients: [
+          "筍絲 100公克",
+          "香菇絲 30公克",
+          "嫩豆腐絲 250公克",
+          "紅蘿蔔絲 60公克",
+          "水 400㏄",
+          "康寶鮮味炒手(奶素) 2匙",
+          "白胡椒粉 1茶匙",
+          "太白粉水 3大匙",
+          "香油 1茶匙"
+        ],
+        steps: [
+          "香菇絲、紅蘿蔔絲、筍絲用開水汆燙10秒後瀝乾。",
+          "取一湯鍋，加入水及所有材料，以中火煮開，加入康寶鮮味炒手(奶素)、白胡椒粉調味。",
+          "煮滾後轉小火，用太白粉水勾芡，加入香油即可。"
+        ],
+        desc: "加入多種蔬菜絲，再用鮮味炒手(奶素)簡單調味，三絲豆腐羹營養又美味!",
+        source_url: "https://www.knorr.com/tw/r/%E4%B8%89%E7%B5%B2%E8%B1%86%E8%85%90%E7%BE%B9(%E7%B4%A0).html/176044",
+        image: "recipe/www.knorr.com/三絲豆腐羹(素)/cover.jpg",
+        local_dir: "www.knorr.com/三絲豆腐羹(素)"
+      },
+      {
+        id: "涼拌素什錦(素)",
+        name: "涼拌素什錦(素)",
+        name_hans: "凉拌素什锦(素)",
+        name_en: "Cold Tossed Assorted Vegetarian Salad",
+        keywords_en: "cold dressed tossed assorted vegetarian vegetable salad appetizers liangban",
+        category: "涼拌 / 前菜",
+        diet: "全素 Vegan",
+        servings: "2 人份",
+        prep_time: "5 分鐘",
+        cook_time: "10 分鐘",
+        total_time: "15 分鐘",
+        ingredients: [
+          "豆皮絲 100公克",
+          "紅甜椒絲 50公克",
+          "芹菜段 50公克",
+          "金針菇 50公克",
+          "木耳絲 60公克",
+          "黃豆芽 150公克",
+          "康寶鮮味炒手(奶素) 1匙",
+          "白醋 2茶匙",
+          "細砂糖 2茶匙",
+          "芝麻香油 2大匙",
+          "薑末 10克",
+          "水 2大匙"
+        ],
+        steps: [
+          "所有材料一起用開水汆燙約1分鐘後，泡冰水瀝乾。",
+          "熱鍋下少許油，薑末下鍋小火炒香。放入所有調味料煮滾後倒出放涼。再與做法1燙熟的材料一起拌勻即可。"
+        ],
+        desc: "美味又營養的涼拌素什錦，加入康寶鮮味炒手(奶素)簡單調味，能帶出食材的自然鮮甜!",
+        source_url: "https://www.knorr.com/tw/r/%E6%B6%BC%E6%8B%8C%E7%B4%A0%E4%BB%80%E9%8C%A6(%E7%B4%A0).html/176045",
+        image: "recipe/www.knorr.com/涼拌素什錦(素)/cover.jpg",
+        local_dir: "www.knorr.com/涼拌素什錦(素)"
+      },
+      {
+        id: "炸海苔腐皮卷 (全素)",
+        name: "炸海苔腐皮卷 (全素)",
+        name_hans: "炸海苔腐皮卷(全素)",
+        name_en: "Crispy Nori Bean Curd Skin Rolls (Vegan)",
+        keywords_en: "crispy fried seaweed nori bean curd skin tofu skin roll dim sum vegan fupi",
+        category: "炸物 / 點心",
+        diet: "純素 Vegan",
+        servings: "5 人份",
+        prep_time: "10 分鐘",
+        cook_time: "13 分鐘",
+        total_time: "23 分鐘",
+        ingredients: [
+          "豆皮 5 塊",
+          "紅甜椒 1/4 顆",
+          "玉米筍 2 條",
+          "四季豆 6 條",
+          "海苔 5 張",
+          "油 少許",
+          "水 4茶匙",
+          "康寶鮮味炒手(奶素) 2又1/4匙"
+        ],
+        steps: [
+          "將2匙康寶鮮味炒手(奶素)溶於清水裡成豆皮醃漬料，攤開豆皮，在朝內的一面均勻抹上適量的豆皮醃漬料。",
+          "蔬菜切成同豆皮寬度，灑上1/4匙康寶鮮味炒手(奶素)。",
+          "豆皮鋪上海苔，放上適量蔬菜，捲成一卷。",
+          "豆皮卷好後，收口朝下，放入氣炸鍋煎烤盤上，並於表面噴油。氣炸鍋設定190度 13 分鐘。",
+          "完成聲響，取出並切片即可，亦可沾番茄醬吃。"
+        ],
+        desc: "氣炸鍋料理好方便! 加點鮮味炒手簡單調味，帶出食材自然清甜",
+        source_url: "https://www.knorr.com/tw/r/%E7%82%B8%E6%B5%B7%E8%8B%94%E8%85%90%E7%9A%AE%E5%8D%B7-(%E5%85%A8%E7%B4%A0).html/179568",
+        image: "recipe/www.knorr.com/炸海苔腐皮卷 (全素)/cover.jpg",
+        local_dir: "www.knorr.com/炸海苔腐皮卷 (全素)"
+      },
+      {
+        id: "鹹酥菇菇 (蛋奶素)",
+        name: "鹹酥菇菇 (蛋奶素)",
+        name_hans: "咸酥菇菇(蛋奶素)",
+        name_en: "Taiwanese Crispy Fried Mushrooms (Ovo-Lacto)",
+        keywords_en: "taiwanese crispy salt and pepper fried mushrooms street food xiansu gugu",
+        category: "炸物 / 小吃",
+        diet: "蛋奶素 Ovo-Lacto",
+        servings: "4 人份",
+        prep_time: "25 分鐘",
+        cook_time: "7 分鐘",
+        total_time: "32 分鐘",
+        ingredients: [
+          "金針菇 50 克",
+          "杏鮑菇 250 克",
+          "九層塔 適量",
+          "油 適量",
+          "乾辣椒末 少許",
+          "康寶鮮味炒手(奶素) 3匙",
+          "雞蛋 2 顆",
+          "木薯粉 1 杯"
+        ],
+        steps: [
+          "杏鮑菇切塊並抹上1匙康寶鮮味炒手(奶素)，醃 10 分鐘入味，金針菇可省略此步驟。",
+          "雞蛋打勻並加入1匙康寶鮮味炒手(奶素)拌勻；木薯粉加入 1 匙康寶鮮味炒手(奶素)混合成麵衣。",
+          "將金針菇分成小束，與杏鮑菇分別先後沾上蛋液與麵衣，並平鋪在盤子上 10 分鐘反潮，並於正反面噴油。",
+          "將杏鮑菇與金針菇平鋪在炸籃中，設定200度 5 分鐘，拉出炸籃稍微翻面，鋪上九層塔，再設定200度 2 分鐘。",
+          "完成後依喜好灑上辣椒末或九層塔即可食用。"
+        ],
+        desc: "經典台式夜市小吃素食版，外酥內嫩多汁，香氣四溢。",
+        source_url: "https://www.knorr.com/tw/r/%E9%B9%B9%E9%85%A5%E8%8F%87%E8%8F%87-(%E8%9B%8B%E5%A5%B6%E7%B4%A0).html/188824",
+        image: "recipe/www.knorr.com/鹹酥菇菇 (蛋奶素)/cover.jpg",
+        local_dir: "www.knorr.com/鹹酥菇菇 (蛋奶素)"
+      },
+      {
+        id: "菇菇素米糕",
+        name: "菇菇素米糕",
+        name_hans: "菇菇素米糕",
+        name_en: "Savory Mushroom Vegetarian Sticky Rice Cake",
+        keywords_en: "mushroom vegetarian sticky glutinous rice cake traditional migao",
+        category: "米食 / 點心",
+        diet: "全素 Vegan",
+        servings: "4 人份",
+        prep_time: "10 分鐘",
+        cook_time: "25 分鐘",
+        total_time: "35 分鐘",
+        ingredients: [
+          "長糯米 2 杯",
+          "水 2 杯",
+          "薑末 10 克",
+          "泡發香菇丁 30 克",
+          "素肉丁 30 克",
+          "麻油 2 大匙",
+          "醬油 2 大匙",
+          "康寶鮮味炒手(奶素) 1 匙"
+        ],
+        steps: [
+          "長糯米洗淨瀝乾備用；香菇泡軟切丁。",
+          "熱鍋倒入麻油，加入薑末、香菇丁、素肉丁爆香。",
+          "加入醬油、康寶鮮味炒手與水煮滾，倒入長糯米拌炒至湯汁收乾。",
+          "移入電鍋中蒸熟（外鍋加1.5杯水），跳起後悶10分鐘即可盛盤享用。"
+        ],
+        desc: "香氣撲鼻的傳統素米糕，麻油與香菇的經典交融，粒粒晶瑩軟糯。",
+        source_url: "https://www.knorr.com/tw/r/%E8%8F%87%E8%8F%87%E7%B4%A0%E7%B1%B3%E7%B3%95.html/255111",
+        image: "recipe/www.knorr.com/菇菇素米糕/cover.jpg",
+        local_dir: "www.knorr.com/菇菇素米糕"
+      },
+      {
+        id: "菌菇南瓜湯(素)",
+        name: "菌菇南瓜湯(素)",
+        name_hans: "菌菇南瓜汤(素)",
+        name_en: "Creamy Mushroom Pumpkin Soup (Vegetarian)",
+        keywords_en: "creamy mushroom pumpkin puree soup potage nangua tang",
+        category: "湯品 / 西式濃湯",
+        diet: "奶素 Lacto-Vegetarian",
+        servings: "4 人份",
+        prep_time: "15 分鐘",
+        cook_time: "20 分鐘",
+        total_time: "35 分鐘",
+        ingredients: [
+          "南瓜塊 300 克",
+          "雪白菇 50 克",
+          "鴻喜菇 50 克",
+          "水 600 ㏄",
+          "鮮奶或植物奶 100 ㏄",
+          "康寶香菇湯塊 1 塊",
+          "黑胡椒粒 少许"
+        ],
+        steps: [
+          "南瓜去皮切塊蒸熟，加入200cc水用調理機打成濃郁南瓜泥。",
+          "熱鍋加少許油炒香雪白菇與鴻喜菇。",
+          "倒入剩餘400cc水與南瓜泥煮滾，加入康寶香菇湯塊攪拌均勻化開。",
+          "起鍋前倒入鮮奶（或燕麥奶）拌勻微滾，灑上黑胡椒粒即可享用。"
+        ],
+        desc: "金黃濃醇的南瓜濃湯融入爽脆野菇，口感絲滑香甜，溫潤暖胃。",
+        source_url: "https://www.knorr.com/tw/r/%E8%8F%8C%E8%8F%87%E5%8D%97%E7%93%9C%E6%B9%AF(%E7%B4%A0).html/229648",
+        image: "recipe/www.knorr.com/菌菇南瓜湯(素)/cover.jpg",
+        local_dir: "www.knorr.com/菌菇南瓜湯(素)"
+      },
+      {
+        id: "如意冬瓜卷",
+        name: "如意冬瓜卷",
+        name_hans: "如意冬瓜卷",
+        name_en: "Ruyi Winter Melon Rolls with Mushroom Stuffing",
+        keywords_en: "ruyi winter melon roll stuffed banquet vegetarian gourmet donggua juan",
+        category: "精緻熱菜 / 宴席料理",
+        diet: "全素 Vegan",
+        servings: "4 人份",
+        prep_time: "10 分鐘",
+        cook_time: "25 分鐘",
+        total_time: "35 分鐘",
+        ingredients: [
+          "冬瓜 600 克",
+          "香菇絲 50 克",
+          "胡蘿蔔絲 30 克",
+          "黑木耳絲 30 克",
+          "金針菇 50 克",
+          "水 200 ㏄",
+          "康寶鮮味炒手(奶素) 1.5 匙",
+          "太白粉水 1 大匙",
+          "香油 少許"
+        ],
+        steps: [
+          "冬瓜去皮去籽，切成薄長片，用滾水汆燙至軟透後泡冷水瀝乾備用。",
+          "香菇絲、胡蘿蔔絲、黑木耳絲、金針菇炒熟，加入半匙鮮味炒手調味作為餡料。",
+          "將冬瓜薄片攤平，包入適量炒好的蔬菜餡料捲起，收口朝下擺盤。",
+          "入蒸鍋大火蒸8分鐘。",
+          "將盤中蒸出的冬瓜鮮甜湯汁倒入小鍋，加水、1匙鮮味炒手煮滾，勾薄芡淋在冬瓜卷上，滴少許香油即可。"
+        ],
+        desc: "晶瑩剔透如翡翠白玉般的經典宴席素菜，清甜多汁，寓意吉祥如意。",
+        source_url: "https://www.knorr.com/tw/r/%E5%A6%82%E6%84%8F%E5%86%AC%E7%93%9C%E5%8D%B7.html/255110",
+        image: "recipe/www.knorr.com/如意冬瓜卷/cover.jpg",
+        local_dir: "www.knorr.com/如意冬瓜卷"
+      },
+      {
+        id: "金沙豆腐",
+        name: "金沙豆腐",
+        name_hans: "金沙豆腐",
+        name_en: "Golden Salted Egg Tofu",
+        keywords_en: "golden yolk salted egg tofu crispy soft stir fry jinsha doufu",
+        category: "熱炒 / 經典家常",
+        diet: "蛋素 Ovo-Vegetarian",
+        servings: "3-4 人份",
+        prep_time: "5 分鐘",
+        cook_time: "10 分鐘",
+        total_time: "15 分鐘",
+        ingredients: [
+          "雞蛋豆腐 1 盒",
+          "蔥花或芫荽 1 根",
+          "太白粉 少許",
+          "康寶私廚料理醬-金沙豆腐醬 1 包（或熟鹹蛋黃2顆壓碎）",
+          "油 適量"
+        ],
+        steps: [
+          "雞蛋豆腐切成一口大小方塊，均勻裹上一層薄薄的太白粉。",
+          "熱鍋下油，將豆腐煎或炸至四面金黃酥脆，撈起瀝油備用。",
+          "鍋內留少許油，下鹹蛋黃末以小火慢炒至起細密金黃泡沫（金沙狀）。",
+          "快速倒入炸好的雞蛋豆腐與蔥花，輕柔翻拌均勻裹上金沙醬汁，立即起鍋裝盤。"
+        ],
+        desc: "外酥內極其軟嫩，濃郁鹹香的金黃沙質外衣裹滿每塊豆腐，超受歡迎的下飯招牌菜。",
+        source_url: "https://www.knorr.com/tw/r/%E9%87%91%E6%B2%99%E8%B1%86%E8%85%90.html/232937",
+        image: "recipe/www.knorr.com/金沙豆腐/cover.jpg",
+        local_dir: "www.knorr.com/金沙豆腐"
+      }
+    ];
+
+    // === 全球权威平台数据 (39个) ===
     const PLATFORMS_DATA = [
       // === 中国区 / 中华美食 (16个，已按指定顺序重排) ===
       {
@@ -1612,6 +2280,24 @@
     let favoritesOnly = false;
     let favorites = JSON.parse(localStorage.getItem("vege_favs") || "[]");
 
+    // 简繁体常用字互转词典
+    const CHAR_MAP = {
+      '面': '麵', '麵': '面',
+      '鲜': '鮮', '鮮': '鲜',
+      '汤': '湯', '湯': '汤',
+      '凉': '涼', '涼': '凉',
+      '什锦': '什錦', '什錦': '什锦',
+      '咸': '鹹', '鹹': '咸',
+      '卷': '卷', '捲': '卷',
+      '块': '塊', '塊': '块',
+      '鸡': '雞', '雞': '鸡',
+      '丝': '絲', '絲': '丝',
+      '笋': '筍', '筍': '笋',
+      '萝卜': '蘿蔔', '蘿蔔': '萝卜',
+      '虾': '蝦', '蝦': '虾',
+      '蛋': '蛋', '菇': '菇', '素': '素', '豆腐': '豆腐'
+    };
+
     function init() {
       updateFavCount();
       renderMainDisplay();
@@ -1672,15 +2358,15 @@
       renderMainDisplay();
     }
 
-    // 点击整个卡片区块直接打开主网址
+    // 点击整个权威平台卡片区块直接打开主网址
     function openSite(url, event) {
       if (event && event.target.closest('button, a')) {
-        return; // 用户点击的是收藏按钮或独立子链接，不重复触发
+        return;
       }
       window.open(url, '_blank', 'noopener,noreferrer');
     }
 
-    // 生成单个卡片 HTML
+    // 生成平台卡片 HTML
     function generateCardHtml(item) {
       const isFav = favorites.includes(item.id);
       const tagsHtml = item.tags.map(t => `<span class="card-tag">#${t}</span>`).join("");
@@ -1726,53 +2412,134 @@
       `;
     }
 
-    // 渲染主展示区域：直接展示中华美食板块与寰宇美食板块
+    // 生成食谱卡片 HTML
+    function generateRecipeCardHtml(r) {
+      const ingChips = r.ingredients.slice(0, 4).map(i => `<span class="recipe-ing-chip">${i.split(' ')[0]}</span>`).join("");
+      return `
+        <article class="recipe-card" onclick="openRecipeDetail('${r.id}')" title="点击查看 ${r.name} 详细烹饪步骤">
+          <div class="recipe-img-box">
+            <img src="${r.image}" alt="${r.name}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><text y=%2250%%22 x=%2250%%22 text-anchor=%22middle%22 font-size=%2240%22>🥗</text></svg>'">
+            <span class="recipe-diet-pill">${r.diet}</span>
+            <span class="recipe-time-pill">⏱️ ${r.total_time}</span>
+          </div>
+          <div class="recipe-card-body">
+            <div>
+              <h4 class="recipe-title">${r.name}</h4>
+              <div class="recipe-en-sub">${r.name_en}</div>
+              <div class="recipe-ingredients-preview">${ingChips}</div>
+            </div>
+            <div class="recipe-card-footer">
+              <span class="recipe-meta-text">👥 ${r.servings} · ${r.category}</span>
+              <button class="btn-view-recipe" onclick="openRecipeDetail('${r.id}'); event.stopPropagation();">
+                <span>📖 做法详情</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    // 多语言匹配函数 (支持简体、繁体、英文、食材)
+    function matchesQuery(text, query) {
+      if (!text || !query) return false;
+      const lowerText = text.toLowerCase();
+      const lowerQ = query.toLowerCase();
+      if (lowerText.includes(lowerQ)) return true;
+
+      // 简繁互转匹配
+      for (const [s, t] of Object.entries(CHAR_MAP)) {
+        if (lowerQ.includes(s) && lowerText.includes(t)) return true;
+        if (lowerQ.includes(t) && lowerText.includes(s)) return true;
+      }
+      return false;
+    }
+
+    // 渲染主展示区域
     function renderMainDisplay() {
       const container = document.getElementById("mainDisplayArea");
 
-      // 搜索或收藏模式
+      // 模式 1：搜索或收藏模式
       if (favoritesOnly || searchQuery) {
-        let filtered = PLATFORMS_DATA.filter(item => {
-          if (favoritesOnly && !favorites.includes(item.id)) return false;
-          if (searchQuery) {
-            const matchName = item.name.toLowerCase().includes(searchQuery);
-            const matchDesc = item.desc.toLowerCase().includes(searchQuery);
-            const matchTags = item.tags.some(t => t.toLowerCase().includes(searchQuery));
-            const matchCat = item.categoryName.toLowerCase().includes(searchQuery);
-            if (!matchName && !matchDesc && !matchTags && !matchCat) return false;
-          }
-          return true;
-        });
+        let matchedRecipes = [];
+        let matchedPlatforms = [];
 
-        const titleText = favoritesOnly ? "⭐ 我的收藏列表" : `🔍 搜索结果 ("${searchQuery}")`;
+        if (searchQuery) {
+          // 搜索食谱库 (支持简/繁/英/食材)
+          matchedRecipes = RECIPES_DATA.filter(r => {
+            return matchesQuery(r.name, searchQuery) ||
+                   matchesQuery(r.name_hans, searchQuery) ||
+                   matchesQuery(r.name_en, searchQuery) ||
+                   matchesQuery(r.keywords_en, searchQuery) ||
+                   matchesQuery(r.category, searchQuery) ||
+                   matchesQuery(r.diet, searchQuery) ||
+                   matchesQuery(r.desc, searchQuery) ||
+                   r.ingredients.some(ing => matchesQuery(ing, searchQuery));
+          });
 
-        if (filtered.length === 0) {
+          // 搜索平台
+          matchedPlatforms = PLATFORMS_DATA.filter(p => {
+            if (favoritesOnly && !favorites.includes(p.id)) return false;
+            return matchesQuery(p.name, searchQuery) ||
+                   matchesQuery(p.desc, searchQuery) ||
+                   matchesQuery(p.categoryName, searchQuery) ||
+                   p.tags.some(t => matchesQuery(t, searchQuery));
+          });
+        } else if (favoritesOnly) {
+          matchedPlatforms = PLATFORMS_DATA.filter(p => favorites.includes(p.id));
+        }
+
+        if (matchedRecipes.length === 0 && matchedPlatforms.length === 0) {
           container.innerHTML = `
             <div class="empty-state">
               <div class="empty-icon">🍃</div>
-              <h4 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.5rem;">未找到相关平台或食谱</h4>
-              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">尝试更换搜索关键词。</p>
-              <button class="btn btn-outline" onclick="resetFilters()">返回全部平台</button>
+              <h4 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem;">未找到相关食谱或平台</h4>
+              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">尝试输入其他词，如: <strong>南瓜 (pumpkin)</strong>, <strong>豆腐 (tofu)</strong>, <strong>鲜菇 (mushroom)</strong>, <strong>素面 (noodles)</strong>, <strong>汤 (soup)</strong>。</p>
+              <button class="btn btn-outline" onclick="resetFilters()">返回全部平台与食谱</button>
             </div>
           `;
           return;
         }
 
-        container.innerHTML = `
-          <section class="group-section">
-            <div class="section-header">
-              <h3 class="section-title"><span>${titleText}</span></h3>
-              <div class="result-info">共找到 <strong style="color: var(--primary-700);">${filtered.length}</strong> 个平台</div>
-            </div>
-            <div class="cards-grid">
-              ${filtered.map(item => generateCardHtml(item)).join("")}
-            </div>
-          </section>
-        `;
+        let html = "";
+
+        // 呈现匹配到的本地食谱库
+        if (matchedRecipes.length > 0) {
+          html += `
+            <section class="group-section">
+              <div class="section-header">
+                <h3 class="section-title">
+                  <span>🍲 精选食谱库搜索结果</span>
+                </h3>
+                <div class="result-info">在本地 recipe 库中找到 <strong style="color: var(--primary-700);">${matchedRecipes.length}</strong> 道菜谱</div>
+              </div>
+              <div class="cards-grid">
+                ${matchedRecipes.map(r => generateRecipeCardHtml(r)).join("")}
+              </div>
+            </section>
+          `;
+        }
+
+        // 呈现匹配到的权威平台
+        if (matchedPlatforms.length > 0) {
+          const sectionTitle = favoritesOnly ? "⭐ 我的收藏平台" : "🌐 匹配的权威平台";
+          html += `
+            <section class="group-section">
+              <div class="section-header">
+                <h3 class="section-title"><span>${sectionTitle}</span></h3>
+                <div class="result-info">共找到 <strong style="color: var(--primary-700);">${matchedPlatforms.length}</strong> 个平台</div>
+              </div>
+              <div class="cards-grid">
+                ${matchedPlatforms.map(item => generateCardHtml(item)).join("")}
+              </div>
+            </section>
+          `;
+        }
+
+        container.innerHTML = html;
         return;
       }
 
-      // 默认状态：直接按【🇨🇳 中华美食】与【🌍 寰宇美食】两大板块展示全部 39 个平台
+      // 默认状态：直接按【🇨🇳 中华美食】与【寰宇美食】两大板块展示全部 39 个平台
       const chinaList = PLATFORMS_DATA.filter(p => p.region === "china");
       const globalList = PLATFORMS_DATA.filter(p => p.region === "global");
 
@@ -1805,6 +2572,84 @@
       `;
     }
 
+    // 打开食谱详情弹窗
+    function openRecipeDetail(recipeId) {
+      const recipe = RECIPES_DATA.find(r => r.id === recipeId);
+      if (!recipe) return;
+
+      const modalBody = document.getElementById("recipeModalBody");
+      const ingHtml = recipe.ingredients.map((ing, idx) => `
+        <label class="ing-item">
+          <input type="checkbox" class="ing-checkbox" id="ing_${idx}">
+          <span>${ing}</span>
+        </label>
+      `).join("");
+
+      const stepsHtml = recipe.steps.map((step, idx) => `
+        <div class="step-item">
+          <div class="step-num">${idx + 1}</div>
+          <div style="flex: 1;">${step}</div>
+        </div>
+      `).join("");
+
+      modalBody.innerHTML = `
+        <img src="${recipe.image}" alt="${recipe.name}" class="recipe-modal-cover" onerror="this.style.display='none'">
+        <div class="recipe-modal-inner">
+          <h2 class="recipe-modal-title">${recipe.name}</h2>
+          <div class="recipe-modal-subtitle">${recipe.name_hans} · <em>${recipe.name_en}</em></div>
+
+          <div class="recipe-info-row">
+            <span class="recipe-info-badge">🥗 ${recipe.diet}</span>
+            <span class="recipe-info-badge">🍱 ${recipe.category}</span>
+            <span class="recipe-info-badge">👥 ${recipe.servings}</span>
+            <span class="recipe-info-badge">⏱️ 備料 ${recipe.prep_time}</span>
+            <span class="recipe-info-badge">🔥 烹飪 ${recipe.cook_time}</span>
+          </div>
+
+          <h3 class="recipe-section-h3">🌿 食材用料清單 (可勾選備料)</h3>
+          <div class="recipe-ing-grid">
+            ${ingHtml}
+          </div>
+
+          <h3 class="recipe-section-h3">🍳 料理步驟圖文解析</h3>
+          <div class="step-list">
+            ${stepsHtml}
+          </div>
+
+          <div class="recipe-tip-box">
+            <strong>💡 大廚美味提鮮要點：</strong><br>
+            ${recipe.desc || '使用康寶純素 / 鮮味系列調味料，能快速提升蔬食鮮味與層次。'}
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; justify-content: flex-end;">
+            <a href="${recipe.source_url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>🌐 康寶官方原站來源</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+            <button class="btn btn-outline" onclick="closeRecipeModal()">
+              <span>關閉</span>
+            </button>
+          </div>
+        </div>
+      `;
+
+      const modal = document.getElementById("recipeDetailModal");
+      modal.classList.add("open");
+    }
+
+    function closeRecipeModal() {
+      const modal = document.getElementById("recipeDetailModal");
+      modal.classList.remove("open");
+    }
+
+    function closeRecipeModalOnOverlay(e) {
+      if (e.target.id === "recipeDetailModal") {
+        closeRecipeModal();
+      }
+    }
+
     function openModal() {
       const modal = document.getElementById("guideModal");
       modal.classList.add("open");
@@ -1813,6 +2658,12 @@
     function closeModal() {
       const modal = document.getElementById("guideModal");
       modal.classList.remove("open");
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target.id === "guideModal") {
+        closeModal();
+      }
     }
 
     function scrollToTop() {
