@@ -162,11 +162,7 @@
     .nav-search-box {
       position: relative;
       width: 360px;
-      transition: var(--transition);
-    }
-
-    .nav-search-box:focus-within {
-      width: 420px;
+      max-width: 100%;
     }
 
     .nav-search-input {
@@ -1106,7 +1102,7 @@
       .nav-right {
         width: 100%;
       }
-      .nav-search-box, .nav-search-box:focus-within {
+      .nav-search-box {
         width: 100%;
       }
       .cards-grid {
